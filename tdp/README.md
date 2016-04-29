@@ -1,4 +1,4 @@
-# NIST Smart Manufacturing Systems (SMS) Test Bed: Technical Data Packages
+# NIST SMS Test Bed: Technical Data Packages
 
 This section contains Technical Data Packages (TDPs) generated in the SMS Test Bed. More information coming soon.
 
