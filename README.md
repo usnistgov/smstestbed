@@ -2,6 +2,16 @@
 
 Coming Soon.
 
+## Repository Description
+
+Below is an overview of the organization of this repository.
+
+```
++---raw (raw unprocessed data for the current day's worth of data)
++---tdp (Technical Data Packages)
++---README.md (this documentation)
+```
+
 ## Contacts
 
 [Thomas Hedberg](http://www.nist.gov/el/msid/syseng/thedberg.cfm), tdh1@nist.gov, 301-975-4247
