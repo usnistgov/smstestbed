@@ -7,7 +7,7 @@ This section contains Technical Data Packages (TDPs) generated in the SMS Test B
 Below is an overview of the TDPs available in this repository.
 
 ```
-+---d2mi (Design to Manufacturing and Inspection)
++---d2mi (Design to Manufacturing and Inspection project)
     +---CAD (Computer-aided design files)
     +---CAM (Computer-aided manufacturing files)
     +---G-code (ISO 6983 G-code related to the CAM and Setup Sheets)
