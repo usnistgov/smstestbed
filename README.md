@@ -7,6 +7,7 @@ Coming Soon.
 Below is an overview of the organization of this repository.
 
 ```
++---mtconnect (current MTConnect adapter and agent build)
 +---raw (raw unprocessed data for the current day's worth of data)
 +---tdp (Technical Data Packages)
 +---README.md (this documentation)
