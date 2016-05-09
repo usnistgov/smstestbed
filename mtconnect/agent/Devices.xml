@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<MTConnectDevices xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns='urn:mtconnect.org:MTConnectDevices:1.3' xmlns:m='urn:mtconnect.org:MTConnectDevices:1.3' xsi:schemaLocation='urn:mtconnect.org:MTConnectDevices:1.3 http://www.mtconnect.org/schemas/MTConnectDevices_1.3.xsd'>
+  <Header creationTime='2015-08-28T10:56:27Z' assetBufferSize='1024' sender='localhost' assetCount='0' version='1.3' instanceId='0' bufferSize='524288'/>
+  <Devices>
+    <Device name='Mazak03' uuid='mtc_adapter004' id='Mazak03'>
+      <Description model='QTN' manufacturer='Mazak'>Mazak Quickturn - Mazak Quick Turn Nexus 300</Description>
+      <DataItems>
+        <DataItem type='AVAILABILITY' category='EVENT' id='dtop_2' name='avail'/>
+      </DataItems>
+      <Components>
+        <Axes name='base' id='base_3'>
+          <DataItems>
+            <DataItem type='ACTUATOR' category='CONDITION' id='base_4' name='servo_cond'/>
+          </DataItems>
+          <Components>
+            <Linear name='X' id='X_5'>
+              <DataItems>
+                <DataItem type='POSITION' category='SAMPLE' id='X_6' name='Xabs' subType='ACTUAL' units='MILLIMETER' nativeUnits='MILLIMETER' coordinateSystem='MACHINE'/>
+                <DataItem type='POSITION' category='CONDITION' id='X_7' name='Xtravel'/>
+                <DataItem type='LOAD' category='SAMPLE' id='X_8' name='Xload' units='PERCENT' nativeUnits='PERCENT'/>
+                <DataItem type='AXIS_FEEDRATE' category='SAMPLE' id='X_9' name='Xfrt' units='MILLIMETER/SECOND' nativeUnits='MILLIMETER/SECOND'/>
+              </DataItems>
+            </Linear>
+            <Linear name='Z' id='Z_10'>
+              <DataItems>
+                <DataItem type='POSITION' category='SAMPLE' id='Z_11' name='Zabs' subType='ACTUAL' units='MILLIMETER' nativeUnits='MILLIMETER' coordinateSystem='MACHINE'/>
+                <DataItem type='POSITION' category='CONDITION' id='Z_12' name='Ztravel'/>
+                <DataItem type='LOAD' category='SAMPLE' id='Z_13' name='Zload' units='PERCENT' nativeUnits='PERCENT'/>
+                <DataItem type='AXIS_FEEDRATE' category='SAMPLE' id='Z_14' name='Zfrt' units='MILLIMETER/SECOND' nativeUnits='MILLIMETER/SECOND'/>
+              </DataItems>
+            </Linear>
+            <Rotary name='C' id='C_15'>
+              <DataItems>
+                <DataItem type='LOAD' category='SAMPLE' id='C_16' name='Cload' units='PERCENT' nativeUnits='PERCENT'/>
+                <DataItem type='ANGULAR_VELOCITY' category='SAMPLE' id='C_17' name='Cfrt' units='DEGREE/SECOND' nativeUnits='DEGREE/MINUTE'/>
+                <DataItem type='ANGLE' category='SAMPLE' id='C_18' name='Cdeg' subType='ACTUAL' units='DEGREE' nativeUnits='DEGREE'/>
+                <DataItem type='ANGLE' category='CONDITION' id='C_19' name='Ctravel'/>
+              </DataItems>
+            </Rotary>
+            <Rotary name='S' nativeName='S' id='S_20'>
+              <DataItems>
+                <DataItem type='SPINDLE_SPEED' category='SAMPLE' id='S_21' name='Srpm' subType='ACTUAL' units='REVOLUTION/MINUTE' nativeUnits='REVOLUTION/MINUTE'/>
+                <DataItem type='LOAD' category='SAMPLE' id='S_22' name='S1load' units='PERCENT' nativeUnits='PERCENT'>
+                  <Source>Sload</Source>
+                </DataItem>
+                <DataItem type='TEMPERATURE' category='SAMPLE' id='S_23' name='Stemp' units='CELSIUS' nativeUnits='CELSIUS'/>
+                <DataItem type='LOAD' category='CONDITION' id='S_24' name='Sload_cond'/>
+                <DataItem type='TEMPERATURE' category='CONDITION' id='S_25' name='Stemp_cond'/>
+              </DataItems>
+            </Rotary>
+            <Rotary name='S2' nativeName='S2' id='S2_26'>
+              <DataItems>
+                <DataItem type='SPINDLE_SPEED' category='SAMPLE' id='S2_27' name='S2rpm' subType='ACTUAL' units='REVOLUTION/MINUTE' nativeUnits='REVOLUTION/MINUTE'/>
+                <DataItem type='LOAD' category='SAMPLE' id='S2_28' name='S2load' units='PERCENT' nativeUnits='PERCENT'>
+                  <Source>S2load</Source>
+                </DataItem>
+                <DataItem type='TEMPERATURE' category='SAMPLE' id='S2_29' name='S2temp' units='CELSIUS' nativeUnits='CELSIUS'/>
+                <DataItem type='LOAD' category='CONDITION' id='S2_30' name='S2load_cond'/>
+                <DataItem type='TEMPERATURE' category='CONDITION' id='S2_31' name='S2temp_cond'/>
+              </DataItems>
+            </Rotary>
+          </Components>
+        </Axes>
+        <Controller name='controller' id='controller_32'>
+          <DataItems>
+            <DataItem type='COMMUNICATIONS' category='CONDITION' id='controller_33' name='comms_cond'/>
+            <DataItem type='LOGIC_PROGRAM' category='CONDITION' id='controller_34' name='logic_cond'/>
+            <DataItem type='SYSTEM' category='CONDITION' id='controller_35' name='system_cond'/>
+            <DataItem type='x:PALLET_NUM' category='EVENT' id='controller_36' name='pallet_num'/>
+          </DataItems>
+          <Components>
+            <Path name='path' id='path_37'>
+              <DataItems>
+                <DataItem type='SPINDLE_SPEED' category='SAMPLE' id='path_38' name='Sovr' subType='OVERRIDE' units='PERCENT' nativeUnits='PERCENT'/>
+                <DataItem type='PROGRAM' category='EVENT' id='path_39' name='program'/>
+                <DataItem type='PROGRAM' category='EVENT' id='path_40' name='subprogram' subType='x:SUB'/>
+                <DataItem type='LINE' category='EVENT' id='path_41' name='line'/>
+                <DataItem type='x:UNIT' category='EVENT' id='path_42' name='unitNum'/>
+                <DataItem type='x:SEQUENCE_NUMBER' category='EVENT' id='path_43' name='sequenceNum'/>
+                <DataItem type='PART_COUNT' category='EVENT' id='path_44' name='PartCountAct'/>
+                <DataItem type='PATH_FEEDRATE' category='SAMPLE' id='path_45' name='Fact' subType='ACTUAL' units='MILLIMETER/SECOND' nativeUnits='MILLIMETER/SECOND'/>
+                <DataItem type='PATH_FEEDRATE' category='SAMPLE' id='path_46' name='Frapidovr' subType='OVERRIDE' units='PERCENT' nativeUnits='PERCENT'/>
+                <DataItem type='PATH_FEEDRATE' category='SAMPLE' id='path_47' name='Fovr' subType='OVERRIDE' units='PERCENT' nativeUnits='PERCENT'/>
+                <DataItem type='EXECUTION' category='EVENT' id='path_48' name='execution'/>
+                <DataItem type='CONTROLLER_MODE' category='EVENT' id='path_49' name='mode'/>
+                <DataItem type='x:COMMENT' category='EVENT' id='path_50' name='program_cmt'/>
+                <DataItem type='x:COMMENT' category='EVENT' id='path_51' name='subprogram_cmt' subType='x:SUB'/>
+                <DataItem type='ACCUMULATED_TIME' category='EVENT' id='path_52' name='auto_time' subType='x:AUTO' units='SECOND' nativeUnits='SECOND'/>
+                <DataItem type='ACCUMULATED_TIME' category='EVENT' id='path_53' name='total_time' subType='x:TOTAL' units='SECOND' nativeUnits='SECOND'/>
+                <DataItem type='ACCUMULATED_TIME' category='EVENT' id='path_54' name='cut_time' subType='x:CUT' units='SECOND' nativeUnits='SECOND'/>
+                <DataItem type='MOTION_PROGRAM' category='CONDITION' id='path_55' name='motion_cond'/>
+                <DataItem type='MOTION_PROGRAM' category='CONDITION' id='path_56' name='motion_cond2'/>
+                <DataItem type='MOTION_PROGRAM' category='CONDITION' id='path_57' name='motion_cond3'/>
+                <DataItem type='MOTION_PROGRAM' category='CONDITION' id='path_58' name='motion_cond4'/>
+                <DataItem type='SYSTEM' category='CONDITION' id='path_59' name='path_system'/>
+                <DataItem type='SYSTEM' category='CONDITION' id='path_60' name='path_system2'/>
+                <DataItem type='SYSTEM' category='CONDITION' id='path_61' name='path_system3'/>
+                <DataItem type='SYSTEM' category='CONDITION' id='path_62' name='path_system4'/>
+                <DataItem type='TOOL_ID' category='EVENT' id='path_63' name='Tool_number'/>
+                <DataItem type='x:TOOL_GROUP' category='EVENT' id='path_64' name='Tool_group'/>
+                <DataItem type='x:TOOL_SUFFIX' category='EVENT' id='path_65' name='Tool_suffix'/>
+              </DataItems>
+            </Path>
+          </Components>
+        </Controller>
+        <Systems name='systems' id='systems_66'>
+          <Components>
+            <Electric name='electric' id='electric_67'>
+              <DataItems>
+                <DataItem type='POWER_STATE' category='EVENT' id='electric_68' name='power'/>
+                <DataItem type='TEMPERATURE' category='CONDITION' id='electric_69' name='electric_temp'/>
+              </DataItems>
+            </Electric>
+            <Hydraulic name='hydraulic' id='hydraulic_70'>
+              <DataItems>
+                <DataItem type='PRESSURE' category='CONDITION' id='hydraulic_71' name='hydra_cond'/>
+              </DataItems>
+            </Hydraulic>
+            <Coolant name='coolant' id='coolant_72'>
+              <DataItems>
+                <DataItem type='PRESSURE' category='CONDITION' id='coolant_73' name='coolant_pres'/>
+                <DataItem type='TEMPERATURE' category='CONDITION' id='coolant_74' name='coolant_temp'/>
+                <DataItem type='LEVEL' category='CONDITION' id='coolant_75' name='coolant_level'/>
+              </DataItems>
+            </Coolant>
+            <Pneumatic name='pneumatic' id='pneumatic_76'>
+              <DataItems>
+                <DataItem type='PRESSURE' category='CONDITION' id='pneumatic_77' name='pneu_cond'/>
+              </DataItems>
+            </Pneumatic>
+          </Components>
+        </Systems>
+      </Components>
+    </Device>
+    <Device name='GFAgie01' uuid='mtc_adapter001' id='GFAgie01'>
+      <Description model='HPM600U' manufacturer='Agie charmilles'>Agie Mikron HPM600U - GF Agie Charmilles HPM600U</Description>
+      <DataItems>
+        <DataItem type='AVAILABILITY' category='EVENT' id='dtop_79' name='avail'/>
+        <DataItem type='EMERGENCY_STOP' category='EVENT' id='dtop_80' name='estop'/>
+        <DataItem type='SYSTEM' category='CONDITION' id='dtop_81' name='system'/>
+      </DataItems>
+      <Components>
+        <Axes name='axes' id='axes_82'>
+          <Components>
+            <Linear name='X' id='X_83'>
+              <DataItems>
+                <DataItem type='POSITION' category='SAMPLE' id='X_84' name='Xposition' subType='ACTUAL' units='MILLIMETER' nativeUnits='MILLIMETER'/>
+              </DataItems>
+            </Linear>
+            <Linear name='Y' id='Y_85'>
+              <DataItems>
+                <DataItem type='POSITION' category='SAMPLE' id='Y_86' name='Yposition' subType='ACTUAL' units='MILLIMETER' nativeUnits='MILLIMETER'/>
+              </DataItems>
+            </Linear>
+            <Linear name='Z' id='Z_87'>
+              <DataItems>
+                <DataItem type='POSITION' category='SAMPLE' id='Z_88' name='Zposition' subType='ACTUAL' units='MILLIMETER' nativeUnits='MILLIMETER'/>
+              </DataItems>
+            </Linear>
+            <Rotary name='C' id='C_89'>
+              <DataItems>
+                <DataItem type='ANGLE' category='SAMPLE' id='C_90' name='Cposition' subType='ACTUAL' units='DEGREE' nativeUnits='DEGREE'/>
+              </DataItems>
+            </Rotary>
+            <Rotary name='A' id='A_91'>
+              <DataItems>
+                <DataItem type='ANGLE' category='SAMPLE' id='A_92' name='Aposition' subType='ACTUAL' units='DEGREE' nativeUnits='DEGREE'/>
+              </DataItems>
+            </Rotary>
+          </Components>
+        </Axes>
+        <Controller name='controller_basic' id='controller_basic_93'>
+          <DataItems>
+            <DataItem type='PATH_FEEDRATE' category='EVENT' id='controller_basic_94' name='Fovr' subType='OVERRIDE' units='PERCENT' nativeUnits='PERCENT'/>
+            <DataItem type='SPINDLE_SPEED' category='EVENT' id='controller_basic_95' name='Sovr' subType='OVERRIDE' units='PERCENT' nativeUnits='PERCENT'/>
+            <DataItem type='ACTUATOR' category='CONDITION' id='controller_basic_96' name='servo'/>
+            <DataItem type='COMMUNICATIONS' category='CONDITION' id='controller_basic_97' name='comms'/>
+            <DataItem type='COMMUNICATIONS' category='CONDITION' id='controller_basic_98' name='pneumatic'/>
+            <DataItem type='COMMUNICATIONS' category='CONDITION' id='controller_basic_99' name='hydraulic'/>
+            <DataItem type='LOGIC_PROGRAM' category='CONDITION' id='controller_basic_100' name='logic'/>
+            <DataItem type='MOTION_PROGRAM' category='CONDITION' id='controller_basic_101' name='motion'/>
+            <DataItem type='TEMPERATURE' category='CONDITION' id='controller_basic_102' name='cnc_temp'/>
+          </DataItems>
+          <Components>
+            <Path name='path_basic' id='path_basic_103'>
+              <DataItems>
+                <!-- Events -->
+                <DataItem type='EXECUTION' category='EVENT' id='path_basic_104' name='execution'/>
+                <DataItem type='CONTROLLER_MODE' category='EVENT' id='path_basic_105' name='mode'/>
+                <DataItem type='PROGRAM' category='EVENT' id='path_basic_106' name='program'/>
+                <DataItem type='x:CUTTING_TOOL' category='EVENT' id='path_basic_107' name='CuttingTool'/>
+                <DataItem type='LINE' category='EVENT' id='path_basic_108' name='line'/>
+                <DataItem type='x:MOTION' category='EVENT' id='path_basic_109' name='move'/>
+                <!-- Samples -->
+                <DataItem type='PATH_POSITION' category='SAMPLE' id='path_basic_110' name='path_pos' units='MILLIMETER_3D' nativeUnits='MILLIMETER_3D'/>
+              </DataItems>
+            </Path>
+          </Components>
+        </Controller>
+      </Components>
+    </Device>  
+ </Devices>
+</MTConnectDevices>
