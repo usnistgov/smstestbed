@@ -167,7 +167,7 @@ You are viewing the Volatile Data Stream (VDS) component of the NIST Smart Manuf
 				<p>
 					<xsl:apply-templates select="/m:MTConnectStreams/m:Header" />
 				</p>
-				<hr/>
+				<hr style="color: black;background-color: black;height: 4px;" />
 				<xsl:apply-templates select="/m:MTConnectStreams/m:Streams/m:DeviceStream" />
 </div>
 
@@ -252,6 +252,7 @@ You are viewing the Volatile Data Stream (VDS) component of the NIST Smart Manuf
 		<xsl:text>; UUID: </xsl:text><xsl:value-of select="@uuid"/>
 		</h2>
 		<xsl:apply-templates select="m:ComponentStream"/>
+		<hr style="color: black;background-color: black;height: 4px;" />
 	</xsl:template>
 	
 	<xsl:template match="m:Header">
