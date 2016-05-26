@@ -162,7 +162,7 @@
 <h2>Volatile Data Stream</h2>
 </p>
 <p>
-You are viewing the Volatile Data Stream (VDS) component of the NIST Smart Manufacturing Systems (SMS) Test Bed located in Gaithersburg MD USA. Please visit the <a href="http://www.nist.gov/el/msid/syseng/dtsm.cfm" target="_blank">SMS Test Bed Information Page</a> for more information.
+You are viewing the Volatile Data Stream (VDS) component of the NIST Smart Manufacturing Systems (SMS) Test Bed located in Gaithersburg MD USA. Please visit the <a href="http://smstestbed.nist.gov" target="_blank">SMS Test Bed Information Page</a> for more information.
 </p>
 				<p>
 					<xsl:apply-templates select="/m:MTConnectStreams/m:Header" />
