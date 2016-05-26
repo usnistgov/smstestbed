@@ -189,7 +189,7 @@ You are viewing the Volatile Data Stream (VDS) component of the NIST Smart Manuf
 		<a href="http://www.nist.gov/public_affairs/envpolicy.cfm">Environmental Policy Statement</a>
 	</p>
 	<p>
-		Date created: March 17, 2016 |  Last updated: April 4, 2016
+		Date created: March 17, 2016 |  Last updated: May 25, 2016
 		Contact: <a href="mailto:elwebmaster@nist.gov" class="bold">Webmaster</a>
 	</p>
 
