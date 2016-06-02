@@ -1,6 +1,6 @@
 # NIST SMS Test Bed: Technical Data Packages
 
-This section contains Technical Data Packages (TDPs) generated in the SMS Test Bed. Please visit the [SMS Test Bed Information Page](http://smstestbed.nist.gov/) for more information on the test bed. More information coming soon.
+This section contains Technical Data Packages (TDPs) generated in the SMS Test Bed. Please visit the [SMS Test Bed Information Page](http://smstestbed.nist.gov/) for more information on the test bed. More information on TDPs coming soon.
 
 ## Repository Description
 
