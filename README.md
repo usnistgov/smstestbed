@@ -15,9 +15,7 @@ Below is an overview of the organization of this repository.
 
 ## Contacts
 
-[Thomas Hedberg](http://www.nist.gov/el/msid/syseng/thedberg.cfm), tdh1@nist.gov, 301-975-4247
-
-[Moneer Helu](http://www.nist.gov/el/msid/infotest/mhelu.cfm), mmh@nist.gov, 301-975-3181
+[Thomas Hedberg](http://www.nist.gov/el/msid/syseng/thedberg.cfm) and [Moneer Helu](http://www.nist.gov/el/msid/infotest/mhelu.cfm) are the Coorindators of the SMS Test Bed. For general questions, please send an email to smstestbed@nist.gov.
 
 ## Disclaimers
 
