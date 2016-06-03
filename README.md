@@ -6,7 +6,7 @@ The NIST Smart Manufacturing Systems (SMS) Test Bed is physically located in Gai
 2. Manufacturing Lab
 3. Data publication web services
 
-This repository contains all technology developed, configuration utilized, and data gathered by the SMS Test Bed. Please visit the SMS Test Bed Information Page for more information about the test bed.
+This repository contains all technology developed, configurations utilized, and data gathered by the SMS Test Bed. Please visit the [SMS Test Bed Information Page](http://smstestbed.nist.gov) for more information about the test bed.
 
 ## Repository Description
 
