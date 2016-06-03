@@ -1,14 +1,20 @@
 # NIST Smart Manufacturing Systems (SMS) Test Bed
 
-Coming Soon.
+The NIST Smart Manufacturing Systems (SMS) Test Bed is physically located in Gaithersburg MD USA. The SMS Test Bed is comprised of three major components:
+
+1. Computer-Aided Technologies (CAx) Lab
+2. Manufacturing Lab
+3. Data publication web services
+
+This repository contains all technology developed, configuration utilized, and data gathered by the SMS Test Bed. Please visit the SMS Test Bed Information Page for more information about the test bed.
 
 ## Repository Description
 
 Below is an overview of the organization of this repository.
 
 ```
-+---mtconnect (current MTConnect adapter and agent build)
-+---raw (raw unprocessed data for the current day's worth of data)
++---mtconnect (current MTConnect adapter and agent build and configuration)
++---raw (raw unprocessed data collected in the test bed)
 +---tdp (Technical Data Packages)
 +---README.md (this documentation)
 ```
