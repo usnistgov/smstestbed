@@ -42,14 +42,14 @@
 // -->
 
 </script>
-<script type="text/javascript" src="http://www.nist.gov/commonspot/javascript/browser-all.js"></script> 
-<script language="JavaScript" src="http://www.nist.gov/js/jquery-1.4.2.min.js" type="text/javascript"></script>
-<script language="JavaScript" src="http://www.nist.gov/js/swfobject.js" type="text/javascript"></script>
-<script language="JavaScript" src="http://www.nist.gov/js/jquery.youtubin.js" type="text/javascript"></script>
-<script language="JavaScript" src="http://www.nist.gov/js/custom.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://www.nist.gov/commonspot/javascript/browser-all.js"></script> 
+<script language="JavaScript" src="https://www.nist.gov/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script language="JavaScript" src="https://www.nist.gov/js/swfobject.js" type="text/javascript"></script>
+<script language="JavaScript" src="https://www.nist.gov/js/jquery.youtubin.js" type="text/javascript"></script>
+<script language="JavaScript" src="https://www.nist.gov/js/custom.js" type="text/javascript"></script>
 <!--[if lt IE 7]>
-<script language="JavaScript" src="http://www.nist.gov/js/jquery.dropdown.js" type="text/javascript"></script>
-<script language="JavaScript" src="http://www.nist.gov/js/pngfix.js" type="text/javascript" defer="defer"></script>
+<script language="JavaScript" src="https://www.nist.gov/js/jquery.dropdown.js" type="text/javascript"></script>
+<script language="JavaScript" src="https://www.nist.gov/js/pngfix.js" type="text/javascript" defer="defer"></script>
 <link href="http://www.nist.gov/style/nist-styles-ie-overrides.css" rel="stylesheet" type="text/css" media="screen" />
 <![endif]-->
 <meta name="DC.creator" content="US Department of Commerce, NIST" />
@@ -62,12 +62,12 @@
 
 <meta name="pagetype" content="3Column" />
 <link rel="stylesheet" href="http://www.nist.gov/commonspot/commonspot.css" type="text/css" id="cs_maincss" /> 
-	<script type="text/javascript" src="http://www.nist.gov/js/jquery.cycle.all.min.js"></script>
+	<script type="text/javascript" src="https://www.nist.gov/js/jquery.cycle.all.min.js"></script>
 	<link rel="stylesheet" type="text/css" media="screen" href="http://www.nist.gov/style/jqbanner.css" />
 
 			</head>
 
-<body lang="en" class="CS_Document"><a name="__topdoc__"></a><script src="http://www.nist.gov/commonspot/pagemode/always-include-common.js" type="text/javascript"></script><script src="http://www.nist.gov/commonspot/pagemode/always-include-moz.js" type="text/javascript"></script>
+<body lang="en" class="CS_Document"><a name="__topdoc__"></a><script src="https://www.nist.gov/commonspot/pagemode/always-include-common.js" type="text/javascript"></script><script src="https://www.nist.gov/commonspot/pagemode/always-include-moz.js" type="text/javascript"></script>
 <div id="base-template-wrapper" class="el">
 	<div id="header-wrapper">
 	<div id="meta-navigation-wrapper"> <a href="http://www.nist.gov/"> <img src="https://www.nist.gov/images/ui/NIST_logo.gif" alt="NIST logo" /> </a>
