@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MTConnectStreams xmlns:m="urn:mtconnect.org:MTConnectStreams:1.3" xmlns="urn:mtconnect.org:MTConnectStreams:1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mtconnect.org:MTConnectStreams:1.3 /schemas/MTConnectStreams_1.3.xsd">
+  <Header creationTime="2016-09-08T14:57:24Z" sender="honda.el.nist.gov" instanceId="1473345898" version="1.3.0.17" bufferSize="1073741824" nextSequence="2711286" firstSequence="1" lastSequence="2711285"/>
+  <Streams>
+    <DeviceStream name="GFAgie01" uuid="mtc_adapter001">
+      <ComponentStream component="Rotary" name="A" componentId="A_91">
+        <Samples>
+          <Angle dataItemId="A_92" timestamp="2016-05-17T13:17:11.899599Z" name="Aposition" sequence="2711050" subType="ACTUAL">-0.0002</Angle>
+          <Angle dataItemId="A_92" timestamp="2016-05-17T13:17:12.069651Z" name="Aposition" sequence="2711055" subType="ACTUAL">0</Angle>
+          <Angle dataItemId="A_92" timestamp="2016-05-17T13:17:13.569679Z" name="Aposition" sequence="2711085" subType="ACTUAL">-0.0001</Angle>
+          <Angle dataItemId="A_92" timestamp="2016-05-17T13:17:13.749619Z" name="Aposition" sequence="2711091" subType="ACTUAL">0</Angle>
+          <Angle dataItemId="A_92" timestamp="2016-05-17T13:18:29.507335Z" name="Aposition" sequence="2711284" subType="ACTUAL">UNAVAILABLE</Angle>
+        </Samples>
+      </ComponentStream>
+      <ComponentStream component="Rotary" name="C" componentId="C_89">
+        <Samples>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:07.071233Z" name="Cposition" sequence="2711013" subType="ACTUAL">0.0393</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:07.215136Z" name="Cposition" sequence="2711014" subType="ACTUAL">0.0392</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:13.749619Z" name="Cposition" sequence="2711090" subType="ACTUAL">0.0393</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:13.935550Z" name="Cposition" sequence="2711096" subType="ACTUAL">0.0392</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:17.403586Z" name="Cposition" sequence="2711160" subType="ACTUAL">0.0393</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:17.547502Z" name="Cposition" sequence="2711163" subType="ACTUAL">0.0392</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:18.834479Z" name="Cposition" sequence="2711173" subType="ACTUAL">0.0393</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:19.119238Z" name="Cposition" sequence="2711176" subType="ACTUAL">0.0392</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:19.839281Z" name="Cposition" sequence="2711181" subType="ACTUAL">0.0393</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:19.983134Z" name="Cposition" sequence="2711183" subType="ACTUAL">0.0392</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:21.279259Z" name="Cposition" sequence="2711194" subType="ACTUAL">0.0393</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:21.423291Z" name="Cposition" sequence="2711195" subType="ACTUAL">0.0392</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:23.307187Z" name="Cposition" sequence="2711209" subType="ACTUAL">0.0393</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:23.451261Z" name="Cposition" sequence="2711212" subType="ACTUAL">0.0392</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:23.887603Z" name="Cposition" sequence="2711217" subType="ACTUAL">0.0393</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:24.027260Z" name="Cposition" sequence="2711220" subType="ACTUAL">0.0392</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:24.172169Z" name="Cposition" sequence="2711221" subType="ACTUAL">0.0393</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:24.315107Z" name="Cposition" sequence="2711224" subType="ACTUAL">0.0392</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:24.603178Z" name="Cposition" sequence="2711227" subType="ACTUAL">0.0393</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:24.747395Z" name="Cposition" sequence="2711229" subType="ACTUAL">0.0392</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:25.467229Z" name="Cposition" sequence="2711233" subType="ACTUAL">0.0393</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:25.611099Z" name="Cposition" sequence="2711235" subType="ACTUAL">0.0392</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:27.252244Z" name="Cposition" sequence="2711245" subType="ACTUAL">0.0393</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:27.399309Z" name="Cposition" sequence="2711248" subType="ACTUAL">0.0392</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:27.687223Z" name="Cposition" sequence="2711251" subType="ACTUAL">0.0393</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:17:27.831239Z" name="Cposition" sequence="2711252" subType="ACTUAL">0.0392</Angle>
+          <Angle dataItemId="C_90" timestamp="2016-05-17T13:18:29.507335Z" name="Cposition" sequence="2711283" subType="ACTUAL">UNAVAILABLE</Angle>
+        </Samples>
+      </ComponentStream>
+      <ComponentStream component="Device" name="GFAgie01" componentId="GFAgie01">
+        <Events>
+          <Availability dataItemId="dtop_79" timestamp="2016-05-17T13:18:29.506759Z" name="avail" sequence="2711271">UNAVAILABLE</Availability>
+          <EmergencyStop dataItemId="dtop_80" timestamp="2016-05-17T13:18:29.506866Z" name="estop" sequence="2711272">UNAVAILABLE</EmergencyStop>
+        </Events>
+        <Condition>
+          <Unavailable dataItemId="dtop_81" timestamp="2016-05-17T13:18:29.506717Z" name="system" sequence="2711270" type="SYSTEM"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Linear" name="X" componentId="X_83">
+        <Samples>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:04.491295Z" name="Xposition" sequence="2710986" subType="ACTUAL">19.74507</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:04.635144Z" name="Xposition" sequence="2710989" subType="ACTUAL">19.74506</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:05.748345Z" name="Xposition" sequence="2711000" subType="ACTUAL">19.74531</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:06.492329Z" name="Xposition" sequence="2711004" subType="ACTUAL">19.74535</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:08.527120Z" name="Xposition" sequence="2711026" subType="ACTUAL">19.74534</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:08.667265Z" name="Xposition" sequence="2711028" subType="ACTUAL">19.74535</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:10.627452Z" name="Xposition" sequence="2711036" subType="ACTUAL">19.74534</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:10.767260Z" name="Xposition" sequence="2711038" subType="ACTUAL">19.74535</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:11.055176Z" name="Xposition" sequence="2711039" subType="ACTUAL">19.74534</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:11.556542Z" name="Xposition" sequence="2711040" subType="ACTUAL">19.74535</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:11.899599Z" name="Xposition" sequence="2711047" subType="ACTUAL">20.6</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:12.069651Z" name="Xposition" sequence="2711052" subType="ACTUAL">21.98244</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:12.259635Z" name="Xposition" sequence="2711057" subType="ACTUAL">23.51031</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:12.429702Z" name="Xposition" sequence="2711061" subType="ACTUAL">24.89273</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:12.633677Z" name="Xposition" sequence="2711065" subType="ACTUAL">26.54185</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:12.835637Z" name="Xposition" sequence="2711068" subType="ACTUAL">28.16672</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:13.020511Z" name="Xposition" sequence="2711071" subType="ACTUAL">29.59764</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:13.195670Z" name="Xposition" sequence="2711075" subType="ACTUAL">31.07701</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:13.383505Z" name="Xposition" sequence="2711079" subType="ACTUAL">32.60492</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:13.569679Z" name="Xposition" sequence="2711082" subType="ACTUAL">33.69291</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:13.749619Z" name="Xposition" sequence="2711087" subType="ACTUAL">33.69548</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:13.935550Z" name="Xposition" sequence="2711093" subType="ACTUAL">33.69546</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:14.079429Z" name="Xposition" sequence="2711098" subType="ACTUAL">33.69547</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:14.223440Z" name="Xposition" sequence="2711102" subType="ACTUAL">33.69548</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:14.367639Z" name="Xposition" sequence="2711104" subType="ACTUAL">33.69547</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:14.655420Z" name="Xposition" sequence="2711109" subType="ACTUAL">33.69548</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:14.799546Z" name="Xposition" sequence="2711112" subType="ACTUAL">33.69547</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:14.947472Z" name="Xposition" sequence="2711114" subType="ACTUAL">33.69548</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:15.087451Z" name="Xposition" sequence="2711117" subType="ACTUAL">33.69547</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:15.231594Z" name="Xposition" sequence="2711119" subType="ACTUAL">33.69552</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:15.375475Z" name="Xposition" sequence="2711123" subType="ACTUAL">33.69548</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:15.663582Z" name="Xposition" sequence="2711129" subType="ACTUAL">33.69546</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:15.807772Z" name="Xposition" sequence="2711133" subType="ACTUAL">33.69547</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:16.095718Z" name="Xposition" sequence="2711137" subType="ACTUAL">33.69548</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:16.239322Z" name="Xposition" sequence="2711139" subType="ACTUAL">33.69547</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:16.383486Z" name="Xposition" sequence="2711141" subType="ACTUAL">33.69548</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:16.815540Z" name="Xposition" sequence="2711150" subType="ACTUAL">33.69547</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:17.256400Z" name="Xposition" sequence="2711155" subType="ACTUAL">33.69546</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:17.403586Z" name="Xposition" sequence="2711158" subType="ACTUAL">33.69547</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:20.707110Z" name="Xposition" sequence="2711187" subType="ACTUAL">33.69548</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:20.847336Z" name="Xposition" sequence="2711189" subType="ACTUAL">33.69547</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:21.567258Z" name="Xposition" sequence="2711197" subType="ACTUAL">33.69548</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:21.711316Z" name="Xposition" sequence="2711200" subType="ACTUAL">33.69547</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:22.551230Z" name="Xposition" sequence="2711203" subType="ACTUAL">33.69548</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:22.695086Z" name="Xposition" sequence="2711204" subType="ACTUAL">33.69547</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:26.655240Z" name="Xposition" sequence="2711241" subType="ACTUAL">33.69548</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:26.875351Z" name="Xposition" sequence="2711243" subType="ACTUAL">33.69547</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:28.515157Z" name="Xposition" sequence="2711258" subType="ACTUAL">33.69548</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:17:28.659270Z" name="Xposition" sequence="2711261" subType="ACTUAL">33.69547</Position>
+          <Position dataItemId="X_84" timestamp="2016-05-17T13:18:29.507335Z" name="Xposition" sequence="2711280" subType="ACTUAL">UNAVAILABLE</Position>
+        </Samples>
+      </ComponentStream>
+      <ComponentStream component="Linear" name="Y" componentId="Y_85">
+        <Samples>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:16:55.843093Z" name="Yposition" sequence="2710938" subType="ACTUAL">-7.13057</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:16:55.983356Z" name="Yposition" sequence="2710940" subType="ACTUAL">-7.13058</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:00.591348Z" name="Yposition" sequence="2710965" subType="ACTUAL">-7.13057</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:00.735157Z" name="Yposition" sequence="2710967" subType="ACTUAL">-7.13058</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:03.339122Z" name="Yposition" sequence="2710978" subType="ACTUAL">-7.13059</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:04.203193Z" name="Yposition" sequence="2710983" subType="ACTUAL">-7.1306</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:04.491295Z" name="Yposition" sequence="2710987" subType="ACTUAL">-7.13061</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:04.635144Z" name="Yposition" sequence="2710990" subType="ACTUAL">-7.1306</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:04.951579Z" name="Yposition" sequence="2710992" subType="ACTUAL">-7.13061</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:05.091415Z" name="Yposition" sequence="2710994" subType="ACTUAL">-7.1306</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:05.379575Z" name="Yposition" sequence="2710996" subType="ACTUAL">-7.13061</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:05.544578Z" name="Yposition" sequence="2710998" subType="ACTUAL">-7.1306</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:05.748345Z" name="Yposition" sequence="2711001" subType="ACTUAL">-7.13037</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:06.927291Z" name="Yposition" sequence="2711010" subType="ACTUAL">-7.13038</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:07.071233Z" name="Yposition" sequence="2711012" subType="ACTUAL">-7.13037</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:07.359280Z" name="Yposition" sequence="2711016" subType="ACTUAL">-7.13038</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:07.503135Z" name="Yposition" sequence="2711018" subType="ACTUAL">-7.13037</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:07.647261Z" name="Yposition" sequence="2711019" subType="ACTUAL">-7.13038</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:07.795111Z" name="Yposition" sequence="2711020" subType="ACTUAL">-7.13037</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:08.079109Z" name="Yposition" sequence="2711021" subType="ACTUAL">-7.13038</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:08.223121Z" name="Yposition" sequence="2711022" subType="ACTUAL">-7.13037</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:08.383533Z" name="Yposition" sequence="2711024" subType="ACTUAL">-7.13038</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:08.527120Z" name="Yposition" sequence="2711027" subType="ACTUAL">-7.13037</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:09.291131Z" name="Yposition" sequence="2711030" subType="ACTUAL">-7.13038</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:09.435128Z" name="Yposition" sequence="2711032" subType="ACTUAL">-7.13037</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:10.483396Z" name="Yposition" sequence="2711034" subType="ACTUAL">-7.13038</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:10.627452Z" name="Yposition" sequence="2711037" subType="ACTUAL">-7.13037</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:11.716550Z" name="Yposition" sequence="2711044" subType="ACTUAL">-7.13038</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:11.899599Z" name="Yposition" sequence="2711048" subType="ACTUAL">-9.06431</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:12.069651Z" name="Yposition" sequence="2711053" subType="ACTUAL">-12.19255</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:12.259635Z" name="Yposition" sequence="2711058" subType="ACTUAL">-15.65004</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:12.429702Z" name="Yposition" sequence="2711062" subType="ACTUAL">-18.77819</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:12.633677Z" name="Yposition" sequence="2711066" subType="ACTUAL">-22.51004</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:12.835637Z" name="Yposition" sequence="2711069" subType="ACTUAL">-26.18702</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:13.020511Z" name="Yposition" sequence="2711072" subType="ACTUAL">-29.42494</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:13.195670Z" name="Yposition" sequence="2711076" subType="ACTUAL">-32.77264</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:13.383505Z" name="Yposition" sequence="2711080" subType="ACTUAL">-36.23011</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:13.569679Z" name="Yposition" sequence="2711083" subType="ACTUAL">-38.69251</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:13.749619Z" name="Yposition" sequence="2711088" subType="ACTUAL">-38.69784</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:13.935550Z" name="Yposition" sequence="2711094" subType="ACTUAL">-38.69785</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:14.079429Z" name="Yposition" sequence="2711099" subType="ACTUAL">-38.69784</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:14.367639Z" name="Yposition" sequence="2711105" subType="ACTUAL">-38.69783</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:14.511587Z" name="Yposition" sequence="2711107" subType="ACTUAL">-38.69784</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:14.655420Z" name="Yposition" sequence="2711110" subType="ACTUAL">-38.69783</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:14.947472Z" name="Yposition" sequence="2711115" subType="ACTUAL">-38.69784</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:15.231594Z" name="Yposition" sequence="2711120" subType="ACTUAL">-38.69786</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:15.375475Z" name="Yposition" sequence="2711124" subType="ACTUAL">-38.69782</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:15.519442Z" name="Yposition" sequence="2711127" subType="ACTUAL">-38.69784</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:15.663582Z" name="Yposition" sequence="2711130" subType="ACTUAL">-38.69783</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:16.095718Z" name="Yposition" sequence="2711138" subType="ACTUAL">-38.69784</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:16.383486Z" name="Yposition" sequence="2711142" subType="ACTUAL">-38.69785</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:16.527607Z" name="Yposition" sequence="2711145" subType="ACTUAL">-38.69784</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:16.671416Z" name="Yposition" sequence="2711148" subType="ACTUAL">-38.69783</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:17.103492Z" name="Yposition" sequence="2711153" subType="ACTUAL">-38.69784</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:17.256400Z" name="Yposition" sequence="2711156" subType="ACTUAL">-38.69783</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:17.403586Z" name="Yposition" sequence="2711159" subType="ACTUAL">-38.69784</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:17.547502Z" name="Yposition" sequence="2711162" subType="ACTUAL">-38.69783</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:17.691382Z" name="Yposition" sequence="2711164" subType="ACTUAL">-38.69784</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:17.839424Z" name="Yposition" sequence="2711165" subType="ACTUAL">-38.69783</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:17.979407Z" name="Yposition" sequence="2711167" subType="ACTUAL">-38.69784</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:18.123445Z" name="Yposition" sequence="2711169" subType="ACTUAL">-38.69785</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:18.267388Z" name="Yposition" sequence="2711170" subType="ACTUAL">-38.69783</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:19.983134Z" name="Yposition" sequence="2711182" subType="ACTUAL">-38.69784</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:20.127201Z" name="Yposition" sequence="2711184" subType="ACTUAL">-38.69783</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:20.847336Z" name="Yposition" sequence="2711190" subType="ACTUAL">-38.69784</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:21.135259Z" name="Yposition" sequence="2711192" subType="ACTUAL">-38.69783</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:21.567258Z" name="Yposition" sequence="2711198" subType="ACTUAL">-38.69784</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:21.711316Z" name="Yposition" sequence="2711201" subType="ACTUAL">-38.69783</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:22.867400Z" name="Yposition" sequence="2711206" subType="ACTUAL">-38.69784</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:23.007165Z" name="Yposition" sequence="2711208" subType="ACTUAL">-38.69783</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:23.451261Z" name="Yposition" sequence="2711211" subType="ACTUAL">-38.69784</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:23.595098Z" name="Yposition" sequence="2711214" subType="ACTUAL">-38.69783</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:23.887603Z" name="Yposition" sequence="2711216" subType="ACTUAL">-38.69784</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:24.027260Z" name="Yposition" sequence="2711219" subType="ACTUAL">-38.69783</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:24.315107Z" name="Yposition" sequence="2711223" subType="ACTUAL">-38.69784</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:24.459290Z" name="Yposition" sequence="2711226" subType="ACTUAL">-38.69783</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:24.747395Z" name="Yposition" sequence="2711228" subType="ACTUAL">-38.69784</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:24.895164Z" name="Yposition" sequence="2711230" subType="ACTUAL">-38.69783</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:26.043253Z" name="Yposition" sequence="2711238" subType="ACTUAL">-38.69784</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:26.187148Z" name="Yposition" sequence="2711240" subType="ACTUAL">-38.69783</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:26.655240Z" name="Yposition" sequence="2711242" subType="ACTUAL">-38.69784</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:26.875351Z" name="Yposition" sequence="2711244" subType="ACTUAL">-38.69783</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:27.399309Z" name="Yposition" sequence="2711247" subType="ACTUAL">-38.69784</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:27.543252Z" name="Yposition" sequence="2711250" subType="ACTUAL">-38.69783</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:28.125216Z" name="Yposition" sequence="2711254" subType="ACTUAL">-38.69784</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:28.371230Z" name="Yposition" sequence="2711256" subType="ACTUAL">-38.69783</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:28.515157Z" name="Yposition" sequence="2711259" subType="ACTUAL">-38.69784</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:17:28.659270Z" name="Yposition" sequence="2711262" subType="ACTUAL">-38.69783</Position>
+          <Position dataItemId="Y_86" timestamp="2016-05-17T13:18:29.507335Z" name="Yposition" sequence="2711281" subType="ACTUAL">UNAVAILABLE</Position>
+        </Samples>
+      </ComponentStream>
+      <ComponentStream component="Linear" name="Z" componentId="Z_87">
+        <Samples>
+          <Position dataItemId="Z_88" timestamp="2016-05-17T13:17:05.748345Z" name="Zposition" sequence="2711002" subType="ACTUAL">23.19081</Position>
+          <Position dataItemId="Z_88" timestamp="2016-05-17T13:17:06.492329Z" name="Zposition" sequence="2711005" subType="ACTUAL">23.19091</Position>
+          <Position dataItemId="Z_88" timestamp="2016-05-17T13:17:11.716550Z" name="Zposition" sequence="2711045" subType="ACTUAL">23.18903</Position>
+          <Position dataItemId="Z_88" timestamp="2016-05-17T13:17:11.899599Z" name="Zposition" sequence="2711049" subType="ACTUAL">23.189</Position>
+          <Position dataItemId="Z_88" timestamp="2016-05-17T13:17:12.069651Z" name="Zposition" sequence="2711054" subType="ACTUAL">23.18898</Position>
+          <Position dataItemId="Z_88" timestamp="2016-05-17T13:17:12.259635Z" name="Zposition" sequence="2711059" subType="ACTUAL">23.18897</Position>
+          <Position dataItemId="Z_88" timestamp="2016-05-17T13:17:12.429702Z" name="Zposition" sequence="2711063" subType="ACTUAL">23.18898</Position>
+          <Position dataItemId="Z_88" timestamp="2016-05-17T13:17:13.020511Z" name="Zposition" sequence="2711073" subType="ACTUAL">23.18897</Position>
+          <Position dataItemId="Z_88" timestamp="2016-05-17T13:17:13.195670Z" name="Zposition" sequence="2711077" subType="ACTUAL">23.18898</Position>
+          <Position dataItemId="Z_88" timestamp="2016-05-17T13:17:13.569679Z" name="Zposition" sequence="2711084" subType="ACTUAL">23.18894</Position>
+          <Position dataItemId="Z_88" timestamp="2016-05-17T13:17:13.749619Z" name="Zposition" sequence="2711089" subType="ACTUAL">22.26554</Position>
+          <Position dataItemId="Z_88" timestamp="2016-05-17T13:17:13.935550Z" name="Zposition" sequence="2711095" subType="ACTUAL">20.37553</Position>
+          <Position dataItemId="Z_88" timestamp="2016-05-17T13:17:14.079429Z" name="Zposition" sequence="2711100" subType="ACTUAL">20.37543</Position>
+          <Position dataItemId="Z_88" timestamp="2016-05-17T13:17:15.231594Z" name="Zposition" sequence="2711121" subType="ACTUAL">20.37535</Position>
+          <Position dataItemId="Z_88" timestamp="2016-05-17T13:17:15.375475Z" name="Zposition" sequence="2711125" subType="ACTUAL">20.37543</Position>
+          <Position dataItemId="Z_88" timestamp="2016-05-17T13:17:15.663582Z" name="Zposition" sequence="2711131" subType="ACTUAL">20.37544</Position>
+          <Position dataItemId="Z_88" timestamp="2016-05-17T13:17:15.807772Z" name="Zposition" sequence="2711134" subType="ACTUAL">20.37543</Position>
+          <Position dataItemId="Z_88" timestamp="2016-05-17T13:17:16.383486Z" name="Zposition" sequence="2711143" subType="ACTUAL">20.37544</Position>
+          <Position dataItemId="Z_88" timestamp="2016-05-17T13:17:16.527607Z" name="Zposition" sequence="2711146" subType="ACTUAL">20.37543</Position>
+          <Position dataItemId="Z_88" timestamp="2016-05-17T13:18:29.507335Z" name="Zposition" sequence="2711282" subType="ACTUAL">UNAVAILABLE</Position>
+        </Samples>
+      </ComponentStream>
+      <ComponentStream component="Controller" name="controller_basic" componentId="controller_basic_93">
+        <Events>
+          <PathFeedrate dataItemId="controller_basic_94" timestamp="2016-05-17T13:18:29.506253Z" name="Fovr" sequence="2711267" subType="OVERRIDE">UNAVAILABLE</PathFeedrate>
+          <SpindleSpeed dataItemId="controller_basic_95" timestamp="2016-05-17T13:18:29.506253Z" name="Sovr" sequence="2711268" subType="OVERRIDE">UNAVAILABLE</SpindleSpeed>
+        </Events>
+        <Condition>
+          <Unavailable dataItemId="controller_basic_100" timestamp="2016-05-17T13:18:29.506967Z" name="logic" sequence="2711275" type="LOGIC_PROGRAM"/>
+          <Unavailable dataItemId="controller_basic_101" timestamp="2016-05-17T13:18:29.507279Z" name="motion" sequence="2711279" type="MOTION_PROGRAM"/>
+          <Unavailable dataItemId="controller_basic_102" timestamp="2016-05-17T13:18:29.507173Z" name="cnc_temp" sequence="2711278" type="TEMPERATURE"/>
+          <Unavailable dataItemId="controller_basic_96" timestamp="2016-05-17T13:18:29.506890Z" name="servo" sequence="2711273" type="ACTUATOR"/>
+          <Unavailable dataItemId="controller_basic_97" timestamp="2016-05-17T13:18:29.506935Z" name="comms" sequence="2711274" type="COMMUNICATIONS"/>
+          <Unavailable dataItemId="controller_basic_98" timestamp="2016-05-17T13:18:29.507086Z" name="pneumatic" sequence="2711276" type="COMMUNICATIONS"/>
+          <Unavailable dataItemId="controller_basic_99" timestamp="2016-05-17T13:18:29.507140Z" name="hydraulic" sequence="2711277" type="COMMUNICATIONS"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Path" name="path_basic" componentId="path_basic_103">
+        <Samples>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:54.975273Z" name="path_pos" sequence="2710933">3.9117100000 10.4942100000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:55.119358Z" name="path_pos" sequence="2710934">3.9117100000 10.4942100000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:55.407353Z" name="path_pos" sequence="2710935">3.9117100000 10.4942100000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:55.695294Z" name="path_pos" sequence="2710936">3.9117100000 10.4942200000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:55.843093Z" name="path_pos" sequence="2710937">3.9117100000 10.4942100000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:55.983356Z" name="path_pos" sequence="2710939">3.9117100000 10.4942100000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:56.127348Z" name="path_pos" sequence="2710941">3.9117100000 10.4942100000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:56.271291Z" name="path_pos" sequence="2710942">3.9117100000 10.4942100000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:56.415335Z" name="path_pos" sequence="2710943">3.9117100000 10.4942100000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:56.559292Z" name="path_pos" sequence="2710944">3.9117100000 10.4942100000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:56.851275Z" name="path_pos" sequence="2710945">3.9117100000 10.4942100000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:56.991349Z" name="path_pos" sequence="2710946">3.9117100000 10.4942100000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:57.279294Z" name="path_pos" sequence="2710947">3.9117100000 10.4942100000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:57.567382Z" name="path_pos" sequence="2710948">3.9117100000 10.4942100000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:57.711437Z" name="path_pos" sequence="2710949">3.9117100000 10.4942100000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:57.859196Z" name="path_pos" sequence="2710950">3.9117100000 10.4942100000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:58.143452Z" name="path_pos" sequence="2710951">3.9117100000 10.4942200000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:58.287293Z" name="path_pos" sequence="2710952">3.9117100000 10.4942100000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:58.431144Z" name="path_pos" sequence="2710953">3.9117100000 10.4942100000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:58.575287Z" name="path_pos" sequence="2710954">3.9117100000 10.4942100000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:58.719140Z" name="path_pos" sequence="2710955">3.9117100000 10.4942100000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:59.007345Z" name="path_pos" sequence="2710956">3.9117100000 10.4942100000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:59.151344Z" name="path_pos" sequence="2710957">3.9117100000 10.4942100000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:59.727271Z" name="path_pos" sequence="2710958">3.9117100000 10.4942100000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:16:59.875330Z" name="path_pos" sequence="2710959">3.9117100000 10.4942200000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:00.015191Z" name="path_pos" sequence="2710960">3.9117100000 10.4942100000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:00.159136Z" name="path_pos" sequence="2710961">3.9117100000 10.4942100000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:00.303282Z" name="path_pos" sequence="2710962">3.9117100000 10.4942100000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:00.447288Z" name="path_pos" sequence="2710963">3.9117100000 10.4942100000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:00.591348Z" name="path_pos" sequence="2710964">3.9117100000 10.4942200000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:00.735157Z" name="path_pos" sequence="2710966">3.9117100000 10.4942100000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:00.883235Z" name="path_pos" sequence="2710968">3.9117100000 10.4942100000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:01.023131Z" name="path_pos" sequence="2710969">3.9117100000 10.4942100000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:01.167295Z" name="path_pos" sequence="2710970">3.9117100000 10.4942100000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:01.311131Z" name="path_pos" sequence="2710971">3.9117100000 10.4942100000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:01.455281Z" name="path_pos" sequence="2710972">3.9117100000 10.4942100000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:01.891425Z" name="path_pos" sequence="2710973">3.9117100000 10.4942200000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:02.031315Z" name="path_pos" sequence="2710974">3.9117100000 10.4942100000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:02.179272Z" name="path_pos" sequence="2710975">3.9117100000 10.4942100000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:02.907396Z" name="path_pos" sequence="2710976">3.9117100000 10.4942100000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:03.195341Z" name="path_pos" sequence="2710977">3.9117100000 10.4942100000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:03.483282Z" name="path_pos" sequence="2710979">3.9117100000 10.4942000000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:03.627142Z" name="path_pos" sequence="2710980">3.9117100000 10.4942000000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:04.059299Z" name="path_pos" sequence="2710981">3.9117100000 10.4942000000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:04.203193Z" name="path_pos" sequence="2710982">3.9117100000 10.4941900000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:04.347279Z" name="path_pos" sequence="2710984">3.9117100000 10.4941900000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:04.491295Z" name="path_pos" sequence="2710985">3.9117200000 10.4941800000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:04.635144Z" name="path_pos" sequence="2710988">3.9117100000 10.4941900000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:04.951322Z" name="path_pos" sequence="2710991">3.9117100000 10.4941900000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:05.091263Z" name="path_pos" sequence="2710993">3.9117100000 10.4941900000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:05.379347Z" name="path_pos" sequence="2710995">3.9117100000 10.4941900000 12.6167400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:05.544336Z" name="path_pos" sequence="2710997">3.9117100000 10.4941900000 12.6167500000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:05.748345Z" name="path_pos" sequence="2710999">3.9120900000 10.4944100000 12.6156000000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:06.492329Z" name="path_pos" sequence="2711003">3.9120000000 10.4944200000 12.6156700000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:06.643285Z" name="path_pos" sequence="2711007">3.9120000000 10.4944100000 12.6156700000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:06.783341Z" name="path_pos" sequence="2711008">3.9120000000 10.4944200000 12.6156700000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:06.927291Z" name="path_pos" sequence="2711009">3.9120000000 10.4944100000 12.6156700000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:07.071233Z" name="path_pos" sequence="2711011">3.9120000000 10.4944200000 12.6156700000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:07.359280Z" name="path_pos" sequence="2711015">3.9120000000 10.4944100000 12.6156700000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:07.503135Z" name="path_pos" sequence="2711017">3.9120000000 10.4944200000 12.6156700000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:08.383533Z" name="path_pos" sequence="2711023">3.9120000000 10.4944100000 12.6156700000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:08.527120Z" name="path_pos" sequence="2711025">3.9120000000 10.4944200000 12.6156700000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:09.291131Z" name="path_pos" sequence="2711029">3.9120000000 10.4944100000 12.6156700000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:09.435128Z" name="path_pos" sequence="2711031">3.9120000000 10.4944200000 12.6156700000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:10.483396Z" name="path_pos" sequence="2711033">3.9120000000 10.4944100000 12.6156700000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:10.627452Z" name="path_pos" sequence="2711035">3.9120000000 10.4944200000 12.6156700000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:11.716252Z" name="path_pos" sequence="2711043">3.9120000000 10.4944300000 12.6137200000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:11.899459Z" name="path_pos" sequence="2711046">4.6454500000 8.8348200000 12.6137600000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:12.069409Z" name="path_pos" sequence="2711051">6.0278100000 5.7065900000 12.6137400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:12.259391Z" name="path_pos" sequence="2711056">7.5315000000 2.3040500000 12.6137400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:12.429459Z" name="path_pos" sequence="2711060">8.9380500000 -0.8789800000 12.6137400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:12.633504Z" name="path_pos" sequence="2711064">10.5629600000 -4.5559800000 12.6137400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:12.835389Z" name="path_pos" sequence="2711067">12.2121400000 -8.2878400000 12.6137400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:13.020296Z" name="path_pos" sequence="2711070">13.5945100000 -11.4160000000 12.6137400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:13.195384Z" name="path_pos" sequence="2711074">15.1224100000 -14.8734700000 12.6137400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:13.383296Z" name="path_pos" sequence="2711078">16.5048300000 -18.0016500000 12.6137400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:13.569470Z" name="path_pos" sequence="2711081">17.8551100000 -21.0574800000 12.6137900000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:13.749407Z" name="path_pos" sequence="2711086">17.8622000000 -21.0730600000 11.9560900000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:13.935341Z" name="path_pos" sequence="2711092">17.8621100000 -21.0730200000 9.8006100000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:14.079231Z" name="path_pos" sequence="2711097">17.8621200000 -21.0730500000 9.8002000000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:14.223169Z" name="path_pos" sequence="2711101">17.8621300000 -21.0730400000 9.8002000000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:14.367449Z" name="path_pos" sequence="2711103">17.8621300000 -21.0730500000 9.8002000000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:14.511330Z" name="path_pos" sequence="2711106">17.8621200000 -21.0730500000 9.8001900000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:14.655264Z" name="path_pos" sequence="2711108">17.8621300000 -21.0730400000 9.8002000000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:14.799337Z" name="path_pos" sequence="2711111">17.8621300000 -21.0730500000 9.8002000000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:14.947316Z" name="path_pos" sequence="2711113">17.8621200000 -21.0730400000 9.8001900000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:15.087148Z" name="path_pos" sequence="2711116">17.8621300000 -21.0730500000 9.8001900000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:15.231306Z" name="path_pos" sequence="2711118">17.8622000000 -21.0730700000 9.8000800000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:15.375217Z" name="path_pos" sequence="2711122">17.8621300000 -21.0730300000 9.8002000000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:15.519219Z" name="path_pos" sequence="2711126">17.8621300000 -21.0730400000 9.8001900000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:15.663415Z" name="path_pos" sequence="2711128">17.8621300000 -21.0730400000 9.8002000000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:15.807511Z" name="path_pos" sequence="2711132">17.8621200000 -21.0730400000 9.8002000000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:15.955398Z" name="path_pos" sequence="2711135">17.8621300000 -21.0730400000 9.8001900000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:16.095402Z" name="path_pos" sequence="2711136">17.8621300000 -21.0730400000 9.8002000000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:16.383314Z" name="path_pos" sequence="2711140">17.8621400000 -21.0730600000 9.8001900000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:16.527347Z" name="path_pos" sequence="2711144">17.8621400000 -21.0730500000 9.8001900000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:16.671260Z" name="path_pos" sequence="2711147">17.8621300000 -21.0730400000 9.8002000000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:16.815331Z" name="path_pos" sequence="2711149">17.8621300000 -21.0730500000 9.8002000000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:16.963283Z" name="path_pos" sequence="2711151">17.8621300000 -21.0730400000 9.8002000000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:17.103248Z" name="path_pos" sequence="2711152">17.8621300000 -21.0730500000 9.8002000000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:17.256238Z" name="path_pos" sequence="2711154">17.8621300000 -21.0730400000 9.8002000000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:17.403328Z" name="path_pos" sequence="2711157">17.8621300000 -21.0730400000 9.8001900000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:17.547271Z" name="path_pos" sequence="2711161">17.8621300000 -21.0730400000 9.8002000000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:17.979209Z" name="path_pos" sequence="2711166">17.8621300000 -21.0730500000 9.8002000000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:18.123124Z" name="path_pos" sequence="2711168">17.8621300000 -21.0730400000 9.8002000000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:18.834479Z" name="path_pos" sequence="2711172">17.8621300000 -21.0730400000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:19.263252Z" name="path_pos" sequence="2711177">17.8621200000 -21.0730400000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:19.407307Z" name="path_pos" sequence="2711178">17.8621300000 -21.0730400000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:19.699277Z" name="path_pos" sequence="2711179">17.8621300000 -21.0730500000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:19.839281Z" name="path_pos" sequence="2711180">17.8621300000 -21.0730400000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:20.415141Z" name="path_pos" sequence="2711185">17.8621200000 -21.0730400000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:20.559320Z" name="path_pos" sequence="2711186">17.8621300000 -21.0730400000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:20.847336Z" name="path_pos" sequence="2711188">17.8621300000 -21.0730500000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:21.135259Z" name="path_pos" sequence="2711191">17.8621200000 -21.0730400000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:21.279259Z" name="path_pos" sequence="2711193">17.8621300000 -21.0730400000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:21.567258Z" name="path_pos" sequence="2711196">17.8621300000 -21.0730500000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:21.711316Z" name="path_pos" sequence="2711199">17.8621300000 -21.0730400000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:22.867400Z" name="path_pos" sequence="2711205">17.8621300000 -21.0730500000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:23.007165Z" name="path_pos" sequence="2711207">17.8621300000 -21.0730400000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:23.451261Z" name="path_pos" sequence="2711210">17.8621300000 -21.0730500000 14.6827300000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:23.595098Z" name="path_pos" sequence="2711213">17.8621300000 -21.0730400000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:23.887603Z" name="path_pos" sequence="2711215">17.8621300000 -21.0730500000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:24.027260Z" name="path_pos" sequence="2711218">17.8621300000 -21.0730400000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:24.315107Z" name="path_pos" sequence="2711222">17.8621300000 -21.0730500000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:24.459290Z" name="path_pos" sequence="2711225">17.8621300000 -21.0730400000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:25.035316Z" name="path_pos" sequence="2711231">17.8621300000 -21.0730500000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:25.179395Z" name="path_pos" sequence="2711232">17.8621300000 -21.0730400000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:25.611099Z" name="path_pos" sequence="2711234">17.8621300000 -21.0730500000 14.6827300000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:25.755088Z" name="path_pos" sequence="2711236">17.8621300000 -21.0730400000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:26.043253Z" name="path_pos" sequence="2711237">17.8621300000 -21.0730500000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:26.187148Z" name="path_pos" sequence="2711239">17.8621300000 -21.0730400000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:27.399309Z" name="path_pos" sequence="2711246">17.8621300000 -21.0730500000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:27.543252Z" name="path_pos" sequence="2711249">17.8621300000 -21.0730400000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:28.125216Z" name="path_pos" sequence="2711253">17.8621300000 -21.0730500000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:28.371230Z" name="path_pos" sequence="2711255">17.8621300000 -21.0730400000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:28.515157Z" name="path_pos" sequence="2711257">17.8621300000 -21.0730500000 14.6827300000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:17:28.659270Z" name="path_pos" sequence="2711260">17.8621300000 -21.0730400000 14.6827400000</PathPosition>
+          <PathPosition dataItemId="path_basic_110" timestamp="2016-05-17T13:18:29.506253Z" name="path_pos" sequence="2711269">UNAVAILABLE</PathPosition>
+        </Samples>
+        <Events>
+          <Execution dataItemId="path_basic_104" timestamp="2016-05-17T13:17:11.716252Z" name="execution" sequence="2711041">ACTIVE</Execution>
+          <Execution dataItemId="path_basic_104" timestamp="2016-05-17T13:17:19.119238Z" name="execution" sequence="2711174">READY</Execution>
+          <Execution dataItemId="path_basic_104" timestamp="2016-05-17T13:18:29.506253Z" name="execution" sequence="2711263">UNAVAILABLE</Execution>
+          <ControllerMode dataItemId="path_basic_105" timestamp="2016-05-17T13:17:06.643285Z" name="mode" sequence="2711006">MANUAL_DATA_INPUT</ControllerMode>
+          <ControllerMode dataItemId="path_basic_105" timestamp="2016-05-17T13:17:22.551230Z" name="mode" sequence="2711202">MANUAL</ControllerMode>
+          <ControllerMode dataItemId="path_basic_105" timestamp="2016-05-17T13:18:29.506253Z" name="mode" sequence="2711265">UNAVAILABLE</ControllerMode>
+          <Program dataItemId="path_basic_106" timestamp="2016-05-17T13:18:29.506253Z" name="program" sequence="2711266">UNAVAILABLE</Program>
+          <Line dataItemId="path_basic_108" timestamp="2016-05-17T13:17:11.716252Z" name="line" sequence="2711042">10</Line>
+          <Line dataItemId="path_basic_108" timestamp="2016-05-17T13:17:18.834479Z" name="line" sequence="2711171">11</Line>
+          <Line dataItemId="path_basic_108" timestamp="2016-05-17T13:17:19.119238Z" name="line" sequence="2711175">0</Line>
+          <Line dataItemId="path_basic_108" timestamp="2016-05-17T13:18:29.506253Z" name="line" sequence="2711264">UNAVAILABLE</Line>
+          <Motion dataItemId="path_basic_109" timestamp="2016-05-17T13:18:29.507335Z" name="move" sequence="2711285">UNAVAILABLE</Motion>
+        </Events>
+      </ComponentStream>
+    </DeviceStream>
+  </Streams>
+</MTConnectStreams>
