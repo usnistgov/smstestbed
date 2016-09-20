@@ -2,179 +2,412 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:m="urn:mtconnect.org:MTConnectStreams:1.3" >
 	<xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes"/>
 	<xsl:template match="/">
-			<head>
-				<title>NIST SMS Test Bed: Volatile Data Stream</title>
-				<meta name="Description" id="Description" content="Test Web Page" />
-				<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-				<meta name="Keywords" id="Keywords" content="" />
-				<meta name="Generator" id="Generator" content="CommonSpot Content Server Build 5.1.1.160" />
-				<link type="text/css" href="/styles/Streams.css" media="screen" rel="stylesheet"/>
-				<link rel="stylesheet" href="https://www.nist.gov/style/nist-styles.css" type="text/css" />
-				<link rel="stylesheet" href="https://www.nist.gov/style/nist-subsite-overrides.css" type="text/css" />
-				<style type="text/css">
-					.mw { color:#000000;font-family:Verdana,Arial,Helvetica;font-weight:bold;font-size:xx-small;text-decoration:none; }
-					a.mw:link	{color:#000000;font-family:Verdana,Arial,Helvetica;font-weight:bold;font-size:xx-small;text-decoration:none;}
-					a.mw:visited	{color:#000000;font-family:Verdana,Arial,Helvetica;font-weight:bold;font-size:xx-small;text-decoration:none;}
-					a.mw:hover	{color:#0000FF;font-family:Verdana,Arial,Helvetica;font-weight:bold;font-size:xx-small;text-decoration:none;}
-				</style>
+	<head>
+		<title>NIST SMS Test Bed: Volatile Data Stream</title>
+		<meta name="Description" id="Description" content="Test Web Page" />
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<meta name="Keywords" id="Keywords" content="" />
+		<link type="text/css" href="/styles/Streams.css" media="screen" rel="stylesheet"/>
+               <link rel="stylesheet" href="/css/nist_base.css"/>
+               <link rel="stylesheet" href="/css/nist_header.css"/>
+               <script src="/js/jquery-1.9.0.min.js" type="text/javascript"/>
+               <script src="/js/nist-header.js" type="text/javascript"/>
+	</head>
 
-<script type="text/javascript">
-<!--
-	var gMenuControlID = 0;
-	var menus_included = 0;
-	var jsDlgLoader = '/el/loader.cfm';
-	var jsSiteID = 1;
-	var jsSubSiteID = 489;
-	var js_gvPageID = 1558468;
-	var jsPageID = 1558468;
-	var jsPageSetID = 0;
-	var jsPageType = 0;
-	var jsControlsWithRenderHandlers = ",9,9,10,10,10,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,36,36,36,1339,1344,1349,1479,1494,1543,1569,1585,1605,1618,1634,1692,2203,2220,2421,2428,2435,2444,2449,2449,2449,2449,2449,2464,2494,6326,6773,10072,12168,12836,12836,15531,15531,20135,20242,28006,28239,41056,41056,41056,1294596,1300481,1306240,1544965,";
-	var jsDefaultRenderHandlerProps = ",1339_1,1344_1,1349_1,1479_1,1494_1,1543_1,1569_1,1585_1,1605_1,1618_1,1634_1,1692_1,2203_1,2220_1,2421_1,2428_1,2435_1,2444_1,2449_1,2464_1,2494_1,6326_1,6773_1,10072_1,12168_1,12836_1,15531_1,20135_1,20242_1,28006_1,28239_1,41056_1,1300481_1,1306240_1,1544965_1,";
-	var jsAuthorizedControls = ",1,2,3,4,6,7,8,9,10,11,16,18,20,21,22,23,25,26,27,28,29,30,31,34,36,39,40,41,42,43,44,45,46,47,50,51,52,53,54,1339,1344,1349,1352,1479,1494,1543,1569,1585,1605,1618,1634,1692,2203,2220,2421,2428,2435,2444,2449,2464,2494,6326,6773,10072,12168,12836,15531,20135,20242,28006,28239,41056,1264259,1287646,1294596,1300481,1306240,1518104,1520389,1544965,1545565,1545573,1545588,1545618,1545625,1545636,";
-	var jsCustomRenderHandlerPairs = "";
-	var jsStandardRenderHandlers = "";
-	var jsSiteSecurityCreateControls = 0;
-	var jsShowRejectForApprover = 1;
+	<body lang="en" class="CS_Document"><a name="__topdoc__"></a>
+              <header class="nist-header nist-header--bar" id="nist-header" role="banner">
+        <div class="nist-header__inner clearfix">
 
-	document.CS_StaticURL = "http://cspot-run2.nist.gov/";
-	document.CS_DynamicURL = "http://cspot-run2.nist.gov/";
-// -->
+          <div class="nist-header__logo">
+            <a href="https://www.nist.gov/" title="National Institute of Standards and Technology" class="nist-header__logo-link" rel="home">
+		    <img src="/images/svg/nist_logo_reverse.svg" onerror="this.src='/images/nist_logo_reverse.png'" alt="National Institute of Standards and Technology"/>
+            </a>
+          </div>
 
-</script>
-<script type="text/javascript" src="https://www.nist.gov/commonspot/javascript/browser-all.js"></script> 
-<script language="JavaScript" src="https://www.nist.gov/js/jquery-1.4.2.min.js" type="text/javascript"></script>
-<script language="JavaScript" src="https://www.nist.gov/js/swfobject.js" type="text/javascript"></script>
-<script language="JavaScript" src="https://www.nist.gov/js/jquery.youtubin.js" type="text/javascript"></script>
-<script language="JavaScript" src="https://www.nist.gov/js/custom.js" type="text/javascript"></script>
-<!--[if lt IE 7]>
-<script language="JavaScript" src="https://www.nist.gov/js/jquery.dropdown.js" type="text/javascript"></script>
-<script language="JavaScript" src="https://www.nist.gov/js/pngfix.js" type="text/javascript" defer="defer"></script>
-<link href="https://www.nist.gov/style/nist-styles-ie-overrides.css" rel="stylesheet" type="text/css" media="screen" />
-<![endif]-->
-<meta name="DC.creator" content="US Department of Commerce, NIST" />
-<meta name="DC.description" content="Engineering Laboratory Home" />
-<meta name="DC.date.created" scheme="ISO8601" content="2010-09-23" />
-<meta name="DC.date.reviewed" scheme="ISO8601" content="2011-01-03" />
-<meta name="DC.language" scheme="DCTERMS.RFC1766" content="EN-US" />
+          <div class="nist-header__search" role="search">
+            <form accept-charset="UTF-8" action="https://find.nist.gov/search?affiliate=nist-search" id="nist-search" method="get">
+	      <input name="utf8" type="hidden" value="true"/>
+	      <input id="affiliate" name="affiliate" type="hidden" value="nist-search"/>
+              <label class="element-invisible" for="query">Search</label>
+	      <input autocomplete="off" class="usagov-search-autocomplete" id="query" name="query" type="text" size="15" maxlength="128" placeholder="Search NIST"/>
+              <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+	      <input type="submit" id="edit-submit" name="commit" value="Search" class="form-submit"/>
+              <button type="submit" id="edit-submit-btn" name="op" class="form-submit">
+                <span class="element-invisible">Search</span>
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div>
 
+        </div> <!--End header content-->
 
+        <div class="nist-header__nav-wrapper">
+          <div class="nist-header__nav nist-header__nav--mini" role="navigation">
+            <div class="nist-header__nav-toggle-wrapper clearfix">
+              <a href="#" class="nist-header__nav-toggle"><span class="fa fa-bars"></span> NIST Menu</a>
+            </div>
+            <div class="nist-header__nav-inner clearfix">
+              <ul class="nist-menu">
 
-<meta name="pagetype" content="3Column" />
-<link rel="stylesheet" href="https://www.nist.gov/commonspot/commonspot.css" type="text/css" id="cs_maincss" /> 
-	<script type="text/javascript" src="https://www.nist.gov/js/jquery.cycle.all.min.js"></script>
-	<link rel="stylesheet" type="text/css" media="screen" href="https://www.nist.gov/style/jqbanner.css" />
+                <!--Topics-->
+                <li class="nist-menu__item nist-menu__item--depth-1">
+                  <a href="https://www.nist.gov/topics" class="nist-menu__link">Topics<span class="expander fa fa-minus"><span class="element-invisible">Expand or Collapse</span></span></a>
+                  <div class="nist-menu__submenu">
+                    <ul class="nist-menu">
+                      <div class="nist-menu__column-container has-three-columns">
+                        <span tabindex="0" class="nist-menu__close">Close</span>
+                        <div class="nist-menu__column">
+                          <li class="nist-menu__item nist-menu__item--depth-2 ">
+                            <a href="https://www.nist.gov/topics/advanced-communications" class="nist-menu__link">Advanced Communications</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/topics/bioscience" class="nist-menu__link">Bioscience</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/topics/buildings-and-construction" class="nist-menu__link">Buildings and Construction</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/topics/chemistry" class="nist-menu__link">Chemistry</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/topics/disaster-resilience" class="nist-menu__link">Disaster Resilience</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/topics/electronics" class="nist-menu__link">Electronics</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/topics/energy" class="nist-menu__link">Energy</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/topics/environment" class="nist-menu__link">Environment</a>
+                          </li>
+                        </div>
+                        <div class="nist-menu__column">
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/topics/fire" class="nist-menu__link">Fire</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/topics/forensic-science" class="nist-menu__link">Forensic Science</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/topics/health" class="nist-menu__link">Health</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/topics/information-technology" class="nist-menu__link">Information technology</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/topics/manufacturing" class="nist-menu__link">Manufacturing</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/topics/mathematics-and-statistics" class="nist-menu__link">Mathematics and Statistics</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/topics/metrology" class="nist-menu__link">Metrology</a>
+                          </li>
+                        </div>
+                        <div class="nist-menu__column">
+                          <li class="nist-menu__item nist-menu__item--depth-2 nist-menu__column-break ">
+                            <a href="https://www.nist.gov/topics/nanotechnology" class="nist-menu__link">Nanotechnology</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/topics/neutron-research" class="nist-menu__link">Neutron research</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/topics/performance-excellence" class="nist-menu__link">Performance Excellence</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/topics/physics" class="nist-menu__link">Physics</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/topics/public-safety" class="nist-menu__link">Public safety</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/topics/standards" class="nist-menu__link">Standards</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/topics/transportation" class="nist-menu__link">Transportation</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/topics/cybersecurity" class="nist-menu__link">Cybersecurity</a>
+                          </li>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                </li>
 
-			</head>
+                <!--Publications-->
+                <li class="nist-menu__item nist-menu__item--depth-1">
+                  <a href="https://www.nist.gov/publications" class="nist-menu__link">Publications</a>
+                </li>
 
-<body lang="en" class="CS_Document"><a name="__topdoc__"></a><script src="https://www.nist.gov/commonspot/pagemode/always-include-common.js" type="text/javascript"></script><script src="https://www.nist.gov/commonspot/pagemode/always-include-moz.js" type="text/javascript"></script>
-<div id="base-template-wrapper" class="el">
-	<div id="header-wrapper">
-	<div id="meta-navigation-wrapper"> <a href="http://www.nist.gov/"> <img src="https://www.nist.gov/images/ui/NIST_logo.gif" alt="NIST logo" /> </a>
+                <!--Labs and Major Programs-->
+                <li class="nist-menu__item nist-menu__item--depth-1">
+                  <a href="https://www.nist.gov/labs-major-programs" class="nist-menu__link">Labs &amp; Major Programs<span class="expander fa fa-minus"><span class="element-invisible">Expand or Collapse</span></span></a>
+                  <div class="nist-menu__submenu">
+                    <ul class="nist-menu">
+                      <div class="nist-menu__column-container has-three-columns">
+                        <span tabindex="0" class="nist-menu__close">Close</span>
+                        <div class="nist-menu__column">
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/labs-major-programs/laboratories" class="nist-menu__link">Laboratories</a>
+                            <ul class="nist-menu">
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/ctl" class="nist-menu__link">Communications Technology Laboratory</a>
+                              </li>
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/el" class="nist-menu__link">Engineering Laboratory</a>
+                              </li>
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/itl" class="nist-menu__link">Information Technology Laboratory</a>
+                              </li>
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/mml" class="nist-menu__link">Material Measurement Laboratory</a>
+                              </li>
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/pml" class="nist-menu__link">Physical Measurement Laboratory</a>
+                              </li>
+                            </ul>
+                          </li>
+                        </div>
+                        <div class="nist-menu__column">
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/laboratories/user-facilities" class="nist-menu__link">User Facilities</a>
+                            <ul class="nist-menu">
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/cnst" class="nist-menu__link">Center for Nanoscale Science and Technology</a>
+                              </li>
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/ncnr" class="nist-menu__link">NIST Center for Neutron Research</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/labs-major-programs/research-test-beds" class="nist-menu__link">Research Test Beds</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/laboratories/projects-programs" class="nist-menu__link">Research Projects</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/laboratories/tools-instruments" class="nist-menu__link">Tools &amp; Instruments</a>
+                          </li>
+                        </div>
+                        <div class="nist-menu__column">
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/labs-major-programs/major-programs" class="nist-menu__link">Major Programs</a>
+                            <ul class="nist-menu">
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/advanced-manufacturing-office" class="nist-menu__link">Advanced Manufacturing Office</a>
+                              </li>
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/baldrige" class="nist-menu__link">Baldrige Performance Excellence Program</a>
+                              </li>
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/mep" class="nist-menu__link">Manufacturing Extension Partnership (MEP)</a>
+                              </li>
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/spo" class="nist-menu__link">Special Programs Office</a>
+                              </li>
+                            </ul>
+                          </li>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                </li>
 
-		<div id="meta-navigation-links">
-			<div class="pipelistBold">
-				<ul>
-					<li><a href="http://www.time.gov/">NIST Time</a></li>
-					<li><a href="http://www.nist.gov/">NIST Home</a></li>
-					<li><a href="http://www.nist.gov/public_affairs/nandyou.cfm">About NIST</a></li>
-					<li><a href="http://www.nist.gov/public_affairs/contact.cfm">Contact Us</a></li>
+                <!--Labs and Major Programs-->
+                <li class="nist-menu__item nist-menu__item--depth-1">
+                  <a href="https://www.nist.gov/services-resources" class="nist-menu__link">Services &amp; Resources<span class="expander fa fa-minus"><span class="element-invisible">Expand or Collapse</span></span></a>
+                  <div class="nist-menu__submenu">
+                    <ul class="nist-menu">
+                      <div class="nist-menu__column-container has-two-columns">
+                        <span tabindex="0" class="nist-menu__close">Close</span>
+                        <div class="nist-menu__column">
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/services-resources/standards-and-measurements" class="nist-menu__link">Standards and Measurements</a>
+                            <ul class="nist-menu">
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/calibrations" class="nist-menu__link">Calibration Services</a>
+                              </li>
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/nvlap" class="nist-menu__link">Laboratory Accreditation (NVLAP)</a>
+                              </li>
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/nist-quality-system" class="nist-menu__link">Quality System</a>
+                              </li>
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/srm" class="nist-menu__link">Standard Reference Materials (SRMs)</a>
+                              </li>
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/standardsgov" class="nist-menu__link">Standards.gov</a>
+                              </li>
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/pml/time-and-frequency-division/time-services" class="nist-menu__link">Time Services</a>
+                              </li>
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/pml/weights-and-measures" class="nist-menu__link">Office of Weights and Measures</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/services-resources/software" class="nist-menu__link">Software</a>
+                          </li>
+                        </div>
+                        <div class="nist-menu__column">
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/data" class="nist-menu__link">Data</a>
+                            <ul class="nist-menu">
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="http://webbook.nist.gov/chemistry/" class="nist-menu__link">Chemistry WebBook</a>
+                              </li>
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="http://csrc.nist.gov/groups/SNS/nvd" class="nist-menu__link">National Vulnerability Database</a>
+                              </li>
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/pml/productsservices/physical-reference-data" class="nist-menu__link">Physical Reference Data</a>
+                              </li>
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/srd" class="nist-menu__link">Standard Reference Data (SRDs)</a>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="http://csrc.nist.gov/" class="nist-menu__link">Computer Security Resource Center (CSRC)</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="http://tsapps.nist.gov/techtransfer" class="nist-menu__link">License &amp; Patents</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/nist-research-library" class="nist-menu__link">NIST Research Library</a>
+                          </li>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                </li>
 
-					<li><a href="http://www.nist.gov/alphasiteindex.cfm">A-Z Site Index</a></li>
-				</ul>
-			</div><!-- END class="pipelistBold" -->
-		</div><!-- END id="meta-navigation-links" -->
-		
-		
-<form method="get" action="http://www.nist.gov/search-results.cfm" name="GoogleSearchForm" id="meta-search-form" class="meta-search-form">
-<input type="text" name="q" size="25" maxlength="255" value="" class="meta-search-form-input" title="search form input" />
-<input type="submit" name="btng" value="Search" class="meta-search-form-button" id="searchButton" />
-<input type="hidden" name="num" value="10" />
-<input type="hidden" name="sortType" value="L" />
-<input type="hidden" name="scopeType" value="0" />
+                <!--News and Events-->
+                <li class="nist-menu__item nist-menu__item--depth-1">
+                  <a href="https://www.nist.gov/news-events" class="nist-menu__link">News &amp; Events<span class="expander fa fa-minus"><span class="element-invisible">Expand or Collapse</span></span></a>
+                  <div class="nist-menu__submenu has-one-column">
+                    <ul class="nist-menu">
+                      <div class="nist-menu__column-container has-one-column">
+                        <span tabindex="0" class="nist-menu__close">Close</span>
+                        <div class="nist-menu__column">
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/news-events/news" class="nist-menu__link">News</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/news-events/events" class="nist-menu__link">Events</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/news-events/news/blogs" class="nist-menu__link">Blogs</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/news-events/image-gallery" class="nist-menu__link">Image Gallery</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/news-events/video-gallery" class="nist-menu__link">Video Gallery</a>
+                          </li>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                </li>
 
-<input type="hidden" name="datefrom" value="" />
+                <!--About NIST-->
+                <li class="nist-menu__item nist-menu__item--depth-1">
+                  <a href="https://www.nist.gov/about-nist" class="nist-menu__link">About NIST<span class="expander fa fa-minus"><span class="element-invisible">Expand or Collapse</span></span></a>
+                  <div class="nist-menu__submenu">
+                    <ul class="nist-menu">
+                      <div class="nist-menu__column-container has-two-columns">
+                        <span tabindex="0" class="nist-menu__close">Close</span>
+                        <div class="nist-menu__column">
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/about-nist/contact-us" class="nist-menu__link">Contact Us</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/pba/nist-visitor-information" class="nist-menu__link">Visit</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/about-nist/our-organization" class="nist-menu__link">Our Organization</a>
+                            <ul class="nist-menu">
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/about-nist/our-organization/mission-vision-values" class="nist-menu__link">Mission, Vision &amp; Values</a>
+                              </li>
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/director/nist-organizational-chart" class="nist-menu__link">Organization Chart</a>
+                              </li>
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/director" class="nist-menu__link">Office of the Director</a>
+                              </li>
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/about-nist/our-organization/locations" class="nist-menu__link">Locations</a>
+                              </li>
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/about-nist/our-organization/people" class="nist-menu__link">People</a>
+                              </li>
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="https://www.nist.gov/about-nist/our-organization/budget-planning" class="nist-menu__link">Budget &amp; Planning</a>
+                              </li>
+                            </ul>
+                          </li>
+                        </div>
+                        <div class="nist-menu__column">
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/about-us/nist-awards" class="nist-menu__link">Awards</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/about-nist/work-nist" class="nist-menu__link">Work with NIST</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/office-acquisition-and-agreements-management-oaam/grants-management-division/nist-program" class="nist-menu__link">Funding Opportunities</a>
+                          </li>
+                          <li class="nist-menu__item nist-menu__item--depth-2">
+                            <a href="https://www.nist.gov/timeline" class="nist-menu__link">History</a>
+                            <ul class="nist-menu">
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="http://nistdigitalarchives.contentdm.oclc.org/" class="nist-menu__link">IST Digital Archives</a>
+                              </li>
+                              <li class="nist-menu__item nist-menu__item--depth-3">
+                                <a href="http://museum.nist.gov" class="nist-menu__link">NIST Museum</a>
+                              </li>
+                            </ul>
+                          </li>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                </li>
+                <!--End Main Menu items-->
 
-<input type="hidden" name="dateto" value="" />
-</form>
- 		
-	</div><!-- END id="meta-navigation-wrapper" -->
-	<div id="banner-graphic-wrapper">
-		
-		<a href="http://www.nist.gov/el">  <img src="https://www.nist.gov/images/banner_graphics/el.jpg" height="33" width="974" alt="Engineering Laboratory (EL)" title="Engineering Laboratory (EL)" border="0" /> 
-	</a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
 
-	</div><!-- END id="banner-graphic-wrapper" -->
-	<div class="pipelist" id="navigation-wrapper">
+		<div id="mtconnect content" style="padding: 0px 30px 30px 30px;">
+			<p>
+			<!-- <img src="/SMS-Testbed_logo.png" width="600" height="129"></img> -->
+			<h1>Smart Manufacturing Systems Test Bed</h1>
 
-		
-		
-			<ul id="nav" class="dropdown dropdown-horizontal">
-
-				<li class="dir"><a class="MenuBarItemSubmenu" href="http://www.nist.gov/el/aboutbfrl.cfm">About EL</a>
-					<ul>
-						<li><a href="http://www.nist.gov/el/staff_org.cfm">Staff and Organization</a></li>
-						<li><a href="http://www.nist.gov/el/facilities_instruments/index.cfm">Facilities</a></li>
-						<li><a href="http://www.nist.gov/el/bfrlstandards.cfm">Standards Activities</a></li>
-
-						<li><a href="http://www.nist.gov/el/workwithus.cfm">Work With Us</a></li>
-
-						<li><a href="http://www.nist.gov/el/careers.cfm">Careers</a></li>
-						<li><a href="http://www.nist.gov/el/aboutbfrl.cfm">What We Do</a></li>
-						<li><a href="http://www.nist.gov/el/contacts.cfm">Contact Us</a></li>
-					</ul>
-				</li>
-
-				<li><a href="http://www.nist.gov/publication-portal.cfm">Publications</a></li>
-				<li><a href="http://www.nist.gov/el/bfrl_topics.cfm">Topic/Subject Areas</a></li>
-
-				<li class="dir"><a class="MenuBarItemSubmenu">Products/Services</a>
-					<ul>
-						<li><a href="http://www.nist.gov/el/bfrlris.cfm">Research Information Services</a></li>
-						<li><a href="http://www.nist.gov/el/software.cfm">Software Products</a></li>
-
-						<li><a href="http://www.nist.gov/el/newsletter.cfm">Newsletter</a></li>
-						<li><a href="http://www.nist.gov/el/workwithus.cfm">Employment/Research Opportunities</a></li>
-
-					</ul>
-				</li>
-				<li><a href="http://www.nist.gov/el/news.cfm">News/Multimedia</a></li>
-				<li><a href="http://www.nist.gov/el/goalsprograms.cfm">Programs/Projects</a></li>
-
-				<li><a href="http://www.nist.gov/el/events.cfm">Events</a></li>
-			</ul>
-			
-	</div>
-
-
-<div id="cs_control_1366" class="cs_control breadcrumb-wrapper">
-
-
-
-</div></div>
-<!-- end #header-wrapper -->
-
-
-<div id="mtconnect content" style="padding: 0px 30px 30px 30px;">
-<p>
-<!-- <img src="/SMS-Testbed_logo.png" width="600" height="129"></img> -->
-<h1>Smart Manufacturing Systems Test Bed</h1>
-<h2>Volatile Data Stream</h2>
-</p>
-<p>
-You are viewing the Volatile Data Stream (VDS) component of the NIST Smart Manufacturing Systems (SMS) Test Bed located in Gaithersburg MD USA. Please visit the <a href="http://smstestbed.nist.gov" target="_blank">SMS Test Bed Information Page</a> for more information.
-</p>
-				<p>
-					<xsl:apply-templates select="/m:MTConnectStreams/m:Header" />
-				</p>
-				<hr style="color: black;background-color: black;height: 4px;" />
-				<xsl:apply-templates select="/m:MTConnectStreams/m:Streams/m:DeviceStream" />
-</div>
-
+			<h2>Volatile Data Stream</h2>
+			</p>
+			<p>
+				You are viewing the Volatile Data Stream (VDS) component of the NIST Smart Manufacturing Systems (SMS) Test Bed located in Gaithersburg MD USA. Please visit the <a href="http://smstestbed.nist.gov" target="_blank">SMS Test Bed Information Page</a> for more information.
+			</p>
+			<p>
+				<xsl:apply-templates select="/m:MTConnectStreams/m:Header" />
+			</p>
+			<hr style="color: black;background-color: black;height: 4px;" />
+			<xsl:apply-templates select="/m:MTConnectStreams/m:Streams/m:DeviceStream" />
+			</div>
 <div id="footer-wrapper">
 	<table border="0" align="right" width="225">
 		<tr>
-			<td><br /><form method="post" action="https://service.govdelivery.com/service/multi_subscribe.html"><input value="http://www.nist.gov/" name="origin" type="hidden" /><img src="https://www.nist.gov/images/govdelivery_bubble.gif" alt="govdelivery bubble icon" title="govdelivery bubble icon" border="0" height="21" hspace="0" vspace="0" width="21" /> Sign Up for NIST E-mail alerts:<br /><input onfocus="this.value=''" value="Enter email address" name="login" id="login" title="login" type="text" /> <input value="USNIST" name="code" type="hidden" /> <input name="signupbutton" id="signupbutton" value="Go" type="submit" /></form></td>
+			<td><br /><form method="post" action="https://service.govdelivery.com/service/multi_subscribe.html"><input value="http://www.nist.gov/" name="origin" type="hidden" /><img src="http://csrc.nist.gov/publications/govdelivery_bubble.gif" alt="govdelivery bubble icon" title="govdelivery bubble icon" border="0" height="21" hspace="0" vspace="0" width="21" /> Sign Up for NIST E-mail alerts:<br /><input onfocus="this.value=''" value="Enter email address" name="login" id="login" title="login" type="text" /> <input value="USNIST" name="code" type="hidden" /> <input name="signupbutton" id="signupbutton" value="Go" type="submit" /></form></td>
 		</tr>
 	</table>
 	<p>The National Institute of Standards and Technology (NIST) is an agency of the U.S. Commerce Department.</p>
@@ -195,56 +428,7 @@ You are viewing the Volatile Data Stream (VDS) component of the NIST Smart Manuf
 
 </div><!-- end #footer-wrapper -->
 
-</div><!-- end #base-template-wrapper --><div style="display:block; clear:left; padding:0px; font-family:Verdana,Arial; font-size:10px; color:gray;"></div><script type="text/javascript">
-		<!--
-			var jsPageContributeMode = 'read';
-			var jsPageSessionContributeMode = 'read';
-			var jsPageAuthorMode = 0;
-			var jsPageEditMode = 0;
-			// build commonspot.csPage, used by entrance.js and onDocumentLoaded
-			if(!commonspot)
-				var commonspot = {};
-			commonspot.csPage = {};
-			commonspot.csPage.url = location.pathname + ((location.pathname.match(/.cfm/i)) ? '' : 'index.cfm'); // use index.cfm if no filename
-			commonspot.csPage.id = 1558468;
-			commonspot.csPage.title = 'Engineering Laboratory';
-			commonspot.csPage.subsiteRoot = '/el/';
-			commonspot.csPage.siteRoot = '/';
-			commonspot.csPage.mode = jsPageSessionContributeMode;
-			commonspot.csPage.authorok = 0;
-			commonspot.csPage.showContainerUI = 0;
-			commonspot.csPage.requestedVersionTimestamp = '';
-			commonspot.csPage.userRights = {};
-			commonspot.csPage.userRights.isLoggedIn = 0;
-			commonspot.csPage.userRights.read = 1;
-			commonspot.csPage.userRights.author = 0;
-			commonspot.csPage.userRights.edit = 0;
-			commonspot.csPage.userRights.approve = 0;
-			commonspot.csPage.userRights.history = 0;
-			commonspot.csPage.userRights.design = 0;
-			commonspot.csPage.userRights.admin = 0;
-			commonspot.csPage.userRights.subsiteAdmin = 0;
-			commonspot.csPage.userRights.siteAdmin = 0;
-			commonspot.csPage.userRights.userAdmin = 0;
-			var doLviewRedirect;
-			if(parent && parent.commonspot && parent.commonspot.lview && (!doLviewRedirect))
-			{
-				onPageArrival = function()
-				{
-					parent.commonspot.lview.currentPage.onPageArrival(commonspot.csPage.mode, commonspot.csPage.url, commonspot.csPage.id, commonspot.csPage.title, commonspot.csPage.subsiteRoot, commonspot.csPage.siteRoot);
-				};
-				onPageUnload = function()
-				{
-					parent.commonspot.lview.currentPage.onPageUnload(location.pathname + '?' + document.location.search);
-				};
-				parent.Spry.Utils.addEventListener(window, 'load', onPageArrival, false);
-				parent.Spry.Utils.addEventListener(window, 'unload', onPageUnload, false);
-			}
-		
-		// -->
-		</script>
-
-			</body>
+	</body>
 	</xsl:template>
 	
 	<xsl:template match="m:DeviceStream">
@@ -304,3 +488,4 @@ You are viewing the Volatile Data Stream (VDS) component of the NIST Smart Manuf
 	</xsl:template>
 	
 </xsl:stylesheet>
+
