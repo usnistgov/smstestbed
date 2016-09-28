@@ -1,139 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MTConnectStreams xmlns:m="urn:mtconnect.org:MTConnectStreams:1.3" xmlns="urn:mtconnect.org:MTConnectStreams:1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mtconnect.org:MTConnectStreams:1.3 /schemas/MTConnectStreams_1.3.xsd">
-  <Header creationTime="2016-09-08T14:40:32Z" sender="honda.el.nist.gov" instanceId="1473345573" version="1.3.0.17" bufferSize="1073741824" nextSequence="167729" firstSequence="1" lastSequence="167728"/>
+<?xml-stylesheet type="text/xsl" href="/styles/Streams.xsl"?>
+<MTConnectStreams xmlns:m="urn:mtconnect.org:MTConnectStreams:1.3" xmlns="urn:mtconnect.org:MTConnectStreams:1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="urn:nist.gov:NistStreams:1.3" xsi:schemaLocation="urn:nist.gov:NistStreams:1.3 /schemas/NistStreams_1.3.xsd">
+  <Header creationTime="2016-09-28T17:47:47Z" sender="honda.el.nist.gov" instanceId="1475084811" version="1.3.0.17" bufferSize="131072" nextSequence="167729" firstSequence="36657" lastSequence="167728"/>
   <Streams>
     <DeviceStream name="Mazak03" uuid="mtc_adapter004">
-      <ComponentStream component="Rotary" name="C" componentId="C_15">
-        <Samples>
-          <Load dataItemId="C_16" timestamp="2016-05-08T05:00:00.000000Z" name="Cload" sequence="167666">UNAVAILABLE</Load>
-          <AngularVelocity dataItemId="C_17" timestamp="2016-05-08T05:00:00.000000Z" name="Cfrt" sequence="167667">UNAVAILABLE</AngularVelocity>
-          <Angle dataItemId="C_18" timestamp="2016-05-08T05:00:00.000000Z" name="Cdeg" sequence="167668" subType="ACTUAL">UNAVAILABLE</Angle>
-        </Samples>
-        <Condition>
-          <Unavailable dataItemId="C_19" timestamp="2016-05-08T05:00:00.000000Z" name="Ctravel" sequence="167669" type="ANGLE"/>
-        </Condition>
-      </ComponentStream>
       <ComponentStream component="Device" name="Mazak03" componentId="Mazak03">
         <Events>
-          <Availability dataItemId="dtop_2" timestamp="2016-05-08T05:00:00.000000Z" name="avail" sequence="167696">UNAVAILABLE</Availability>
+          <Availability dataItemId="Mazak03-dtop_1" timestamp="2016-05-08T05:00:00.000000Z" name="avail" sequence="167696">UNAVAILABLE</Availability>
         </Events>
       </ComponentStream>
-      <ComponentStream component="Rotary" name="S2" componentId="S2_26">
+      <ComponentStream component="Rotary" name="C" componentId="Mazak03-C_1">
         <Samples>
-          <SpindleSpeed dataItemId="S2_27" timestamp="2016-05-08T05:00:00.000000Z" name="S2rpm" sequence="167670" subType="ACTUAL">UNAVAILABLE</SpindleSpeed>
-          <Load dataItemId="S2_28" timestamp="2016-05-08T05:00:00.000000Z" name="S2load" sequence="167671">UNAVAILABLE</Load>
-          <Temperature dataItemId="S2_29" timestamp="2016-05-08T05:00:00.000000Z" name="S2temp" sequence="167672">UNAVAILABLE</Temperature>
+          <Load dataItemId="Mazak03-C_2" timestamp="2016-05-08T05:00:00.000000Z" name="Cload" sequence="167666">UNAVAILABLE</Load>
+          <AngularVelocity dataItemId="Mazak03-C_3" timestamp="2016-05-08T05:00:00.000000Z" name="Cfrt" sequence="167667">UNAVAILABLE</AngularVelocity>
+          <Angle dataItemId="Mazak03-C_4" timestamp="2016-05-08T05:00:00.000000Z" name="Cdeg" sequence="167668" subType="ACTUAL">UNAVAILABLE</Angle>
         </Samples>
         <Condition>
-          <Unavailable dataItemId="S2_30" timestamp="2016-05-08T05:00:00.000000Z" name="S2load_cond" sequence="167673" type="LOAD"/>
-          <Unavailable dataItemId="S2_31" timestamp="2016-05-08T05:00:00.000000Z" name="S2temp_cond" sequence="167674" type="TEMPERATURE"/>
+          <Unavailable dataItemId="Mazak03-C_5" timestamp="2016-05-08T05:00:00.000000Z" name="Ctravel" sequence="167669" type="ANGLE"/>
         </Condition>
       </ComponentStream>
-      <ComponentStream component="Rotary" name="S" componentId="S_20">
+      <ComponentStream component="Rotary" name="S2" componentId="Mazak03-S2_1">
         <Samples>
-          <SpindleSpeed dataItemId="S_21" timestamp="2016-05-08T05:00:00.000000Z" name="Srpm" sequence="167675" subType="ACTUAL">UNAVAILABLE</SpindleSpeed>
-          <Load dataItemId="S_22" timestamp="2016-05-08T05:00:00.000000Z" name="S1load" sequence="167676">UNAVAILABLE</Load>
-          <Temperature dataItemId="S_23" timestamp="2016-05-08T05:00:00.000000Z" name="Stemp" sequence="167677">UNAVAILABLE</Temperature>
+          <RotaryVelocity dataItemId="Mazak03-S2_2" timestamp="2016-05-08T05:00:00.000000Z" name="S2rpm" sequence="167670" subType="ACTUAL">UNAVAILABLE</RotaryVelocity>
+          <Load dataItemId="Mazak03-S2_3" timestamp="2016-05-08T05:00:00.000000Z" name="S2load" sequence="167671">UNAVAILABLE</Load>
+          <Temperature dataItemId="Mazak03-S2_4" timestamp="2016-05-08T05:00:00.000000Z" name="S2temp" sequence="167672">UNAVAILABLE</Temperature>
         </Samples>
         <Condition>
-          <Unavailable dataItemId="S_24" timestamp="2016-05-08T05:00:00.000000Z" name="Sload_cond" sequence="167678" type="LOAD"/>
-          <Unavailable dataItemId="S_25" timestamp="2016-05-08T05:00:00.000000Z" name="Stemp_cond" sequence="167679" type="TEMPERATURE"/>
+          <Unavailable dataItemId="Mazak03-S2_5" timestamp="2016-05-08T05:00:00.000000Z" name="S2load_cond" sequence="167673" type="LOAD"/>
+          <Unavailable dataItemId="Mazak03-S2_6" timestamp="2016-05-08T05:00:00.000000Z" name="S2temp_cond" sequence="167674" type="TEMPERATURE"/>
         </Condition>
       </ComponentStream>
-      <ComponentStream component="Linear" name="X" componentId="X_5">
+      <ComponentStream component="Rotary" name="S" componentId="Mazak03-S_1">
         <Samples>
-          <Position dataItemId="X_6" timestamp="2016-05-08T05:00:00.000000Z" name="Xabs" sequence="167680" subType="ACTUAL">UNAVAILABLE</Position>
-          <Load dataItemId="X_8" timestamp="2016-05-08T05:00:00.000000Z" name="Xload" sequence="167682">UNAVAILABLE</Load>
-          <AxisFeedrate dataItemId="X_9" timestamp="2016-05-08T05:00:00.000000Z" name="Xfrt" sequence="167683">UNAVAILABLE</AxisFeedrate>
+          <RotaryVelocity dataItemId="Mazak03-S_2" timestamp="2016-05-08T05:00:00.000000Z" name="Srpm" sequence="167675" subType="ACTUAL">UNAVAILABLE</RotaryVelocity>
+          <Load dataItemId="Mazak03-S_3" timestamp="2016-05-08T05:00:00.000000Z" name="S1load" sequence="167676">UNAVAILABLE</Load>
+          <Temperature dataItemId="Mazak03-S_4" timestamp="2016-05-08T05:00:00.000000Z" name="Stemp" sequence="167677">UNAVAILABLE</Temperature>
         </Samples>
         <Condition>
-          <Unavailable dataItemId="X_7" timestamp="2016-05-08T05:00:00.000000Z" name="Xtravel" sequence="167681" type="POSITION"/>
+          <Unavailable dataItemId="Mazak03-S_5" timestamp="2016-05-08T05:00:00.000000Z" name="Sload_cond" sequence="167678" type="LOAD"/>
+          <Unavailable dataItemId="Mazak03-S_6" timestamp="2016-05-08T05:00:00.000000Z" name="Stemp_cond" sequence="167679" type="TEMPERATURE"/>
         </Condition>
       </ComponentStream>
-      <ComponentStream component="Linear" name="Z" componentId="Z_10">
+      <ComponentStream component="Linear" name="X" componentId="Mazak03-X_1">
         <Samples>
-          <Position dataItemId="Z_11" timestamp="2016-05-08T05:00:00.000000Z" name="Zabs" sequence="167684" subType="ACTUAL">UNAVAILABLE</Position>
-          <Load dataItemId="Z_13" timestamp="2016-05-08T05:00:00.000000Z" name="Zload" sequence="167686">UNAVAILABLE</Load>
-          <AxisFeedrate dataItemId="Z_14" timestamp="2016-05-08T05:00:00.000000Z" name="Zfrt" sequence="167687">UNAVAILABLE</AxisFeedrate>
+          <Position dataItemId="Mazak03-X_2" timestamp="2016-05-08T05:00:00.000000Z" name="Xabs" sequence="167680" subType="ACTUAL">UNAVAILABLE</Position>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-08T05:00:00.000000Z" name="Xload" sequence="167682">UNAVAILABLE</Load>
+          <AxisFeedrate dataItemId="Mazak03-X_5" timestamp="2016-05-08T05:00:00.000000Z" name="Xfrt" sequence="167683">UNAVAILABLE</AxisFeedrate>
         </Samples>
         <Condition>
-          <Unavailable dataItemId="Z_12" timestamp="2016-05-08T05:00:00.000000Z" name="Ztravel" sequence="167685" type="POSITION"/>
+          <Unavailable dataItemId="Mazak03-X_3" timestamp="2016-05-08T05:00:00.000000Z" name="Xtravel" sequence="167681" type="POSITION"/>
         </Condition>
       </ComponentStream>
-      <ComponentStream component="Axes" name="base" componentId="base_3">
+      <ComponentStream component="Linear" name="Z" componentId="Mazak03-Z_1">
+        <Samples>
+          <Position dataItemId="Mazak03-Z_2" timestamp="2016-05-08T05:00:00.000000Z" name="Zabs" sequence="167684" subType="ACTUAL">UNAVAILABLE</Position>
+          <Load dataItemId="Mazak03-Z_4" timestamp="2016-05-08T05:00:00.000000Z" name="Zload" sequence="167686">UNAVAILABLE</Load>
+          <AxisFeedrate dataItemId="Mazak03-Z_5" timestamp="2016-05-08T05:00:00.000000Z" name="Zfrt" sequence="167687">UNAVAILABLE</AxisFeedrate>
+        </Samples>
         <Condition>
-          <Unavailable dataItemId="base_4" timestamp="2016-05-08T05:00:00.000000Z" name="servo_cond" sequence="167688" type="ACTUATOR"/>
+          <Unavailable dataItemId="Mazak03-Z_3" timestamp="2016-05-08T05:00:00.000000Z" name="Ztravel" sequence="167685" type="POSITION"/>
         </Condition>
       </ComponentStream>
-      <ComponentStream component="Controller" name="controller" componentId="controller_32">
+      <ComponentStream component="Axes" name="base" componentId="Mazak03-base_1">
+        <Condition>
+          <Unavailable dataItemId="Mazak03-base_2" timestamp="2016-05-08T05:00:00.000000Z" name="servo_cond" sequence="167688" type="ACTUATOR"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Controller" name="controller" componentId="Mazak03-controller_1">
         <Events>
-          <PalletNum dataItemId="controller_36" timestamp="2016-05-08T05:00:00.000000Z" name="pallet_num" sequence="167692">UNAVAILABLE</PalletNum>
+          <x:PalletNumber dataItemId="Mazak03-controller_5" timestamp="2016-05-08T05:00:00.000000Z" name="pallet_num" sequence="167692">UNAVAILABLE</x:PalletNumber>
         </Events>
         <Condition>
-          <Unavailable dataItemId="controller_33" timestamp="2016-05-08T05:00:00.000000Z" name="comms_cond" sequence="167689" type="COMMUNICATIONS"/>
-          <Unavailable dataItemId="controller_34" timestamp="2016-05-08T05:00:00.000000Z" name="logic_cond" sequence="167690" type="LOGIC_PROGRAM"/>
-          <Unavailable dataItemId="controller_35" timestamp="2016-05-08T05:00:00.000000Z" name="system_cond" sequence="167691" type="SYSTEM"/>
+          <Unavailable dataItemId="Mazak03-controller_2" timestamp="2016-05-08T05:00:00.000000Z" name="comms_cond" sequence="167689" type="COMMUNICATIONS"/>
+          <Unavailable dataItemId="Mazak03-controller_3" timestamp="2016-05-08T05:00:00.000000Z" name="logic_cond" sequence="167690" type="LOGIC_PROGRAM"/>
+          <Unavailable dataItemId="Mazak03-controller_4" timestamp="2016-05-08T05:00:00.000000Z" name="system_cond" sequence="167691" type="SYSTEM"/>
         </Condition>
       </ComponentStream>
-      <ComponentStream component="Coolant" name="coolant" componentId="coolant_72">
+      <ComponentStream component="Coolant" name="coolant" componentId="Mazak03-coolant_1">
         <Condition>
-          <Unavailable dataItemId="coolant_73" timestamp="2016-05-08T05:00:00.000000Z" name="coolant_pres" sequence="167693" type="PRESSURE"/>
-          <Unavailable dataItemId="coolant_74" timestamp="2016-05-08T05:00:00.000000Z" name="coolant_temp" sequence="167694" type="TEMPERATURE"/>
-          <Unavailable dataItemId="coolant_75" timestamp="2016-05-08T05:00:00.000000Z" name="coolant_level" sequence="167695" type="LEVEL"/>
+          <Unavailable dataItemId="Mazak03-coolant_2" timestamp="2016-05-08T05:00:00.000000Z" name="coolant_pres" sequence="167693" type="PRESSURE"/>
+          <Unavailable dataItemId="Mazak03-coolant_3" timestamp="2016-05-08T05:00:00.000000Z" name="coolant_temp" sequence="167694" type="TEMPERATURE"/>
+          <Unavailable dataItemId="Mazak03-coolant_4" timestamp="2016-05-08T05:00:00.000000Z" name="coolant_level" sequence="167695" type="LEVEL"/>
         </Condition>
       </ComponentStream>
-      <ComponentStream component="Electric" name="electric" componentId="electric_67">
+      <ComponentStream component="Electric" name="electric" componentId="Mazak03-electric_1">
         <Events>
-          <PowerState dataItemId="electric_68" timestamp="2016-05-08T05:00:00.000000Z" name="power" sequence="167697">UNAVAILABLE</PowerState>
+          <PowerState dataItemId="Mazak03-electric_2" timestamp="2016-05-08T05:00:00.000000Z" name="power" sequence="167697">UNAVAILABLE</PowerState>
         </Events>
         <Condition>
-          <Unavailable dataItemId="electric_69" timestamp="2016-05-08T05:00:00.000000Z" name="electric_temp" sequence="167698" type="TEMPERATURE"/>
+          <Unavailable dataItemId="Mazak03-electric_3" timestamp="2016-05-08T05:00:00.000000Z" name="electric_temp" sequence="167698" type="TEMPERATURE"/>
         </Condition>
       </ComponentStream>
-      <ComponentStream component="Hydraulic" name="hydraulic" componentId="hydraulic_70">
+      <ComponentStream component="Hydraulic" name="hydraulic" componentId="Mazak03-hydraulic_1">
         <Condition>
-          <Unavailable dataItemId="hydraulic_71" timestamp="2016-05-08T05:00:00.000000Z" name="hydra_cond" sequence="167699" type="PRESSURE"/>
+          <Unavailable dataItemId="Mazak03-hydraulic_2" timestamp="2016-05-08T05:00:00.000000Z" name="hydra_cond" sequence="167699" type="PRESSURE"/>
         </Condition>
       </ComponentStream>
-      <ComponentStream component="Path" name="path" componentId="path_37">
+      <ComponentStream component="Path" name="path" componentId="Mazak03-path_1">
         <Samples>
-          <SpindleSpeed dataItemId="path_38" timestamp="2016-05-08T05:00:00.000000Z" name="Sovr" sequence="167700" subType="OVERRIDE">UNAVAILABLE</SpindleSpeed>
-          <PathFeedrate dataItemId="path_45" timestamp="2016-05-08T05:00:00.000000Z" name="Fact" sequence="167707" subType="ACTUAL">UNAVAILABLE</PathFeedrate>
-          <PathFeedrate dataItemId="path_46" timestamp="2016-05-08T05:00:00.000000Z" name="Frapidovr" sequence="167708" subType="OVERRIDE">UNAVAILABLE</PathFeedrate>
-          <PathFeedrate dataItemId="path_47" timestamp="2016-05-08T05:00:00.000000Z" name="Fovr" sequence="167709" subType="OVERRIDE">UNAVAILABLE</PathFeedrate>
+          <AccumulatedTime dataItemId="Mazak03-path_14" timestamp="2016-05-08T05:00:00.000000Z" name="auto_time" sequence="167714" subType="x:AUTO">UNAVAILABLE</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-08T05:00:00.000000Z" name="total_time" sequence="167715" subType="x:TOTAL">UNAVAILABLE</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_16" timestamp="2016-05-08T05:00:00.000000Z" name="cut_time" sequence="167716" subType="x:CUT">UNAVAILABLE</AccumulatedTime>
+          <PathFeedrate dataItemId="Mazak03-path_7" timestamp="2016-05-08T05:00:00.000000Z" name="Fact" sequence="167707" subType="ACTUAL">UNAVAILABLE</PathFeedrate>
         </Samples>
         <Events>
-          <Program dataItemId="path_39" timestamp="2016-05-08T05:00:00.000000Z" name="program" sequence="167701">UNAVAILABLE</Program>
-          <Program dataItemId="path_40" timestamp="2016-05-08T05:00:00.000000Z" name="subprogram" sequence="167702" subType="x:SUB">UNAVAILABLE</Program>
-          <Line dataItemId="path_41" timestamp="2016-05-08T05:00:00.000000Z" name="line" sequence="167703">UNAVAILABLE</Line>
-          <Unit dataItemId="path_42" timestamp="2016-05-08T05:00:00.000000Z" name="unitNum" sequence="167704">UNAVAILABLE</Unit>
-          <SequenceNumber dataItemId="path_43" timestamp="2016-05-08T05:00:00.000000Z" name="sequenceNum" sequence="167705">UNAVAILABLE</SequenceNumber>
-          <PartCount dataItemId="path_44" timestamp="2016-05-08T05:00:00.000000Z" name="PartCountAct" sequence="167706">UNAVAILABLE</PartCount>
-          <Execution dataItemId="path_48" timestamp="2016-05-08T05:00:00.000000Z" name="execution" sequence="167710">UNAVAILABLE</Execution>
-          <ControllerMode dataItemId="path_49" timestamp="2016-05-08T05:00:00.000000Z" name="mode" sequence="167711">UNAVAILABLE</ControllerMode>
-          <Comment dataItemId="path_50" timestamp="2016-05-08T05:00:00.000000Z" name="program_cmt" sequence="167712">UNAVAILABLE</Comment>
-          <Comment dataItemId="path_51" timestamp="2016-05-08T05:00:00.000000Z" name="subprogram_cmt" sequence="167713" subType="x:SUB">UNAVAILABLE</Comment>
-          <AccumulatedTime dataItemId="path_52" timestamp="2016-05-08T05:00:00.000000Z" name="auto_time" sequence="167714" subType="x:AUTO">UNAVAILABLE</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-08T05:00:00.000000Z" name="total_time" sequence="167715" subType="x:TOTAL">UNAVAILABLE</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_54" timestamp="2016-05-08T05:00:00.000000Z" name="cut_time" sequence="167716" subType="x:CUT">UNAVAILABLE</AccumulatedTime>
-          <ToolId dataItemId="path_63" timestamp="2016-05-08T05:00:00.000000Z" name="Tool_number" sequence="167725">UNAVAILABLE</ToolId>
-          <ToolGroup dataItemId="path_64" timestamp="2016-05-08T05:00:00.000000Z" name="Tool_group" sequence="167726">UNAVAILABLE</ToolGroup>
-          <ToolSuffix dataItemId="path_65" timestamp="2016-05-08T05:00:00.000000Z" name="Tool_suffix" sequence="167727">UNAVAILABLE</ToolSuffix>
+          <Execution dataItemId="Mazak03-path_10" timestamp="2016-05-08T05:00:00.000000Z" name="execution" sequence="167710">UNAVAILABLE</Execution>
+          <ControllerMode dataItemId="Mazak03-path_11" timestamp="2016-05-08T05:00:00.000000Z" name="mode" sequence="167711">UNAVAILABLE</ControllerMode>
+          <ProgramComment dataItemId="Mazak03-path_12" timestamp="2016-05-08T05:00:00.000000Z" name="program_cmt" sequence="167712">UNAVAILABLE</ProgramComment>
+          <ProgramComment dataItemId="Mazak03-path_13" timestamp="2016-05-08T05:00:00.000000Z" name="subprogram_cmt" sequence="167713" subType="x:SUB_PROGRAM">UNAVAILABLE</ProgramComment>
+          <RotaryVelocityOverride dataItemId="Mazak03-path_2" timestamp="2016-05-08T05:00:00.000000Z" name="Sovr" sequence="167700">UNAVAILABLE</RotaryVelocityOverride>
+          <ToolAssetId dataItemId="Mazak03-path_25" timestamp="2016-05-08T05:00:00.000000Z" name="Tool_number" sequence="167725">UNAVAILABLE</ToolAssetId>
+          <x:ToolGroup dataItemId="Mazak03-path_26" timestamp="2016-05-08T05:00:00.000000Z" name="Tool_group" sequence="167726">UNAVAILABLE</x:ToolGroup>
+          <x:ToolSuffix dataItemId="Mazak03-path_27" timestamp="2016-05-08T05:00:00.000000Z" name="Tool_suffix" sequence="167727">UNAVAILABLE</x:ToolSuffix>
+          <Program dataItemId="Mazak03-path_3" timestamp="2016-05-08T05:00:00.000000Z" name="program" sequence="167701">UNAVAILABLE</Program>
+          <Program dataItemId="Mazak03-path_4" timestamp="2016-05-08T05:00:00.000000Z" name="subprogram" sequence="167702" subType="x:SUB">UNAVAILABLE</Program>
+          <Line dataItemId="Mazak03-path_5" timestamp="2016-05-08T05:00:00.000000Z" name="line" sequence="167703">UNAVAILABLE</Line>
+          <x:Unit dataItemId="Mazak03-path_6" timestamp="2016-05-08T05:00:00.000000Z" name="unitNum" sequence="167704">UNAVAILABLE</x:Unit>
+          <PathFeedrateOverride dataItemId="Mazak03-path_8" timestamp="2016-05-08T05:00:00.000000Z" name="Frapidovr" sequence="167708" subType="RAPID">UNAVAILABLE</PathFeedrateOverride>
+          <PathFeedrateOverride dataItemId="Mazak03-path_9" timestamp="2016-05-08T05:00:00.000000Z" name="Fovr" sequence="167709" subType="PROGRAMMED">UNAVAILABLE</PathFeedrateOverride>
+          <x:SequenceNumber dataItemId="Mazak03-path_95" timestamp="2016-05-08T05:00:00.000000Z" name="sequenceNum" sequence="167705">UNAVAILABLE</x:SequenceNumber>
+          <PartCount dataItemId="Mazak03-path_96" timestamp="2016-05-08T05:00:00.000000Z" name="PartCountAct" sequence="167706">UNAVAILABLE</PartCount>
         </Events>
         <Condition>
-          <Unavailable dataItemId="path_55" timestamp="2016-05-08T05:00:00.000000Z" name="motion_cond" sequence="167717" type="MOTION_PROGRAM"/>
-          <Unavailable dataItemId="path_56" timestamp="2016-05-08T05:00:00.000000Z" name="motion_cond2" sequence="167718" type="MOTION_PROGRAM"/>
-          <Unavailable dataItemId="path_57" timestamp="2016-05-08T05:00:00.000000Z" name="motion_cond3" sequence="167719" type="MOTION_PROGRAM"/>
-          <Unavailable dataItemId="path_58" timestamp="2016-05-08T05:00:00.000000Z" name="motion_cond4" sequence="167720" type="MOTION_PROGRAM"/>
-          <Unavailable dataItemId="path_59" timestamp="2016-05-08T05:00:00.000000Z" name="path_system" sequence="167721" type="SYSTEM"/>
-          <Unavailable dataItemId="path_60" timestamp="2016-05-08T05:00:00.000000Z" name="path_system2" sequence="167722" type="SYSTEM"/>
-          <Unavailable dataItemId="path_61" timestamp="2016-05-08T05:00:00.000000Z" name="path_system3" sequence="167723" type="SYSTEM"/>
-          <Unavailable dataItemId="path_62" timestamp="2016-05-08T05:00:00.000000Z" name="path_system4" sequence="167724" type="SYSTEM"/>
+          <Unavailable dataItemId="Mazak03-path_17" timestamp="2016-05-08T05:00:00.000000Z" name="motion_cond" sequence="167717" type="MOTION_PROGRAM"/>
+          <Unavailable dataItemId="Mazak03-path_18" timestamp="2016-05-08T05:00:00.000000Z" name="motion_cond2" sequence="167718" subType="x:MOTION_PROGRAM_2" type="MOTION_PROGRAM"/>
+          <Unavailable dataItemId="Mazak03-path_19" timestamp="2016-05-08T05:00:00.000000Z" name="motion_cond3" sequence="167719" subType="x:MOTION_PROGRAM_3" type="MOTION_PROGRAM"/>
+          <Unavailable dataItemId="Mazak03-path_20" timestamp="2016-05-08T05:00:00.000000Z" name="motion_cond4" sequence="167720" subType="x:MOTION_PROGRAM_4" type="MOTION_PROGRAM"/>
+          <Unavailable dataItemId="Mazak03-path_21" timestamp="2016-05-08T05:00:00.000000Z" name="path_system" sequence="167721" type="SYSTEM"/>
+          <Unavailable dataItemId="Mazak03-path_22" timestamp="2016-05-08T05:00:00.000000Z" name="path_system2" sequence="167722" subType="x:SYSTEM_1" type="SYSTEM"/>
+          <Unavailable dataItemId="Mazak03-path_23" timestamp="2016-05-08T05:00:00.000000Z" name="path_system3" sequence="167723" subType="x:SYSTEM_2" type="SYSTEM"/>
+          <Unavailable dataItemId="Mazak03-path_24" timestamp="2016-05-08T05:00:00.000000Z" name="path_system4" sequence="167724" subType="x:SYSTEM_3" type="SYSTEM"/>
         </Condition>
       </ComponentStream>
-      <ComponentStream component="Pneumatic" name="pneumatic" componentId="pneumatic_76">
+      <ComponentStream component="Pneumatic" name="pneumatic" componentId="Mazak03-pneumatic_1">
         <Condition>
-          <Unavailable dataItemId="pneumatic_77" timestamp="2016-05-08T05:00:00.000000Z" name="pneu_cond" sequence="167728" type="PRESSURE"/>
+          <Unavailable dataItemId="Mazak03-pneumatic_2" timestamp="2016-05-08T05:00:00.000000Z" name="pneu_cond" sequence="167728" type="PRESSURE"/>
         </Condition>
       </ComponentStream>
     </DeviceStream>

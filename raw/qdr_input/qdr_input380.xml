@@ -1,321 +1,322 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MTConnectStreams xmlns:m="urn:mtconnect.org:MTConnectStreams:1.3" xmlns="urn:mtconnect.org:MTConnectStreams:1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mtconnect.org:MTConnectStreams:1.3 /schemas/MTConnectStreams_1.3.xsd">
-  <Header creationTime="2016-09-08T14:40:05Z" sender="honda.el.nist.gov" instanceId="1473345573" version="1.3.0.17" bufferSize="1073741824" nextSequence="87323" firstSequence="1" lastSequence="87322"/>
+<?xml-stylesheet type="text/xsl" href="/styles/Streams.xsl"?>
+<MTConnectStreams xmlns:m="urn:mtconnect.org:MTConnectStreams:1.3" xmlns="urn:mtconnect.org:MTConnectStreams:1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:x="urn:nist.gov:NistStreams:1.3" xsi:schemaLocation="urn:nist.gov:NistStreams:1.3 /schemas/NistStreams_1.3.xsd">
+  <Header creationTime="2016-09-28T17:47:19Z" sender="honda.el.nist.gov" instanceId="1475084811" version="1.3.0.17" bufferSize="131072" nextSequence="87323" firstSequence="1" lastSequence="87322"/>
   <Streams>
     <DeviceStream name="Mazak03" uuid="mtc_adapter004">
-      <ComponentStream component="Rotary" name="C" componentId="C_15">
-        <Samples>
-          <Load dataItemId="C_16" timestamp="2016-05-04T18:54:15.639890Z" name="Cload" sequence="87266">UNAVAILABLE</Load>
-          <AngularVelocity dataItemId="C_17" timestamp="2016-05-04T18:54:15.639890Z" name="Cfrt" sequence="87267">UNAVAILABLE</AngularVelocity>
-          <Angle dataItemId="C_18" timestamp="2016-05-04T18:54:15.639890Z" name="Cdeg" sequence="87268" subType="ACTUAL">UNAVAILABLE</Angle>
-        </Samples>
-        <Condition>
-          <Unavailable dataItemId="C_19" timestamp="2016-05-04T18:54:15.639890Z" name="Ctravel" sequence="87269" type="ANGLE"/>
-        </Condition>
-      </ComponentStream>
       <ComponentStream component="Device" name="Mazak03" componentId="Mazak03">
         <Events>
-          <Availability dataItemId="dtop_2" timestamp="2016-05-04T18:54:15.639890Z" name="avail" sequence="87296">UNAVAILABLE</Availability>
+          <Availability dataItemId="Mazak03-dtop_1" timestamp="2016-05-04T18:54:15.639890Z" name="avail" sequence="87296">UNAVAILABLE</Availability>
         </Events>
       </ComponentStream>
-      <ComponentStream component="Rotary" name="S2" componentId="S2_26">
+      <ComponentStream component="Rotary" name="C" componentId="Mazak03-C_1">
         <Samples>
-          <SpindleSpeed dataItemId="S2_27" timestamp="2016-05-04T18:48:50.807803Z" name="S2rpm" sequence="87085" subType="ACTUAL">585</SpindleSpeed>
-          <SpindleSpeed dataItemId="S2_27" timestamp="2016-05-04T18:48:54.912218Z" name="S2rpm" sequence="87094" subType="ACTUAL">691</SpindleSpeed>
-          <SpindleSpeed dataItemId="S2_27" timestamp="2016-05-04T18:48:59.038239Z" name="S2rpm" sequence="87104" subType="ACTUAL">753</SpindleSpeed>
-          <SpindleSpeed dataItemId="S2_27" timestamp="2016-05-04T18:49:03.164676Z" name="S2rpm" sequence="87112" subType="ACTUAL">788</SpindleSpeed>
-          <SpindleSpeed dataItemId="S2_27" timestamp="2016-05-04T18:49:07.285695Z" name="S2rpm" sequence="87119" subType="ACTUAL">829</SpindleSpeed>
-          <SpindleSpeed dataItemId="S2_27" timestamp="2016-05-04T18:49:11.406907Z" name="S2rpm" sequence="87128" subType="ACTUAL">877</SpindleSpeed>
-          <SpindleSpeed dataItemId="S2_27" timestamp="2016-05-04T18:49:15.540099Z" name="S2rpm" sequence="87137" subType="ACTUAL">875</SpindleSpeed>
-          <SpindleSpeed dataItemId="S2_27" timestamp="2016-05-04T18:49:19.659431Z" name="S2rpm" sequence="87149" subType="ACTUAL">359</SpindleSpeed>
-          <SpindleSpeed dataItemId="S2_27" timestamp="2016-05-04T18:49:23.789351Z" name="S2rpm" sequence="87165" subType="ACTUAL">0</SpindleSpeed>
-          <SpindleSpeed dataItemId="S2_27" timestamp="2016-05-04T18:54:15.639890Z" name="S2rpm" sequence="87270" subType="ACTUAL">UNAVAILABLE</SpindleSpeed>
-          <Load dataItemId="S2_28" timestamp="2016-05-04T18:48:50.807803Z" name="S2load" sequence="87086">3</Load>
-          <Load dataItemId="S2_28" timestamp="2016-05-04T18:48:54.912218Z" name="S2load" sequence="87095">4</Load>
-          <Load dataItemId="S2_28" timestamp="2016-05-04T18:49:15.540099Z" name="S2load" sequence="87138">21</Load>
-          <Load dataItemId="S2_28" timestamp="2016-05-04T18:49:19.659431Z" name="S2load" sequence="87150">0</Load>
-          <Load dataItemId="S2_28" timestamp="2016-05-04T18:54:15.639890Z" name="S2load" sequence="87271">UNAVAILABLE</Load>
-          <Temperature dataItemId="S2_29" timestamp="2016-05-04T18:48:59.038239Z" name="S2temp" sequence="87105">28</Temperature>
-          <Temperature dataItemId="S2_29" timestamp="2016-05-04T18:49:07.285695Z" name="S2temp" sequence="87120">27</Temperature>
-          <Temperature dataItemId="S2_29" timestamp="2016-05-04T18:49:11.406907Z" name="S2temp" sequence="87129">28</Temperature>
-          <Temperature dataItemId="S2_29" timestamp="2016-05-04T18:49:15.540099Z" name="S2temp" sequence="87139">27</Temperature>
-          <Temperature dataItemId="S2_29" timestamp="2016-05-04T18:49:19.659431Z" name="S2temp" sequence="87151">28</Temperature>
-          <Temperature dataItemId="S2_29" timestamp="2016-05-04T18:49:23.789351Z" name="S2temp" sequence="87166">27</Temperature>
-          <Temperature dataItemId="S2_29" timestamp="2016-05-04T18:49:27.902243Z" name="S2temp" sequence="87175">28</Temperature>
-          <Temperature dataItemId="S2_29" timestamp="2016-05-04T18:50:29.771020Z" name="S2temp" sequence="87199">27</Temperature>
-          <Temperature dataItemId="S2_29" timestamp="2016-05-04T18:50:38.020494Z" name="S2temp" sequence="87204">28</Temperature>
-          <Temperature dataItemId="S2_29" timestamp="2016-05-04T18:50:50.361916Z" name="S2temp" sequence="87211">27</Temperature>
-          <Temperature dataItemId="S2_29" timestamp="2016-05-04T18:54:15.639890Z" name="S2temp" sequence="87272">UNAVAILABLE</Temperature>
+          <Load dataItemId="Mazak03-C_2" timestamp="2016-05-04T18:54:15.639890Z" name="Cload" sequence="87266">UNAVAILABLE</Load>
+          <AngularVelocity dataItemId="Mazak03-C_3" timestamp="2016-05-04T18:54:15.639890Z" name="Cfrt" sequence="87267">UNAVAILABLE</AngularVelocity>
+          <Angle dataItemId="Mazak03-C_4" timestamp="2016-05-04T18:54:15.639890Z" name="Cdeg" sequence="87268" subType="ACTUAL">UNAVAILABLE</Angle>
         </Samples>
         <Condition>
-          <Unavailable dataItemId="S2_30" timestamp="2016-05-04T18:54:15.639890Z" name="S2load_cond" sequence="87273" type="LOAD"/>
-          <Unavailable dataItemId="S2_31" timestamp="2016-05-04T18:54:15.639890Z" name="S2temp_cond" sequence="87274" type="TEMPERATURE"/>
+          <Unavailable dataItemId="Mazak03-C_5" timestamp="2016-05-04T18:54:15.639890Z" name="Ctravel" sequence="87269" type="ANGLE"/>
         </Condition>
       </ComponentStream>
-      <ComponentStream component="Rotary" name="S" componentId="S_20">
+      <ComponentStream component="Rotary" name="S2" componentId="Mazak03-S2_1">
         <Samples>
-          <SpindleSpeed dataItemId="S_21" timestamp="2016-05-04T18:54:15.639890Z" name="Srpm" sequence="87275" subType="ACTUAL">UNAVAILABLE</SpindleSpeed>
-          <Load dataItemId="S_22" timestamp="2016-05-04T18:54:15.639890Z" name="S1load" sequence="87276">UNAVAILABLE</Load>
-          <Temperature dataItemId="S_23" timestamp="2016-05-04T18:54:15.639890Z" name="Stemp" sequence="87277">UNAVAILABLE</Temperature>
+          <RotaryVelocity dataItemId="Mazak03-S2_2" timestamp="2016-05-04T18:48:50.807803Z" name="S2rpm" sequence="87085" subType="ACTUAL">585</RotaryVelocity>
+          <RotaryVelocity dataItemId="Mazak03-S2_2" timestamp="2016-05-04T18:48:54.912218Z" name="S2rpm" sequence="87094" subType="ACTUAL">691</RotaryVelocity>
+          <RotaryVelocity dataItemId="Mazak03-S2_2" timestamp="2016-05-04T18:48:59.038239Z" name="S2rpm" sequence="87104" subType="ACTUAL">753</RotaryVelocity>
+          <RotaryVelocity dataItemId="Mazak03-S2_2" timestamp="2016-05-04T18:49:03.164676Z" name="S2rpm" sequence="87112" subType="ACTUAL">788</RotaryVelocity>
+          <RotaryVelocity dataItemId="Mazak03-S2_2" timestamp="2016-05-04T18:49:07.285695Z" name="S2rpm" sequence="87119" subType="ACTUAL">829</RotaryVelocity>
+          <RotaryVelocity dataItemId="Mazak03-S2_2" timestamp="2016-05-04T18:49:11.406907Z" name="S2rpm" sequence="87128" subType="ACTUAL">877</RotaryVelocity>
+          <RotaryVelocity dataItemId="Mazak03-S2_2" timestamp="2016-05-04T18:49:15.540099Z" name="S2rpm" sequence="87137" subType="ACTUAL">875</RotaryVelocity>
+          <RotaryVelocity dataItemId="Mazak03-S2_2" timestamp="2016-05-04T18:49:19.659431Z" name="S2rpm" sequence="87149" subType="ACTUAL">359</RotaryVelocity>
+          <RotaryVelocity dataItemId="Mazak03-S2_2" timestamp="2016-05-04T18:49:23.789351Z" name="S2rpm" sequence="87165" subType="ACTUAL">0</RotaryVelocity>
+          <RotaryVelocity dataItemId="Mazak03-S2_2" timestamp="2016-05-04T18:54:15.639890Z" name="S2rpm" sequence="87270" subType="ACTUAL">UNAVAILABLE</RotaryVelocity>
+          <Load dataItemId="Mazak03-S2_3" timestamp="2016-05-04T18:48:50.807803Z" name="S2load" sequence="87086">3</Load>
+          <Load dataItemId="Mazak03-S2_3" timestamp="2016-05-04T18:48:54.912218Z" name="S2load" sequence="87095">4</Load>
+          <Load dataItemId="Mazak03-S2_3" timestamp="2016-05-04T18:49:15.540099Z" name="S2load" sequence="87138">21</Load>
+          <Load dataItemId="Mazak03-S2_3" timestamp="2016-05-04T18:49:19.659431Z" name="S2load" sequence="87150">0</Load>
+          <Load dataItemId="Mazak03-S2_3" timestamp="2016-05-04T18:54:15.639890Z" name="S2load" sequence="87271">UNAVAILABLE</Load>
+          <Temperature dataItemId="Mazak03-S2_4" timestamp="2016-05-04T18:48:59.038239Z" name="S2temp" sequence="87105">28</Temperature>
+          <Temperature dataItemId="Mazak03-S2_4" timestamp="2016-05-04T18:49:07.285695Z" name="S2temp" sequence="87120">27</Temperature>
+          <Temperature dataItemId="Mazak03-S2_4" timestamp="2016-05-04T18:49:11.406907Z" name="S2temp" sequence="87129">28</Temperature>
+          <Temperature dataItemId="Mazak03-S2_4" timestamp="2016-05-04T18:49:15.540099Z" name="S2temp" sequence="87139">27</Temperature>
+          <Temperature dataItemId="Mazak03-S2_4" timestamp="2016-05-04T18:49:19.659431Z" name="S2temp" sequence="87151">28</Temperature>
+          <Temperature dataItemId="Mazak03-S2_4" timestamp="2016-05-04T18:49:23.789351Z" name="S2temp" sequence="87166">27</Temperature>
+          <Temperature dataItemId="Mazak03-S2_4" timestamp="2016-05-04T18:49:27.902243Z" name="S2temp" sequence="87175">28</Temperature>
+          <Temperature dataItemId="Mazak03-S2_4" timestamp="2016-05-04T18:50:29.771020Z" name="S2temp" sequence="87199">27</Temperature>
+          <Temperature dataItemId="Mazak03-S2_4" timestamp="2016-05-04T18:50:38.020494Z" name="S2temp" sequence="87204">28</Temperature>
+          <Temperature dataItemId="Mazak03-S2_4" timestamp="2016-05-04T18:50:50.361916Z" name="S2temp" sequence="87211">27</Temperature>
+          <Temperature dataItemId="Mazak03-S2_4" timestamp="2016-05-04T18:54:15.639890Z" name="S2temp" sequence="87272">UNAVAILABLE</Temperature>
         </Samples>
         <Condition>
-          <Unavailable dataItemId="S_24" timestamp="2016-05-04T18:54:15.639890Z" name="Sload_cond" sequence="87278" type="LOAD"/>
-          <Unavailable dataItemId="S_25" timestamp="2016-05-04T18:54:15.639890Z" name="Stemp_cond" sequence="87279" type="TEMPERATURE"/>
+          <Unavailable dataItemId="Mazak03-S2_5" timestamp="2016-05-04T18:54:15.639890Z" name="S2load_cond" sequence="87273" type="LOAD"/>
+          <Unavailable dataItemId="Mazak03-S2_6" timestamp="2016-05-04T18:54:15.639890Z" name="S2temp_cond" sequence="87274" type="TEMPERATURE"/>
         </Condition>
       </ComponentStream>
-      <ComponentStream component="Linear" name="X" componentId="X_5">
+      <ComponentStream component="Rotary" name="S" componentId="Mazak03-S_1">
         <Samples>
-          <Position dataItemId="X_6" timestamp="2016-05-04T18:48:50.807803Z" name="Xabs" sequence="87082" subType="ACTUAL">40.552624</Position>
-          <Position dataItemId="X_6" timestamp="2016-05-04T18:48:54.912218Z" name="Xabs" sequence="87091" subType="ACTUAL">34.38652</Position>
-          <Position dataItemId="X_6" timestamp="2016-05-04T18:48:59.038239Z" name="Xabs" sequence="87100" subType="ACTUAL">31.338774</Position>
-          <Position dataItemId="X_6" timestamp="2016-05-04T18:49:03.164676Z" name="Xabs" sequence="87110" subType="ACTUAL">29.942536</Position>
-          <Position dataItemId="X_6" timestamp="2016-05-04T18:49:07.285695Z" name="Xabs" sequence="87117" subType="ACTUAL">28.43403</Position>
-          <Position dataItemId="X_6" timestamp="2016-05-04T18:49:11.406907Z" name="Xabs" sequence="87125" subType="ACTUAL">26.89479</Position>
-          <Position dataItemId="X_6" timestamp="2016-05-04T18:49:15.540099Z" name="Xabs" sequence="87134" subType="ACTUAL">28.452064</Position>
-          <Position dataItemId="X_6" timestamp="2016-05-04T18:49:19.659431Z" name="Xabs" sequence="87144" subType="ACTUAL">166.504112</Position>
-          <Position dataItemId="X_6" timestamp="2016-05-04T18:49:23.789351Z" name="Xabs" sequence="87159" subType="ACTUAL">423.914316</Position>
-          <Position dataItemId="X_6" timestamp="2016-05-04T18:53:06.793126Z" name="Xabs" sequence="87260" subType="ACTUAL">423.910506</Position>
-          <Position dataItemId="X_6" timestamp="2016-05-04T18:54:15.639890Z" name="Xabs" sequence="87280" subType="ACTUAL">UNAVAILABLE</Position>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:48:50.807803Z" name="Xload" sequence="87084">44</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:48:54.912218Z" name="Xload" sequence="87093">42</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:48:59.038239Z" name="Xload" sequence="87102">27</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:49:03.164676Z" name="Xload" sequence="87111">28</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:49:11.406907Z" name="Xload" sequence="87127">29</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:49:15.540099Z" name="Xload" sequence="87136">54</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:49:23.789351Z" name="Xload" sequence="87161">47</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:49:27.902243Z" name="Xload" sequence="87174">45</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:49:32.030542Z" name="Xload" sequence="87177">46</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:49:36.174343Z" name="Xload" sequence="87179">48</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:49:56.776135Z" name="Xload" sequence="87187">49</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:50:00.901741Z" name="Xload" sequence="87189">48</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:50:38.020494Z" name="Xload" sequence="87203">47</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:50:42.148393Z" name="Xload" sequence="87206">49</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:50:46.264073Z" name="Xload" sequence="87209">48</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:50:54.486923Z" name="Xload" sequence="87213">47</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:50:58.611862Z" name="Xload" sequence="87215">48</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:51:02.764910Z" name="Xload" sequence="87218">47</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:51:48.189647Z" name="Xload" sequence="87232">52</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:51:52.313355Z" name="Xload" sequence="87235">49</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:52:17.088350Z" name="Xload" sequence="87243">48</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:52:21.207201Z" name="Xload" sequence="87245">49</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:52:25.307199Z" name="Xload" sequence="87247">48</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:52:41.805754Z" name="Xload" sequence="87252">47</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:52:45.931375Z" name="Xload" sequence="87254">45</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:53:06.793126Z" name="Xload" sequence="87261">0</Load>
-          <Load dataItemId="X_8" timestamp="2016-05-04T18:54:15.639890Z" name="Xload" sequence="87282">UNAVAILABLE</Load>
-          <AxisFeedrate dataItemId="X_9" timestamp="2016-05-04T18:48:50.807803Z" name="Xfrt" sequence="87083">2.5654</AxisFeedrate>
-          <AxisFeedrate dataItemId="X_9" timestamp="2016-05-04T18:48:54.912218Z" name="Xfrt" sequence="87092">0.9059333</AxisFeedrate>
-          <AxisFeedrate dataItemId="X_9" timestamp="2016-05-04T18:48:59.038239Z" name="Xfrt" sequence="87101">0.1693333</AxisFeedrate>
-          <AxisFeedrate dataItemId="X_9" timestamp="2016-05-04T18:49:07.285695Z" name="Xfrt" sequence="87118">0.1820333</AxisFeedrate>
-          <AxisFeedrate dataItemId="X_9" timestamp="2016-05-04T18:49:11.406907Z" name="Xfrt" sequence="87126">0.1905</AxisFeedrate>
-          <AxisFeedrate dataItemId="X_9" timestamp="2016-05-04T18:49:15.540099Z" name="Xfrt" sequence="87135">15.94273</AxisFeedrate>
-          <AxisFeedrate dataItemId="X_9" timestamp="2016-05-04T18:49:19.659431Z" name="Xfrt" sequence="87145">24.98937</AxisFeedrate>
-          <AxisFeedrate dataItemId="X_9" timestamp="2016-05-04T18:49:23.789351Z" name="Xfrt" sequence="87160">0</AxisFeedrate>
-          <AxisFeedrate dataItemId="X_9" timestamp="2016-05-04T18:54:15.639890Z" name="Xfrt" sequence="87283">UNAVAILABLE</AxisFeedrate>
+          <RotaryVelocity dataItemId="Mazak03-S_2" timestamp="2016-05-04T18:54:15.639890Z" name="Srpm" sequence="87275" subType="ACTUAL">UNAVAILABLE</RotaryVelocity>
+          <Load dataItemId="Mazak03-S_3" timestamp="2016-05-04T18:54:15.639890Z" name="S1load" sequence="87276">UNAVAILABLE</Load>
+          <Temperature dataItemId="Mazak03-S_4" timestamp="2016-05-04T18:54:15.639890Z" name="Stemp" sequence="87277">UNAVAILABLE</Temperature>
         </Samples>
         <Condition>
-          <Unavailable dataItemId="X_7" timestamp="2016-05-04T18:54:15.639890Z" name="Xtravel" sequence="87281" type="POSITION"/>
+          <Unavailable dataItemId="Mazak03-S_5" timestamp="2016-05-04T18:54:15.639890Z" name="Sload_cond" sequence="87278" type="LOAD"/>
+          <Unavailable dataItemId="Mazak03-S_6" timestamp="2016-05-04T18:54:15.639890Z" name="Stemp_cond" sequence="87279" type="TEMPERATURE"/>
         </Condition>
       </ComponentStream>
-      <ComponentStream component="Linear" name="Z" componentId="Z_10">
+      <ComponentStream component="Linear" name="X" componentId="Mazak03-X_1">
         <Samples>
-          <Position dataItemId="Z_11" timestamp="2016-05-04T18:49:19.659431Z" name="Zabs" sequence="87146" subType="ACTUAL">4.368546</Position>
-          <Position dataItemId="Z_11" timestamp="2016-05-04T18:49:23.789351Z" name="Zabs" sequence="87162" subType="ACTUAL">145.068798</Position>
-          <Position dataItemId="Z_11" timestamp="2016-05-04T18:54:15.639890Z" name="Zabs" sequence="87284" subType="ACTUAL">UNAVAILABLE</Position>
-          <Load dataItemId="Z_13" timestamp="2016-05-04T18:48:59.038239Z" name="Zload" sequence="87103">4</Load>
-          <Load dataItemId="Z_13" timestamp="2016-05-04T18:49:19.659431Z" name="Zload" sequence="87148">6</Load>
-          <Load dataItemId="Z_13" timestamp="2016-05-04T18:49:23.789351Z" name="Zload" sequence="87164">0</Load>
-          <Load dataItemId="Z_13" timestamp="2016-05-04T18:49:44.375814Z" name="Zload" sequence="87182">1</Load>
-          <Load dataItemId="Z_13" timestamp="2016-05-04T18:49:48.499554Z" name="Zload" sequence="87184">0</Load>
-          <Load dataItemId="Z_13" timestamp="2016-05-04T18:50:17.397516Z" name="Zload" sequence="87194">1</Load>
-          <Load dataItemId="Z_13" timestamp="2016-05-04T18:50:21.542872Z" name="Zload" sequence="87196">0</Load>
-          <Load dataItemId="Z_13" timestamp="2016-05-04T18:50:33.894606Z" name="Zload" sequence="87201">1</Load>
-          <Load dataItemId="Z_13" timestamp="2016-05-04T18:50:42.148393Z" name="Zload" sequence="87207">0</Load>
-          <Load dataItemId="Z_13" timestamp="2016-05-04T18:50:58.611862Z" name="Zload" sequence="87216">1</Load>
-          <Load dataItemId="Z_13" timestamp="2016-05-04T18:51:19.261281Z" name="Zload" sequence="87223">0</Load>
-          <Load dataItemId="Z_13" timestamp="2016-05-04T18:51:44.034800Z" name="Zload" sequence="87230">1</Load>
-          <Load dataItemId="Z_13" timestamp="2016-05-04T18:51:48.189647Z" name="Zload" sequence="87233">0</Load>
-          <Load dataItemId="Z_13" timestamp="2016-05-04T18:51:52.313355Z" name="Zload" sequence="87236">1</Load>
-          <Load dataItemId="Z_13" timestamp="2016-05-04T18:53:06.793126Z" name="Zload" sequence="87262">0</Load>
-          <Load dataItemId="Z_13" timestamp="2016-05-04T18:54:15.639890Z" name="Zload" sequence="87286">UNAVAILABLE</Load>
-          <AxisFeedrate dataItemId="Z_14" timestamp="2016-05-04T18:49:19.659431Z" name="Zfrt" sequence="87147">27.32617</AxisFeedrate>
-          <AxisFeedrate dataItemId="Z_14" timestamp="2016-05-04T18:49:23.789351Z" name="Zfrt" sequence="87163">0</AxisFeedrate>
-          <AxisFeedrate dataItemId="Z_14" timestamp="2016-05-04T18:54:15.639890Z" name="Zfrt" sequence="87287">UNAVAILABLE</AxisFeedrate>
+          <Position dataItemId="Mazak03-X_2" timestamp="2016-05-04T18:48:50.807803Z" name="Xabs" sequence="87082" subType="ACTUAL">40.552624</Position>
+          <Position dataItemId="Mazak03-X_2" timestamp="2016-05-04T18:48:54.912218Z" name="Xabs" sequence="87091" subType="ACTUAL">34.38652</Position>
+          <Position dataItemId="Mazak03-X_2" timestamp="2016-05-04T18:48:59.038239Z" name="Xabs" sequence="87100" subType="ACTUAL">31.338774</Position>
+          <Position dataItemId="Mazak03-X_2" timestamp="2016-05-04T18:49:03.164676Z" name="Xabs" sequence="87110" subType="ACTUAL">29.942536</Position>
+          <Position dataItemId="Mazak03-X_2" timestamp="2016-05-04T18:49:07.285695Z" name="Xabs" sequence="87117" subType="ACTUAL">28.43403</Position>
+          <Position dataItemId="Mazak03-X_2" timestamp="2016-05-04T18:49:11.406907Z" name="Xabs" sequence="87125" subType="ACTUAL">26.89479</Position>
+          <Position dataItemId="Mazak03-X_2" timestamp="2016-05-04T18:49:15.540099Z" name="Xabs" sequence="87134" subType="ACTUAL">28.452064</Position>
+          <Position dataItemId="Mazak03-X_2" timestamp="2016-05-04T18:49:19.659431Z" name="Xabs" sequence="87144" subType="ACTUAL">166.504112</Position>
+          <Position dataItemId="Mazak03-X_2" timestamp="2016-05-04T18:49:23.789351Z" name="Xabs" sequence="87159" subType="ACTUAL">423.914316</Position>
+          <Position dataItemId="Mazak03-X_2" timestamp="2016-05-04T18:53:06.793126Z" name="Xabs" sequence="87260" subType="ACTUAL">423.910506</Position>
+          <Position dataItemId="Mazak03-X_2" timestamp="2016-05-04T18:54:15.639890Z" name="Xabs" sequence="87280" subType="ACTUAL">UNAVAILABLE</Position>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:48:50.807803Z" name="Xload" sequence="87084">44</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:48:54.912218Z" name="Xload" sequence="87093">42</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:48:59.038239Z" name="Xload" sequence="87102">27</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:49:03.164676Z" name="Xload" sequence="87111">28</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:49:11.406907Z" name="Xload" sequence="87127">29</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:49:15.540099Z" name="Xload" sequence="87136">54</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:49:23.789351Z" name="Xload" sequence="87161">47</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:49:27.902243Z" name="Xload" sequence="87174">45</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:49:32.030542Z" name="Xload" sequence="87177">46</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:49:36.174343Z" name="Xload" sequence="87179">48</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:49:56.776135Z" name="Xload" sequence="87187">49</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:50:00.901741Z" name="Xload" sequence="87189">48</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:50:38.020494Z" name="Xload" sequence="87203">47</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:50:42.148393Z" name="Xload" sequence="87206">49</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:50:46.264073Z" name="Xload" sequence="87209">48</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:50:54.486923Z" name="Xload" sequence="87213">47</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:50:58.611862Z" name="Xload" sequence="87215">48</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:51:02.764910Z" name="Xload" sequence="87218">47</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:51:48.189647Z" name="Xload" sequence="87232">52</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:51:52.313355Z" name="Xload" sequence="87235">49</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:52:17.088350Z" name="Xload" sequence="87243">48</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:52:21.207201Z" name="Xload" sequence="87245">49</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:52:25.307199Z" name="Xload" sequence="87247">48</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:52:41.805754Z" name="Xload" sequence="87252">47</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:52:45.931375Z" name="Xload" sequence="87254">45</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:53:06.793126Z" name="Xload" sequence="87261">0</Load>
+          <Load dataItemId="Mazak03-X_4" timestamp="2016-05-04T18:54:15.639890Z" name="Xload" sequence="87282">UNAVAILABLE</Load>
+          <AxisFeedrate dataItemId="Mazak03-X_5" timestamp="2016-05-04T18:48:50.807803Z" name="Xfrt" sequence="87083">2.5654</AxisFeedrate>
+          <AxisFeedrate dataItemId="Mazak03-X_5" timestamp="2016-05-04T18:48:54.912218Z" name="Xfrt" sequence="87092">0.9059333</AxisFeedrate>
+          <AxisFeedrate dataItemId="Mazak03-X_5" timestamp="2016-05-04T18:48:59.038239Z" name="Xfrt" sequence="87101">0.1693333</AxisFeedrate>
+          <AxisFeedrate dataItemId="Mazak03-X_5" timestamp="2016-05-04T18:49:07.285695Z" name="Xfrt" sequence="87118">0.1820333</AxisFeedrate>
+          <AxisFeedrate dataItemId="Mazak03-X_5" timestamp="2016-05-04T18:49:11.406907Z" name="Xfrt" sequence="87126">0.1905</AxisFeedrate>
+          <AxisFeedrate dataItemId="Mazak03-X_5" timestamp="2016-05-04T18:49:15.540099Z" name="Xfrt" sequence="87135">15.94273</AxisFeedrate>
+          <AxisFeedrate dataItemId="Mazak03-X_5" timestamp="2016-05-04T18:49:19.659431Z" name="Xfrt" sequence="87145">24.98937</AxisFeedrate>
+          <AxisFeedrate dataItemId="Mazak03-X_5" timestamp="2016-05-04T18:49:23.789351Z" name="Xfrt" sequence="87160">0</AxisFeedrate>
+          <AxisFeedrate dataItemId="Mazak03-X_5" timestamp="2016-05-04T18:54:15.639890Z" name="Xfrt" sequence="87283">UNAVAILABLE</AxisFeedrate>
         </Samples>
         <Condition>
-          <Unavailable dataItemId="Z_12" timestamp="2016-05-04T18:54:15.639890Z" name="Ztravel" sequence="87285" type="POSITION"/>
+          <Unavailable dataItemId="Mazak03-X_3" timestamp="2016-05-04T18:54:15.639890Z" name="Xtravel" sequence="87281" type="POSITION"/>
         </Condition>
       </ComponentStream>
-      <ComponentStream component="Axes" name="base" componentId="base_3">
+      <ComponentStream component="Linear" name="Z" componentId="Mazak03-Z_1">
+        <Samples>
+          <Position dataItemId="Mazak03-Z_2" timestamp="2016-05-04T18:49:19.659431Z" name="Zabs" sequence="87146" subType="ACTUAL">4.368546</Position>
+          <Position dataItemId="Mazak03-Z_2" timestamp="2016-05-04T18:49:23.789351Z" name="Zabs" sequence="87162" subType="ACTUAL">145.068798</Position>
+          <Position dataItemId="Mazak03-Z_2" timestamp="2016-05-04T18:54:15.639890Z" name="Zabs" sequence="87284" subType="ACTUAL">UNAVAILABLE</Position>
+          <Load dataItemId="Mazak03-Z_4" timestamp="2016-05-04T18:48:59.038239Z" name="Zload" sequence="87103">4</Load>
+          <Load dataItemId="Mazak03-Z_4" timestamp="2016-05-04T18:49:19.659431Z" name="Zload" sequence="87148">6</Load>
+          <Load dataItemId="Mazak03-Z_4" timestamp="2016-05-04T18:49:23.789351Z" name="Zload" sequence="87164">0</Load>
+          <Load dataItemId="Mazak03-Z_4" timestamp="2016-05-04T18:49:44.375814Z" name="Zload" sequence="87182">1</Load>
+          <Load dataItemId="Mazak03-Z_4" timestamp="2016-05-04T18:49:48.499554Z" name="Zload" sequence="87184">0</Load>
+          <Load dataItemId="Mazak03-Z_4" timestamp="2016-05-04T18:50:17.397516Z" name="Zload" sequence="87194">1</Load>
+          <Load dataItemId="Mazak03-Z_4" timestamp="2016-05-04T18:50:21.542872Z" name="Zload" sequence="87196">0</Load>
+          <Load dataItemId="Mazak03-Z_4" timestamp="2016-05-04T18:50:33.894606Z" name="Zload" sequence="87201">1</Load>
+          <Load dataItemId="Mazak03-Z_4" timestamp="2016-05-04T18:50:42.148393Z" name="Zload" sequence="87207">0</Load>
+          <Load dataItemId="Mazak03-Z_4" timestamp="2016-05-04T18:50:58.611862Z" name="Zload" sequence="87216">1</Load>
+          <Load dataItemId="Mazak03-Z_4" timestamp="2016-05-04T18:51:19.261281Z" name="Zload" sequence="87223">0</Load>
+          <Load dataItemId="Mazak03-Z_4" timestamp="2016-05-04T18:51:44.034800Z" name="Zload" sequence="87230">1</Load>
+          <Load dataItemId="Mazak03-Z_4" timestamp="2016-05-04T18:51:48.189647Z" name="Zload" sequence="87233">0</Load>
+          <Load dataItemId="Mazak03-Z_4" timestamp="2016-05-04T18:51:52.313355Z" name="Zload" sequence="87236">1</Load>
+          <Load dataItemId="Mazak03-Z_4" timestamp="2016-05-04T18:53:06.793126Z" name="Zload" sequence="87262">0</Load>
+          <Load dataItemId="Mazak03-Z_4" timestamp="2016-05-04T18:54:15.639890Z" name="Zload" sequence="87286">UNAVAILABLE</Load>
+          <AxisFeedrate dataItemId="Mazak03-Z_5" timestamp="2016-05-04T18:49:19.659431Z" name="Zfrt" sequence="87147">27.32617</AxisFeedrate>
+          <AxisFeedrate dataItemId="Mazak03-Z_5" timestamp="2016-05-04T18:49:23.789351Z" name="Zfrt" sequence="87163">0</AxisFeedrate>
+          <AxisFeedrate dataItemId="Mazak03-Z_5" timestamp="2016-05-04T18:54:15.639890Z" name="Zfrt" sequence="87287">UNAVAILABLE</AxisFeedrate>
+        </Samples>
         <Condition>
-          <Unavailable dataItemId="base_4" timestamp="2016-05-04T18:54:15.639890Z" name="servo_cond" sequence="87288" type="ACTUATOR"/>
+          <Unavailable dataItemId="Mazak03-Z_3" timestamp="2016-05-04T18:54:15.639890Z" name="Ztravel" sequence="87285" type="POSITION"/>
         </Condition>
       </ComponentStream>
-      <ComponentStream component="Controller" name="controller" componentId="controller_32">
+      <ComponentStream component="Axes" name="base" componentId="Mazak03-base_1">
+        <Condition>
+          <Unavailable dataItemId="Mazak03-base_2" timestamp="2016-05-04T18:54:15.639890Z" name="servo_cond" sequence="87288" type="ACTUATOR"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Controller" name="controller" componentId="Mazak03-controller_1">
         <Events>
-          <PalletNum dataItemId="controller_36" timestamp="2016-05-04T18:54:15.639890Z" name="pallet_num" sequence="87292">UNAVAILABLE</PalletNum>
+          <x:PalletNumber dataItemId="Mazak03-controller_5" timestamp="2016-05-04T18:54:15.639890Z" name="pallet_num" sequence="87292">UNAVAILABLE</x:PalletNumber>
         </Events>
         <Condition>
-          <Unavailable dataItemId="controller_33" timestamp="2016-05-04T18:54:15.639890Z" name="comms_cond" sequence="87289" type="COMMUNICATIONS"/>
-          <Unavailable dataItemId="controller_34" timestamp="2016-05-04T18:54:15.639890Z" name="logic_cond" sequence="87290" type="LOGIC_PROGRAM"/>
-          <Warning dataItemId="controller_35" timestamp="2016-05-04T18:53:11.126908Z" name="system_cond" sequence="87265" nativeCode="442" type="SYSTEM">DATA RENEWAL NOT ALLOWED</Warning>
-          <Unavailable dataItemId="controller_35" timestamp="2016-05-04T18:54:15.639890Z" name="system_cond" sequence="87291" type="SYSTEM"/>
+          <Unavailable dataItemId="Mazak03-controller_2" timestamp="2016-05-04T18:54:15.639890Z" name="comms_cond" sequence="87289" type="COMMUNICATIONS"/>
+          <Unavailable dataItemId="Mazak03-controller_3" timestamp="2016-05-04T18:54:15.639890Z" name="logic_cond" sequence="87290" type="LOGIC_PROGRAM"/>
+          <Warning dataItemId="Mazak03-controller_4" timestamp="2016-05-04T18:53:11.126908Z" name="system_cond" sequence="87265" nativeCode="442" type="SYSTEM">DATA RENEWAL NOT ALLOWED</Warning>
+          <Unavailable dataItemId="Mazak03-controller_4" timestamp="2016-05-04T18:54:15.639890Z" name="system_cond" sequence="87291" type="SYSTEM"/>
         </Condition>
       </ComponentStream>
-      <ComponentStream component="Coolant" name="coolant" componentId="coolant_72">
+      <ComponentStream component="Coolant" name="coolant" componentId="Mazak03-coolant_1">
         <Condition>
-          <Unavailable dataItemId="coolant_73" timestamp="2016-05-04T18:54:15.639890Z" name="coolant_pres" sequence="87293" type="PRESSURE"/>
-          <Unavailable dataItemId="coolant_74" timestamp="2016-05-04T18:54:15.639890Z" name="coolant_temp" sequence="87294" type="TEMPERATURE"/>
-          <Unavailable dataItemId="coolant_75" timestamp="2016-05-04T18:54:15.639890Z" name="coolant_level" sequence="87295" type="LEVEL"/>
+          <Unavailable dataItemId="Mazak03-coolant_2" timestamp="2016-05-04T18:54:15.639890Z" name="coolant_pres" sequence="87293" type="PRESSURE"/>
+          <Unavailable dataItemId="Mazak03-coolant_3" timestamp="2016-05-04T18:54:15.639890Z" name="coolant_temp" sequence="87294" type="TEMPERATURE"/>
+          <Unavailable dataItemId="Mazak03-coolant_4" timestamp="2016-05-04T18:54:15.639890Z" name="coolant_level" sequence="87295" type="LEVEL"/>
         </Condition>
       </ComponentStream>
-      <ComponentStream component="Electric" name="electric" componentId="electric_67">
+      <ComponentStream component="Electric" name="electric" componentId="Mazak03-electric_1">
         <Events>
-          <PowerState dataItemId="electric_68" timestamp="2016-05-04T18:54:15.639890Z" name="power" sequence="87297">UNAVAILABLE</PowerState>
+          <PowerState dataItemId="Mazak03-electric_2" timestamp="2016-05-04T18:54:15.639890Z" name="power" sequence="87297">UNAVAILABLE</PowerState>
         </Events>
         <Condition>
-          <Unavailable dataItemId="electric_69" timestamp="2016-05-04T18:54:15.639890Z" name="electric_temp" sequence="87298" type="TEMPERATURE"/>
+          <Unavailable dataItemId="Mazak03-electric_3" timestamp="2016-05-04T18:54:15.639890Z" name="electric_temp" sequence="87298" type="TEMPERATURE"/>
         </Condition>
       </ComponentStream>
-      <ComponentStream component="Hydraulic" name="hydraulic" componentId="hydraulic_70">
+      <ComponentStream component="Hydraulic" name="hydraulic" componentId="Mazak03-hydraulic_1">
         <Condition>
-          <Unavailable dataItemId="hydraulic_71" timestamp="2016-05-04T18:54:15.639890Z" name="hydra_cond" sequence="87299" type="PRESSURE"/>
+          <Unavailable dataItemId="Mazak03-hydraulic_2" timestamp="2016-05-04T18:54:15.639890Z" name="hydra_cond" sequence="87299" type="PRESSURE"/>
         </Condition>
       </ComponentStream>
-      <ComponentStream component="Path" name="path" componentId="path_37">
+      <ComponentStream component="Path" name="path" componentId="Mazak03-path_1">
         <Samples>
-          <SpindleSpeed dataItemId="path_38" timestamp="2016-05-04T18:54:15.639890Z" name="Sovr" sequence="87300" subType="OVERRIDE">UNAVAILABLE</SpindleSpeed>
-          <PathFeedrate dataItemId="path_45" timestamp="2016-05-04T18:48:46.666979Z" name="Fact" sequence="87078" subType="ACTUAL">0.6942667</PathFeedrate>
-          <PathFeedrate dataItemId="path_45" timestamp="2016-05-04T18:48:50.807803Z" name="Fact" sequence="87087" subType="ACTUAL">0.7789333</PathFeedrate>
-          <PathFeedrate dataItemId="path_45" timestamp="2016-05-04T18:48:54.912218Z" name="Fact" sequence="87096" subType="ACTUAL">0.9228667</PathFeedrate>
-          <PathFeedrate dataItemId="path_45" timestamp="2016-05-04T18:48:59.038239Z" name="Fact" sequence="87106" subType="ACTUAL">0.1693333</PathFeedrate>
-          <PathFeedrate dataItemId="path_45" timestamp="2016-05-04T18:49:03.164676Z" name="Fact" sequence="87113" subType="ACTUAL">0.1735667</PathFeedrate>
-          <PathFeedrate dataItemId="path_45" timestamp="2016-05-04T18:49:07.285695Z" name="Fact" sequence="87121" subType="ACTUAL">0.1820333</PathFeedrate>
-          <PathFeedrate dataItemId="path_45" timestamp="2016-05-04T18:49:11.406907Z" name="Fact" sequence="87130" subType="ACTUAL">0.1947333</PathFeedrate>
-          <PathFeedrate dataItemId="path_45" timestamp="2016-05-04T18:49:15.540099Z" name="Fact" sequence="87140" subType="ACTUAL">14.8463</PathFeedrate>
-          <PathFeedrate dataItemId="path_45" timestamp="2016-05-04T18:49:19.659431Z" name="Fact" sequence="87153" subType="ACTUAL">37.0459</PathFeedrate>
-          <PathFeedrate dataItemId="path_45" timestamp="2016-05-04T18:49:23.789351Z" name="Fact" sequence="87169" subType="ACTUAL">0</PathFeedrate>
-          <PathFeedrate dataItemId="path_45" timestamp="2016-05-04T18:54:15.639890Z" name="Fact" sequence="87307" subType="ACTUAL">UNAVAILABLE</PathFeedrate>
-          <PathFeedrate dataItemId="path_46" timestamp="2016-05-04T18:49:23.789351Z" name="Frapidovr" sequence="87170" subType="OVERRIDE">25</PathFeedrate>
-          <PathFeedrate dataItemId="path_46" timestamp="2016-05-04T18:54:15.639890Z" name="Frapidovr" sequence="87308" subType="OVERRIDE">UNAVAILABLE</PathFeedrate>
-          <PathFeedrate dataItemId="path_47" timestamp="2016-05-04T18:54:15.639890Z" name="Fovr" sequence="87309" subType="OVERRIDE">UNAVAILABLE</PathFeedrate>
+          <AccumulatedTime dataItemId="Mazak03-path_14" timestamp="2016-05-04T18:48:46.666979Z" name="auto_time" sequence="87079" subType="x:AUTO">618103</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_14" timestamp="2016-05-04T18:48:50.807803Z" name="auto_time" sequence="87088" subType="x:AUTO">618107</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_14" timestamp="2016-05-04T18:48:54.912218Z" name="auto_time" sequence="87097" subType="x:AUTO">618111</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_14" timestamp="2016-05-04T18:48:59.038239Z" name="auto_time" sequence="87107" subType="x:AUTO">618115</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_14" timestamp="2016-05-04T18:49:03.164676Z" name="auto_time" sequence="87114" subType="x:AUTO">618119</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_14" timestamp="2016-05-04T18:49:07.285695Z" name="auto_time" sequence="87122" subType="x:AUTO">618123</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_14" timestamp="2016-05-04T18:49:11.406907Z" name="auto_time" sequence="87131" subType="x:AUTO">618128</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_14" timestamp="2016-05-04T18:49:15.540099Z" name="auto_time" sequence="87141" subType="x:AUTO">618132</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_14" timestamp="2016-05-04T18:49:19.659431Z" name="auto_time" sequence="87156" subType="x:AUTO">618136</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_14" timestamp="2016-05-04T18:49:23.789351Z" name="auto_time" sequence="87172" subType="x:AUTO">618138</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_14" timestamp="2016-05-04T18:54:15.639890Z" name="auto_time" sequence="87314" subType="x:AUTO">UNAVAILABLE</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:48:46.666979Z" name="total_time" sequence="87081" subType="x:TOTAL">6707998</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:48:50.807803Z" name="total_time" sequence="87090" subType="x:TOTAL">6708002</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:48:54.912218Z" name="total_time" sequence="87099" subType="x:TOTAL">6708006</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:48:59.038239Z" name="total_time" sequence="87109" subType="x:TOTAL">6708010</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:49:03.164676Z" name="total_time" sequence="87116" subType="x:TOTAL">6708014</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:49:07.285695Z" name="total_time" sequence="87124" subType="x:TOTAL">6708019</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:49:11.406907Z" name="total_time" sequence="87133" subType="x:TOTAL">6708023</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:49:15.540099Z" name="total_time" sequence="87143" subType="x:TOTAL">6708027</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:49:19.659431Z" name="total_time" sequence="87158" subType="x:TOTAL">6708031</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:49:23.789351Z" name="total_time" sequence="87173" subType="x:TOTAL">6708035</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:49:27.902243Z" name="total_time" sequence="87176" subType="x:TOTAL">6708039</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:49:32.030542Z" name="total_time" sequence="87178" subType="x:TOTAL">6708043</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:49:36.174343Z" name="total_time" sequence="87180" subType="x:TOTAL">6708047</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:49:40.272735Z" name="total_time" sequence="87181" subType="x:TOTAL">6708051</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:49:44.375814Z" name="total_time" sequence="87183" subType="x:TOTAL">6708056</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:49:48.499554Z" name="total_time" sequence="87185" subType="x:TOTAL">6708060</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:49:52.625414Z" name="total_time" sequence="87186" subType="x:TOTAL">6708064</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:49:56.776135Z" name="total_time" sequence="87188" subType="x:TOTAL">6708068</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:50:00.901741Z" name="total_time" sequence="87190" subType="x:TOTAL">6708072</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:50:05.023749Z" name="total_time" sequence="87191" subType="x:TOTAL">6708076</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:50:09.148401Z" name="total_time" sequence="87192" subType="x:TOTAL">6708080</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:50:13.274738Z" name="total_time" sequence="87193" subType="x:TOTAL">6708084</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:50:17.397516Z" name="total_time" sequence="87195" subType="x:TOTAL">6708088</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:50:21.542872Z" name="total_time" sequence="87197" subType="x:TOTAL">6708093</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:50:25.645964Z" name="total_time" sequence="87198" subType="x:TOTAL">6708097</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:50:29.771020Z" name="total_time" sequence="87200" subType="x:TOTAL">6708101</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:50:33.894606Z" name="total_time" sequence="87202" subType="x:TOTAL">6708105</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:50:38.020494Z" name="total_time" sequence="87205" subType="x:TOTAL">6708109</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:50:42.148393Z" name="total_time" sequence="87208" subType="x:TOTAL">6708113</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:50:46.264073Z" name="total_time" sequence="87210" subType="x:TOTAL">6708117</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:50:50.361916Z" name="total_time" sequence="87212" subType="x:TOTAL">6708122</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:50:54.486923Z" name="total_time" sequence="87214" subType="x:TOTAL">6708126</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:50:58.611862Z" name="total_time" sequence="87217" subType="x:TOTAL">6708130</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:51:02.764910Z" name="total_time" sequence="87219" subType="x:TOTAL">6708134</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:51:06.889153Z" name="total_time" sequence="87220" subType="x:TOTAL">6708138</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:51:11.008114Z" name="total_time" sequence="87221" subType="x:TOTAL">6708142</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:51:15.136459Z" name="total_time" sequence="87222" subType="x:TOTAL">6708146</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:51:19.261281Z" name="total_time" sequence="87224" subType="x:TOTAL">6708150</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:51:23.383461Z" name="total_time" sequence="87225" subType="x:TOTAL">6708154</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:51:27.534940Z" name="total_time" sequence="87226" subType="x:TOTAL">6708159</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:51:31.663949Z" name="total_time" sequence="87227" subType="x:TOTAL">6708163</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:51:35.787167Z" name="total_time" sequence="87228" subType="x:TOTAL">6708167</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:51:39.914275Z" name="total_time" sequence="87229" subType="x:TOTAL">6708171</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:51:44.034800Z" name="total_time" sequence="87231" subType="x:TOTAL">6708175</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:51:48.189647Z" name="total_time" sequence="87234" subType="x:TOTAL">6708179</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:51:52.313355Z" name="total_time" sequence="87237" subType="x:TOTAL">6708183</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:51:56.435460Z" name="total_time" sequence="87238" subType="x:TOTAL">6708188</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:52:00.565601Z" name="total_time" sequence="87239" subType="x:TOTAL">6708192</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:52:04.684731Z" name="total_time" sequence="87240" subType="x:TOTAL">6708196</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:52:08.810849Z" name="total_time" sequence="87241" subType="x:TOTAL">6708200</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:52:12.961696Z" name="total_time" sequence="87242" subType="x:TOTAL">6708204</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:52:17.088350Z" name="total_time" sequence="87244" subType="x:TOTAL">6708208</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:52:21.207201Z" name="total_time" sequence="87246" subType="x:TOTAL">6708212</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:52:25.307199Z" name="total_time" sequence="87248" subType="x:TOTAL">6708216</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:52:29.435771Z" name="total_time" sequence="87249" subType="x:TOTAL">6708221</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:52:33.567586Z" name="total_time" sequence="87250" subType="x:TOTAL">6708225</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:52:37.681565Z" name="total_time" sequence="87251" subType="x:TOTAL">6708229</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:52:41.805754Z" name="total_time" sequence="87253" subType="x:TOTAL">6708233</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:52:45.931375Z" name="total_time" sequence="87255" subType="x:TOTAL">6708237</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:52:50.123660Z" name="total_time" sequence="87256" subType="x:TOTAL">6708241</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:52:54.245176Z" name="total_time" sequence="87257" subType="x:TOTAL">6708245</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:52:58.553403Z" name="total_time" sequence="87258" subType="x:TOTAL">6708250</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:53:02.685957Z" name="total_time" sequence="87259" subType="x:TOTAL">6708254</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:53:06.793126Z" name="total_time" sequence="87264" subType="x:TOTAL">6708257</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_15" timestamp="2016-05-04T18:54:15.639890Z" name="total_time" sequence="87315" subType="x:TOTAL">UNAVAILABLE</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_16" timestamp="2016-05-04T18:48:46.666979Z" name="cut_time" sequence="87080" subType="x:CUT">393853</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_16" timestamp="2016-05-04T18:48:50.807803Z" name="cut_time" sequence="87089" subType="x:CUT">393857</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_16" timestamp="2016-05-04T18:48:54.912218Z" name="cut_time" sequence="87098" subType="x:CUT">393862</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_16" timestamp="2016-05-04T18:48:59.038239Z" name="cut_time" sequence="87108" subType="x:CUT">393866</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_16" timestamp="2016-05-04T18:49:03.164676Z" name="cut_time" sequence="87115" subType="x:CUT">393870</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_16" timestamp="2016-05-04T18:49:07.285695Z" name="cut_time" sequence="87123" subType="x:CUT">393874</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_16" timestamp="2016-05-04T18:49:11.406907Z" name="cut_time" sequence="87132" subType="x:CUT">393878</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_16" timestamp="2016-05-04T18:49:15.540099Z" name="cut_time" sequence="87142" subType="x:CUT">393882</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_16" timestamp="2016-05-04T18:49:19.659431Z" name="cut_time" sequence="87157" subType="x:CUT">393884</AccumulatedTime>
+          <AccumulatedTime dataItemId="Mazak03-path_16" timestamp="2016-05-04T18:54:15.639890Z" name="cut_time" sequence="87316" subType="x:CUT">UNAVAILABLE</AccumulatedTime>
+          <PathFeedrate dataItemId="Mazak03-path_7" timestamp="2016-05-04T18:48:46.666979Z" name="Fact" sequence="87078" subType="ACTUAL">0.6942667</PathFeedrate>
+          <PathFeedrate dataItemId="Mazak03-path_7" timestamp="2016-05-04T18:48:50.807803Z" name="Fact" sequence="87087" subType="ACTUAL">0.7789333</PathFeedrate>
+          <PathFeedrate dataItemId="Mazak03-path_7" timestamp="2016-05-04T18:48:54.912218Z" name="Fact" sequence="87096" subType="ACTUAL">0.9228667</PathFeedrate>
+          <PathFeedrate dataItemId="Mazak03-path_7" timestamp="2016-05-04T18:48:59.038239Z" name="Fact" sequence="87106" subType="ACTUAL">0.1693333</PathFeedrate>
+          <PathFeedrate dataItemId="Mazak03-path_7" timestamp="2016-05-04T18:49:03.164676Z" name="Fact" sequence="87113" subType="ACTUAL">0.1735667</PathFeedrate>
+          <PathFeedrate dataItemId="Mazak03-path_7" timestamp="2016-05-04T18:49:07.285695Z" name="Fact" sequence="87121" subType="ACTUAL">0.1820333</PathFeedrate>
+          <PathFeedrate dataItemId="Mazak03-path_7" timestamp="2016-05-04T18:49:11.406907Z" name="Fact" sequence="87130" subType="ACTUAL">0.1947333</PathFeedrate>
+          <PathFeedrate dataItemId="Mazak03-path_7" timestamp="2016-05-04T18:49:15.540099Z" name="Fact" sequence="87140" subType="ACTUAL">14.8463</PathFeedrate>
+          <PathFeedrate dataItemId="Mazak03-path_7" timestamp="2016-05-04T18:49:19.659431Z" name="Fact" sequence="87153" subType="ACTUAL">37.0459</PathFeedrate>
+          <PathFeedrate dataItemId="Mazak03-path_7" timestamp="2016-05-04T18:49:23.789351Z" name="Fact" sequence="87169" subType="ACTUAL">0</PathFeedrate>
+          <PathFeedrate dataItemId="Mazak03-path_7" timestamp="2016-05-04T18:54:15.639890Z" name="Fact" sequence="87307" subType="ACTUAL">UNAVAILABLE</PathFeedrate>
         </Samples>
         <Events>
-          <Program dataItemId="path_39" timestamp="2016-05-04T18:54:15.639890Z" name="program" sequence="87301">UNAVAILABLE</Program>
-          <Program dataItemId="path_40" timestamp="2016-05-04T18:54:15.639890Z" name="subprogram" sequence="87302" subType="x:SUB">UNAVAILABLE</Program>
-          <Line dataItemId="path_41" timestamp="2016-05-04T18:49:19.659431Z" name="line" sequence="87152">3</Line>
-          <Line dataItemId="path_41" timestamp="2016-05-04T18:49:23.789351Z" name="line" sequence="87168">0</Line>
-          <Line dataItemId="path_41" timestamp="2016-05-04T18:54:15.639890Z" name="line" sequence="87303">UNAVAILABLE</Line>
-          <Unit dataItemId="path_42" timestamp="2016-05-04T18:49:19.659431Z" name="unitNum" sequence="87155">6</Unit>
-          <Unit dataItemId="path_42" timestamp="2016-05-04T18:49:23.789351Z" name="unitNum" sequence="87171">0</Unit>
-          <Unit dataItemId="path_42" timestamp="2016-05-04T18:54:15.639890Z" name="unitNum" sequence="87304">UNAVAILABLE</Unit>
-          <SequenceNumber dataItemId="path_43" timestamp="2016-05-04T18:49:19.659431Z" name="sequenceNum" sequence="87154">0</SequenceNumber>
-          <SequenceNumber dataItemId="path_43" timestamp="2016-05-04T18:54:15.639890Z" name="sequenceNum" sequence="87305">UNAVAILABLE</SequenceNumber>
-          <PartCount dataItemId="path_44" timestamp="2016-05-04T18:54:15.639890Z" name="PartCountAct" sequence="87306">UNAVAILABLE</PartCount>
-          <Execution dataItemId="path_48" timestamp="2016-05-04T18:49:23.789351Z" name="execution" sequence="87167">READY</Execution>
-          <Execution dataItemId="path_48" timestamp="2016-05-04T18:53:06.793126Z" name="execution" sequence="87263">STOPPED</Execution>
-          <Execution dataItemId="path_48" timestamp="2016-05-04T18:54:15.639890Z" name="execution" sequence="87310">UNAVAILABLE</Execution>
-          <ControllerMode dataItemId="path_49" timestamp="2016-05-04T18:54:15.639890Z" name="mode" sequence="87311">UNAVAILABLE</ControllerMode>
-          <Comment dataItemId="path_50" timestamp="2016-05-04T18:54:15.639890Z" name="program_cmt" sequence="87312">UNAVAILABLE</Comment>
-          <Comment dataItemId="path_51" timestamp="2016-05-04T18:54:15.639890Z" name="subprogram_cmt" sequence="87313" subType="x:SUB">UNAVAILABLE</Comment>
-          <AccumulatedTime dataItemId="path_52" timestamp="2016-05-04T18:48:46.666979Z" name="auto_time" sequence="87079" subType="x:AUTO">618103</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_52" timestamp="2016-05-04T18:48:50.807803Z" name="auto_time" sequence="87088" subType="x:AUTO">618107</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_52" timestamp="2016-05-04T18:48:54.912218Z" name="auto_time" sequence="87097" subType="x:AUTO">618111</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_52" timestamp="2016-05-04T18:48:59.038239Z" name="auto_time" sequence="87107" subType="x:AUTO">618115</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_52" timestamp="2016-05-04T18:49:03.164676Z" name="auto_time" sequence="87114" subType="x:AUTO">618119</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_52" timestamp="2016-05-04T18:49:07.285695Z" name="auto_time" sequence="87122" subType="x:AUTO">618123</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_52" timestamp="2016-05-04T18:49:11.406907Z" name="auto_time" sequence="87131" subType="x:AUTO">618128</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_52" timestamp="2016-05-04T18:49:15.540099Z" name="auto_time" sequence="87141" subType="x:AUTO">618132</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_52" timestamp="2016-05-04T18:49:19.659431Z" name="auto_time" sequence="87156" subType="x:AUTO">618136</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_52" timestamp="2016-05-04T18:49:23.789351Z" name="auto_time" sequence="87172" subType="x:AUTO">618138</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_52" timestamp="2016-05-04T18:54:15.639890Z" name="auto_time" sequence="87314" subType="x:AUTO">UNAVAILABLE</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:48:46.666979Z" name="total_time" sequence="87081" subType="x:TOTAL">6707998</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:48:50.807803Z" name="total_time" sequence="87090" subType="x:TOTAL">6708002</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:48:54.912218Z" name="total_time" sequence="87099" subType="x:TOTAL">6708006</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:48:59.038239Z" name="total_time" sequence="87109" subType="x:TOTAL">6708010</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:49:03.164676Z" name="total_time" sequence="87116" subType="x:TOTAL">6708014</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:49:07.285695Z" name="total_time" sequence="87124" subType="x:TOTAL">6708019</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:49:11.406907Z" name="total_time" sequence="87133" subType="x:TOTAL">6708023</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:49:15.540099Z" name="total_time" sequence="87143" subType="x:TOTAL">6708027</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:49:19.659431Z" name="total_time" sequence="87158" subType="x:TOTAL">6708031</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:49:23.789351Z" name="total_time" sequence="87173" subType="x:TOTAL">6708035</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:49:27.902243Z" name="total_time" sequence="87176" subType="x:TOTAL">6708039</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:49:32.030542Z" name="total_time" sequence="87178" subType="x:TOTAL">6708043</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:49:36.174343Z" name="total_time" sequence="87180" subType="x:TOTAL">6708047</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:49:40.272735Z" name="total_time" sequence="87181" subType="x:TOTAL">6708051</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:49:44.375814Z" name="total_time" sequence="87183" subType="x:TOTAL">6708056</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:49:48.499554Z" name="total_time" sequence="87185" subType="x:TOTAL">6708060</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:49:52.625414Z" name="total_time" sequence="87186" subType="x:TOTAL">6708064</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:49:56.776135Z" name="total_time" sequence="87188" subType="x:TOTAL">6708068</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:50:00.901741Z" name="total_time" sequence="87190" subType="x:TOTAL">6708072</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:50:05.023749Z" name="total_time" sequence="87191" subType="x:TOTAL">6708076</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:50:09.148401Z" name="total_time" sequence="87192" subType="x:TOTAL">6708080</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:50:13.274738Z" name="total_time" sequence="87193" subType="x:TOTAL">6708084</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:50:17.397516Z" name="total_time" sequence="87195" subType="x:TOTAL">6708088</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:50:21.542872Z" name="total_time" sequence="87197" subType="x:TOTAL">6708093</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:50:25.645964Z" name="total_time" sequence="87198" subType="x:TOTAL">6708097</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:50:29.771020Z" name="total_time" sequence="87200" subType="x:TOTAL">6708101</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:50:33.894606Z" name="total_time" sequence="87202" subType="x:TOTAL">6708105</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:50:38.020494Z" name="total_time" sequence="87205" subType="x:TOTAL">6708109</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:50:42.148393Z" name="total_time" sequence="87208" subType="x:TOTAL">6708113</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:50:46.264073Z" name="total_time" sequence="87210" subType="x:TOTAL">6708117</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:50:50.361916Z" name="total_time" sequence="87212" subType="x:TOTAL">6708122</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:50:54.486923Z" name="total_time" sequence="87214" subType="x:TOTAL">6708126</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:50:58.611862Z" name="total_time" sequence="87217" subType="x:TOTAL">6708130</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:51:02.764910Z" name="total_time" sequence="87219" subType="x:TOTAL">6708134</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:51:06.889153Z" name="total_time" sequence="87220" subType="x:TOTAL">6708138</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:51:11.008114Z" name="total_time" sequence="87221" subType="x:TOTAL">6708142</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:51:15.136459Z" name="total_time" sequence="87222" subType="x:TOTAL">6708146</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:51:19.261281Z" name="total_time" sequence="87224" subType="x:TOTAL">6708150</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:51:23.383461Z" name="total_time" sequence="87225" subType="x:TOTAL">6708154</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:51:27.534940Z" name="total_time" sequence="87226" subType="x:TOTAL">6708159</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:51:31.663949Z" name="total_time" sequence="87227" subType="x:TOTAL">6708163</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:51:35.787167Z" name="total_time" sequence="87228" subType="x:TOTAL">6708167</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:51:39.914275Z" name="total_time" sequence="87229" subType="x:TOTAL">6708171</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:51:44.034800Z" name="total_time" sequence="87231" subType="x:TOTAL">6708175</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:51:48.189647Z" name="total_time" sequence="87234" subType="x:TOTAL">6708179</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:51:52.313355Z" name="total_time" sequence="87237" subType="x:TOTAL">6708183</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:51:56.435460Z" name="total_time" sequence="87238" subType="x:TOTAL">6708188</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:52:00.565601Z" name="total_time" sequence="87239" subType="x:TOTAL">6708192</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:52:04.684731Z" name="total_time" sequence="87240" subType="x:TOTAL">6708196</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:52:08.810849Z" name="total_time" sequence="87241" subType="x:TOTAL">6708200</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:52:12.961696Z" name="total_time" sequence="87242" subType="x:TOTAL">6708204</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:52:17.088350Z" name="total_time" sequence="87244" subType="x:TOTAL">6708208</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:52:21.207201Z" name="total_time" sequence="87246" subType="x:TOTAL">6708212</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:52:25.307199Z" name="total_time" sequence="87248" subType="x:TOTAL">6708216</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:52:29.435771Z" name="total_time" sequence="87249" subType="x:TOTAL">6708221</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:52:33.567586Z" name="total_time" sequence="87250" subType="x:TOTAL">6708225</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:52:37.681565Z" name="total_time" sequence="87251" subType="x:TOTAL">6708229</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:52:41.805754Z" name="total_time" sequence="87253" subType="x:TOTAL">6708233</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:52:45.931375Z" name="total_time" sequence="87255" subType="x:TOTAL">6708237</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:52:50.123660Z" name="total_time" sequence="87256" subType="x:TOTAL">6708241</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:52:54.245176Z" name="total_time" sequence="87257" subType="x:TOTAL">6708245</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:52:58.553403Z" name="total_time" sequence="87258" subType="x:TOTAL">6708250</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:53:02.685957Z" name="total_time" sequence="87259" subType="x:TOTAL">6708254</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:53:06.793126Z" name="total_time" sequence="87264" subType="x:TOTAL">6708257</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_53" timestamp="2016-05-04T18:54:15.639890Z" name="total_time" sequence="87315" subType="x:TOTAL">UNAVAILABLE</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_54" timestamp="2016-05-04T18:48:46.666979Z" name="cut_time" sequence="87080" subType="x:CUT">393853</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_54" timestamp="2016-05-04T18:48:50.807803Z" name="cut_time" sequence="87089" subType="x:CUT">393857</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_54" timestamp="2016-05-04T18:48:54.912218Z" name="cut_time" sequence="87098" subType="x:CUT">393862</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_54" timestamp="2016-05-04T18:48:59.038239Z" name="cut_time" sequence="87108" subType="x:CUT">393866</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_54" timestamp="2016-05-04T18:49:03.164676Z" name="cut_time" sequence="87115" subType="x:CUT">393870</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_54" timestamp="2016-05-04T18:49:07.285695Z" name="cut_time" sequence="87123" subType="x:CUT">393874</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_54" timestamp="2016-05-04T18:49:11.406907Z" name="cut_time" sequence="87132" subType="x:CUT">393878</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_54" timestamp="2016-05-04T18:49:15.540099Z" name="cut_time" sequence="87142" subType="x:CUT">393882</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_54" timestamp="2016-05-04T18:49:19.659431Z" name="cut_time" sequence="87157" subType="x:CUT">393884</AccumulatedTime>
-          <AccumulatedTime dataItemId="path_54" timestamp="2016-05-04T18:54:15.639890Z" name="cut_time" sequence="87316" subType="x:CUT">UNAVAILABLE</AccumulatedTime>
-          <ToolId dataItemId="path_63" timestamp="2016-05-04T18:54:15.639890Z" name="Tool_number" sequence="87319">UNAVAILABLE</ToolId>
-          <ToolGroup dataItemId="path_64" timestamp="2016-05-04T18:54:15.639890Z" name="Tool_group" sequence="87320">UNAVAILABLE</ToolGroup>
-          <ToolSuffix dataItemId="path_65" timestamp="2016-05-04T18:54:15.639890Z" name="Tool_suffix" sequence="87321">UNAVAILABLE</ToolSuffix>
+          <Execution dataItemId="Mazak03-path_10" timestamp="2016-05-04T18:49:23.789351Z" name="execution" sequence="87167">READY</Execution>
+          <Execution dataItemId="Mazak03-path_10" timestamp="2016-05-04T18:53:06.793126Z" name="execution" sequence="87263">STOPPED</Execution>
+          <Execution dataItemId="Mazak03-path_10" timestamp="2016-05-04T18:54:15.639890Z" name="execution" sequence="87310">UNAVAILABLE</Execution>
+          <ControllerMode dataItemId="Mazak03-path_11" timestamp="2016-05-04T18:54:15.639890Z" name="mode" sequence="87311">UNAVAILABLE</ControllerMode>
+          <ProgramComment dataItemId="Mazak03-path_12" timestamp="2016-05-04T18:54:15.639890Z" name="program_cmt" sequence="87312">UNAVAILABLE</ProgramComment>
+          <ProgramComment dataItemId="Mazak03-path_13" timestamp="2016-05-04T18:54:15.639890Z" name="subprogram_cmt" sequence="87313" subType="x:SUB_PROGRAM">UNAVAILABLE</ProgramComment>
+          <RotaryVelocityOverride dataItemId="Mazak03-path_2" timestamp="2016-05-04T18:54:15.639890Z" name="Sovr" sequence="87300">UNAVAILABLE</RotaryVelocityOverride>
+          <ToolAssetId dataItemId="Mazak03-path_25" timestamp="2016-05-04T18:54:15.639890Z" name="Tool_number" sequence="87319">UNAVAILABLE</ToolAssetId>
+          <x:ToolGroup dataItemId="Mazak03-path_26" timestamp="2016-05-04T18:54:15.639890Z" name="Tool_group" sequence="87320">UNAVAILABLE</x:ToolGroup>
+          <x:ToolSuffix dataItemId="Mazak03-path_27" timestamp="2016-05-04T18:54:15.639890Z" name="Tool_suffix" sequence="87321">UNAVAILABLE</x:ToolSuffix>
+          <Program dataItemId="Mazak03-path_3" timestamp="2016-05-04T18:54:15.639890Z" name="program" sequence="87301">UNAVAILABLE</Program>
+          <Program dataItemId="Mazak03-path_4" timestamp="2016-05-04T18:54:15.639890Z" name="subprogram" sequence="87302" subType="x:SUB">UNAVAILABLE</Program>
+          <Line dataItemId="Mazak03-path_5" timestamp="2016-05-04T18:49:19.659431Z" name="line" sequence="87152">3</Line>
+          <Line dataItemId="Mazak03-path_5" timestamp="2016-05-04T18:49:23.789351Z" name="line" sequence="87168">0</Line>
+          <Line dataItemId="Mazak03-path_5" timestamp="2016-05-04T18:54:15.639890Z" name="line" sequence="87303">UNAVAILABLE</Line>
+          <x:Unit dataItemId="Mazak03-path_6" timestamp="2016-05-04T18:49:19.659431Z" name="unitNum" sequence="87155">6</x:Unit>
+          <x:Unit dataItemId="Mazak03-path_6" timestamp="2016-05-04T18:49:23.789351Z" name="unitNum" sequence="87171">0</x:Unit>
+          <x:Unit dataItemId="Mazak03-path_6" timestamp="2016-05-04T18:54:15.639890Z" name="unitNum" sequence="87304">UNAVAILABLE</x:Unit>
+          <PathFeedrateOverride dataItemId="Mazak03-path_8" timestamp="2016-05-04T18:49:23.789351Z" name="Frapidovr" sequence="87170" subType="RAPID">25</PathFeedrateOverride>
+          <PathFeedrateOverride dataItemId="Mazak03-path_8" timestamp="2016-05-04T18:54:15.639890Z" name="Frapidovr" sequence="87308" subType="RAPID">UNAVAILABLE</PathFeedrateOverride>
+          <PathFeedrateOverride dataItemId="Mazak03-path_9" timestamp="2016-05-04T18:54:15.639890Z" name="Fovr" sequence="87309" subType="PROGRAMMED">UNAVAILABLE</PathFeedrateOverride>
+          <x:SequenceNumber dataItemId="Mazak03-path_95" timestamp="2016-05-04T18:49:19.659431Z" name="sequenceNum" sequence="87154">0</x:SequenceNumber>
+          <x:SequenceNumber dataItemId="Mazak03-path_95" timestamp="2016-05-04T18:54:15.639890Z" name="sequenceNum" sequence="87305">UNAVAILABLE</x:SequenceNumber>
+          <PartCount dataItemId="Mazak03-path_96" timestamp="2016-05-04T18:54:15.639890Z" name="PartCountAct" sequence="87306">UNAVAILABLE</PartCount>
         </Events>
         <Condition>
-          <Unavailable dataItemId="path_55" timestamp="2016-05-04T18:54:15.639890Z" name="motion_cond" sequence="87317" type="MOTION_PROGRAM"/>
-          <Unavailable dataItemId="path_59" timestamp="2016-05-04T18:54:15.639890Z" name="path_system" sequence="87318" type="SYSTEM"/>
+          <Unavailable dataItemId="Mazak03-path_17" timestamp="2016-05-04T18:54:15.639890Z" name="motion_cond" sequence="87317" type="MOTION_PROGRAM"/>
+          <Unavailable dataItemId="Mazak03-path_21" timestamp="2016-05-04T18:54:15.639890Z" name="path_system" sequence="87318" type="SYSTEM"/>
         </Condition>
       </ComponentStream>
-      <ComponentStream component="Pneumatic" name="pneumatic" componentId="pneumatic_76">
+      <ComponentStream component="Pneumatic" name="pneumatic" componentId="Mazak03-pneumatic_1">
         <Condition>
-          <Unavailable dataItemId="pneumatic_77" timestamp="2016-05-04T18:54:15.639890Z" name="pneu_cond" sequence="87322" type="PRESSURE"/>
+          <Unavailable dataItemId="Mazak03-pneumatic_2" timestamp="2016-05-04T18:54:15.639890Z" name="pneu_cond" sequence="87322" type="PRESSURE"/>
         </Condition>
       </ComponentStream>
     </DeviceStream>
