@@ -386,11 +386,22 @@
           </div>
         </div>
       </header>
+			<div id="mtconnect content" style="padding: 0px 30px 30px 30px;">
+			<p>
+			<!-- <img src="/SMS-Testbed_logo.png" width="600" height="129"></img> -->
+			<h1>Smart Manufacturing Systems Test Bed</h1>
+
+			<h2>Volatile Data Stream: Streams</h2>
+			</p>
+			<p>
+				You are viewing the Volatile Data Stream (VDS) component of the NIST Smart Manufacturing Systems (SMS) Test Bed located in Gaithersburg MD USA. Please visit the <a href="http://smstestbed.nist.gov" target="_blank">SMS Test Bed Information Page</a> for more information.
+			</p>
 				<p>
 					<xsl:apply-templates select="/m:MTConnectDevices/m:Header" />
 				</p>
 				<hr/>
 				<xsl:apply-templates select="/m:MTConnectDevices/m:Devices/m:Device" />
+			</div>
 		<div id="footer-wrapper">
 	<table border="0" align="right" width="225">
 		<tr>
