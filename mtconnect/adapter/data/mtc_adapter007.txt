@@ -1,3 +1,4 @@
+2017-02-01T05:00:00.000000Z|EStop_State|UNAVAILABLE|Spindle_Speed|UNAVAILABLE|Feed_Rate|UNAVAILABLE|Program_Name_Editing|UNAVAILABLE|Program_Name_Running|UNAVAILABLE|Block_Number|UNAVAILABLE|Part_Count|UNAVAILABLE|Spindle_Override|UNAVAILABLE|Feed_Override|UNAVAILABLE|Rapid_Override|UNAVAILABLE|Spindle_Time|UNAVAILABLE|Current_Tool|UNAVAILABLE|Program_Status|UNAVAILABLE|Program_Runtime_Seconds|UNAVAILABLE|avail|UNAVAILABLE
 2017-02-01T10:12:23.1718750Z|EStop_State|ARMED|Spindle_Speed|0|Feed_Rate|0|Program_Name_Editing|NONAME1.HWM|Program_Name_Running| |Block_Number|0|Part_Count|1909|Spindle_Override|100.000000|Feed_Override|101|Rapid_Override|50|Spindle_Time|7165959.99999998|Current_Tool|0|Program_Status|READY|Program_Runtime_Seconds|0|avail|AVAILABLE
 2017-02-01T10:12:26.7343750Z|Spindle_Override|107.000000
 2017-02-01T10:12:26.8593750Z|Spindle_Override|121.000000
