@@ -556,17 +556,17 @@
     <Device name="Hurco01" uuid="mtc_adapter005" id="Hurco01">
       <Description model="VMX24" manufacturer="Hurco">Hurco VMX 24 #1</Description>
       <DataItems>
-        <DataItem category="EVENT" id="Hurco01-dtop_1" name="avail" type="AVAILABILITY"/>
+        <DataItem category="EVENT" id="Hurco01-dtop_1" name="avail" type="AVAILABILITY" />
       </DataItems>
       <Components>
-        <Axes id="Hurco01-axes" name="axes">
+        <Axes id="Hurco01-axes" name="Axes">
           <Components>
             <Rotary id="Hurco01-C" name="C">
               <DataItems>
-                <DataItem category="SAMPLE" id="Hurco01-C_1" name="Srpm" nativeUnits="REVOLUTION/MINUTE" subType="ACTUAL" type="ROTARY_VELOCITY" units="REVOLUTION/MINUTE">
+                <DataItem category="SAMPLE" id="Hurco01-C_1" name="Spindle_Speed" nativeUnits="REVOLUTION/MINUTE" type="ROTARY_VELOCITY" subType="ACTUAL" units="REVOLUTION/MINUTE">
                   <Source>spindle_speed</Source>
                 </DataItem>
-                <DataItem category="EVENT" id="Hurco01-C_2" name="Sovr" nativeUnits="PERCENT" subType="PROGRAMMED" type="ROTARY_VELOCITY_OVERRIDE" units="PERCENT">
+                <DataItem category="EVENT" id="Hurco01-C_2" name="Spindle_Override" nativeUnits="PERCENT" type="ROTARY_VELOCITY_OVERRIDE" units="PERCENT">
                   <Source>SspeedOvr</Source>
                 </DataItem>
               </DataItems>
@@ -575,23 +575,22 @@
         </Axes>
         <Controller id="Hurco01-controller" name="controller">
           <DataItems>
-            <DataItem category="EVENT" id="Hurco01-controller_1" name="estop" type="EMERGENCY_STOP"/>
+            <DataItem category="EVENT" id="Hurco01-controller_1" name="EStop_State" type="EMERGENCY_STOP" />
           </DataItems>
           <Components>
-            <Path id="Hurco01-path" name="path">
+            <Path id="Hurco01-path" name="Path">
               <DataItems>
-                <DataItem category="EVENT" id="Hurco01-path_1" name="block_number" type="LINE_LABEL"/> <!-- Need to verify that this is correct -->
-                <DataItem category="EVENT" id="Hurco01-path_2" name="program_name_running" type="PROGRAM"/>
-                <DataItem category="EVENT" id="Hurco01-path_3" name="program_name_editing" type="PROGRAM_EDIT_NAME"/>
-                <DataItem category="EVENT" id="Hurco01-path_4" name="part_count" type="PART_COUNT"/>
-                <DataItem category="EVENT" id="Hurco01-path_5" name="execution" type="EXECUTION"/> <!-- Original name="Feed_Hold_State" -->
-                <!-- <DataItem category="EVENT" id="Hurco01-path_6" name="Program_Status" type="EXECUTION"/> Talk with Hurco about this -->
-                <DataItem category="EVENT" id="Hurco01-path_7" name="current_tool" type="TOOL_NUMBER"/>
-                <DataItem category="SAMPLE" id="Hurco01-path_8" name="program_runtime_seconds" type="ACCUMULATED_TIME" units="SECOND"/> <!-- Need to talk to Will about this -->
-                <DataItem category="SAMPLE" id="Hurco01-path_9" name="spindle_time" type="ACCUMULATED_TIME" units="SECOND"/> <!-- Need to talk to Will about this -->
-                <DataItem category="SAMPLE" id="Hurco01-path_10" name="feed_rate" nativeUnits="MILLIMETER/SECOND" type="PATH_FEEDRATE" subType="ACTUAL" units="MILLIMETER/SECOND"/> <!-- Actual? --> 
-                <DataItem category="EVENT" id="Hurco01-path_11" name="feed_override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" subType="PROGRAMMED" units="PERCENT"/>
-                <DataItem category="EVENT" id="Hurco01-path_12" name="rapid_override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" subType="RAPID" units="PERCENT"/>
+                <DataItem category="EVENT" id="Hurco01-path_1" name="Block_Number" type="LINE" />
+                <DataItem category="EVENT" id="Hurco01-path_2" name="Program_Name_Running" type="PROGRAM" />
+                <DataItem category="EVENT" id="Hurco01-path_3" name="Program_Name_Editing" type="PROGRAM_EDIT_NAME" />
+                <DataItem category="EVENT" id="Hurco01-path_4" name="Part_Count" type="PART_COUNT" subType="ALL" />
+                <DataItem category="EVENT" id="Hurco01-path_5" name="Program_Status" type="EXECUTION" />
+                <DataItem category="EVENT" id="Hurco01-path_6" name="Current_Tool" type="TOOL_NUMBER" />
+                <DataItem category="SAMPLE" id="Hurco01-path_7" name="Program_Runtime_Seconds" type="ACCUMULATED_TIME" units="SECOND" />
+                <DataItem category="SAMPLE" id="Hurco01-path_8" name="Spindle_Time" type="ACCUMULATED_TIME" units="SECOND" />
+                <DataItem category="SAMPLE" id="Hurco01-path_9" name="Feed_Rate" nativeUnits="MILLIMETER/SECOND" type="PATH_FEEDRATE" subType="ACTUAL" units="MILLIMETER/SECOND" />
+                <DataItem category="SAMPLE" id="Hurco01-path_10" name="Feed_Override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" units="PERCENT" />
+                <DataItem category="SAMPLE" id="Hurco01-path_11" name="Rapid_Override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" subType="RAPID" units="PERCENT" />
               </DataItems>
             </Path>
           </Components>
@@ -601,17 +600,17 @@
     <Device name="Hurco02" uuid="mtc_adapter006" id="Hurco02">
       <Description model="VMX24" manufacturer="Hurco">Hurco VMX 24 #2</Description>
       <DataItems>
-        <DataItem category="EVENT" id="Hurco02-dtop_1" name="avail" type="AVAILABILITY"/>
+        <DataItem category="EVENT" id="Hurco02-dtop_1" name="avail" type="AVAILABILITY" />
       </DataItems>
       <Components>
-        <Axes id="Hurco02-axes" name="axes">
+        <Axes id="Hurco02-axes" name="Axes">
           <Components>
             <Rotary id="Hurco02-C" name="C">
               <DataItems>
-                <DataItem category="SAMPLE" id="Hurco02-C_1" name="Srpm" nativeUnits="REVOLUTION/MINUTE" subType="ACTUAL" type="ROTARY_VELOCITY" units="REVOLUTION/MINUTE">
+                <DataItem category="SAMPLE" id="Hurco02-C_1" name="Spindle_Speed" nativeUnits="REVOLUTION/MINUTE" type="ROTARY_VELOCITY" subType="ACTUAL" units="REVOLUTION/MINUTE">
                   <Source>spindle_speed</Source>
                 </DataItem>
-                <DataItem category="EVENT" id="Hurco02-C_2" name="Sovr" nativeUnits="PERCENT" subType="PROGRAMMED" type="ROTARY_VELOCITY_OVERRIDE" units="PERCENT">
+                <DataItem category="EVENT" id="Hurco02-C_2" name="Spindle_Override" nativeUnits="PERCENT" type="ROTARY_VELOCITY_OVERRIDE" units="PERCENT">
                   <Source>SspeedOvr</Source>
                 </DataItem>
               </DataItems>
@@ -620,23 +619,22 @@
         </Axes>
         <Controller id="Hurco02-controller" name="controller">
           <DataItems>
-            <DataItem category="EVENT" id="Hurco02-controller_1" name="estop" type="EMERGENCY_STOP"/>
+            <DataItem category="EVENT" id="Hurco02-controller_1" name="EStop_State" type="EMERGENCY_STOP" />
           </DataItems>
           <Components>
-            <Path id="Hurco02-path" name="path">
+            <Path id="Hurco02-path" name="Path">
               <DataItems>
-                <DataItem category="EVENT" id="Hurco02-path_1" name="block_number" type="LINE_LABEL"/> <!-- Need to verify that this is correct -->
-                <DataItem category="EVENT" id="Hurco02-path_2" name="program_name_running" type="PROGRAM"/>
-                <DataItem category="EVENT" id="Hurco02-path_3" name="program_name_editing" type="PROGRAM_EDIT_NAME"/>
-                <DataItem category="EVENT" id="Hurco02-path_4" name="part_count" type="PART_COUNT"/>
-                <DataItem category="EVENT" id="Hurco02-path_5" name="execution" type="EXECUTION"/> <!-- Original name="Feed_Hold_State" -->
-                <!-- <DataItem category="EVENT" id="Hurco01-path_6" name="Program_Status" type="EXECUTION"/> Talk with Hurco about this -->
-                <DataItem category="EVENT" id="Hurco02-path_7" name="current_tool" type="TOOL_NUMBER"/>
-                <DataItem category="SAMPLE" id="Hurco02-path_8" name="program_runtime_seconds" type="ACCUMULATED_TIME" units="SECOND"/> <!-- Need to talk to Will about this -->
-                <DataItem category="SAMPLE" id="Hurco02-path_9" name="spindle_time" type="ACCUMULATED_TIME" units="SECOND"/> <!-- Need to talk to Will about this -->
-                <DataItem category="SAMPLE" id="Hurco02-path_10" name="feed_rate" nativeUnits="MILLIMETER/SECOND" type="PATH_FEEDRATE" subType="ACTUAL" units="MILLIMETER/SECOND"/> <!-- Actual? --> 
-                <DataItem category="EVENT" id="Hurco02-path_11" name="feed_override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" subType="PROGRAMMED" units="PERCENT"/>
-                <DataItem category="EVENT" id="Hurco02-path_12" name="rapid_override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" subType="RAPID" units="PERCENT"/>
+                <DataItem category="EVENT" id="Hurco02-path_1" name="Block_Number" type="LINE" />
+                <DataItem category="EVENT" id="Hurco02-path_2" name="Program_Name_Running" type="PROGRAM" />
+                <DataItem category="EVENT" id="Hurco02-path_3" name="Program_Name_Editing" type="PROGRAM_EDIT_NAME" />
+                <DataItem category="EVENT" id="Hurco02-path_4" name="Part_Count" type="PART_COUNT" subType="ALL" />
+                <DataItem category="EVENT" id="Hurco02-path_5" name="Program_Status" type="EXECUTION" />
+                <DataItem category="EVENT" id="Hurco02-path_6" name="Current_Tool" type="TOOL_NUMBER" />
+                <DataItem category="SAMPLE" id="Hurco02-path_7" name="Program_Runtime_Seconds" type="ACCUMULATED_TIME" units="SECOND" />
+                <DataItem category="SAMPLE" id="Hurco02-path_8" name="Spindle_Time" type="ACCUMULATED_TIME" units="SECOND" />
+                <DataItem category="SAMPLE" id="Hurco02-path_9" name="Feed_Rate" nativeUnits="MILLIMETER/SECOND" type="PATH_FEEDRATE" subType="ACTUAL" units="MILLIMETER/SECOND" />
+                <DataItem category="SAMPLE" id="Hurco02-path_10" name="Feed_Override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" units="PERCENT" />
+                <DataItem category="SAMPLE" id="Hurco02-path_11" name="Rapid_Override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" subType="RAPID" units="PERCENT" />
               </DataItems>
             </Path>
           </Components>
@@ -646,17 +644,17 @@
     <Device name="Hurco03" uuid="mtc_adapter007" id="Hurco03">
       <Description model="VMX24" manufacturer="Hurco">Hurco VMX 24 #3</Description>
       <DataItems>
-        <DataItem category="EVENT" id="Hurco03-dtop_1" name="avail" type="AVAILABILITY"/>
+        <DataItem category="EVENT" id="Hurco03-dtop_1" name="avail" type="AVAILABILITY" />
       </DataItems>
       <Components>
-        <Axes id="Hurco03-axes" name="axes">
+        <Axes id="Hurco03-axes" name="Axes">
           <Components>
             <Rotary id="Hurco03-C" name="C">
               <DataItems>
-                <DataItem category="SAMPLE" id="Hurco03-C_1" name="Srpm" nativeUnits="REVOLUTION/MINUTE" subType="ACTUAL" type="ROTARY_VELOCITY" units="REVOLUTION/MINUTE">
+                <DataItem category="SAMPLE" id="Hurco03-C_1" name="Spindle_Speed" nativeUnits="REVOLUTION/MINUTE" type="ROTARY_VELOCITY" subType="ACTUAL" units="REVOLUTION/MINUTE">
                   <Source>spindle_speed</Source>
                 </DataItem>
-                <DataItem category="EVENT" id="Hurco03-C_2" name="Sovr" nativeUnits="PERCENT" subType="PROGRAMMED" type="ROTARY_VELOCITY_OVERRIDE" units="PERCENT">
+                <DataItem category="EVENT" id="Hurco03-C_2" name="Spindle_Override" nativeUnits="PERCENT" type="ROTARY_VELOCITY_OVERRIDE" units="PERCENT">
                   <Source>SspeedOvr</Source>
                 </DataItem>
               </DataItems>
@@ -665,23 +663,22 @@
         </Axes>
         <Controller id="Hurco03-controller" name="controller">
           <DataItems>
-            <DataItem category="EVENT" id="Hurco03-controller_1" name="estop" type="EMERGENCY_STOP"/>
+            <DataItem category="EVENT" id="Hurco03-controller_1" name="EStop_State" type="EMERGENCY_STOP" />
           </DataItems>
           <Components>
-            <Path id="Hurco03-path" name="path">
+            <Path id="Hurco03-path" name="Path">
               <DataItems>
-                <DataItem category="EVENT" id="Hurco03-path_1" name="block_number" type="LINE_LABEL"/> <!-- Need to verify that this is correct -->
-                <DataItem category="EVENT" id="Hurco03-path_2" name="program_name_running" type="PROGRAM"/>
-                <DataItem category="EVENT" id="Hurco03-path_3" name="program_name_editing" type="PROGRAM_EDIT_NAME"/>
-                <DataItem category="EVENT" id="Hurco03-path_4" name="part_count" type="PART_COUNT"/>
-                <DataItem category="EVENT" id="Hurco03-path_5" name="execution" type="EXECUTION"/> <!-- Original name="Feed_Hold_State" -->
-                <!-- <DataItem category="EVENT" id="Hurco01-path_6" name="Program_Status" type="EXECUTION"/> Talk with Hurco about this -->
-                <DataItem category="EVENT" id="Hurco03-path_7" name="current_tool" type="TOOL_NUMBER"/>
-                <DataItem category="SAMPLE" id="Hurco03-path_8" name="program_runtime_seconds" type="ACCUMULATED_TIME" units="SECOND"/> <!-- Need to talk to Will about this -->
-                <DataItem category="SAMPLE" id="Hurco03-path_9" name="spindle_time" type="ACCUMULATED_TIME" units="SECOND"/> <!-- Need to talk to Will about this -->
-                <DataItem category="SAMPLE" id="Hurco03-path_10" name="feed_rate" nativeUnits="MILLIMETER/SECOND" type="PATH_FEEDRATE" subType="ACTUAL" units="MILLIMETER/SECOND"/> <!-- Actual? --> 
-                <DataItem category="EVENT" id="Hurco03-path_11" name="feed_override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" subType="PROGRAMMED" units="PERCENT"/>
-                <DataItem category="EVENT" id="Hurco03-path_12" name="rapid_override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" subType="RAPID" units="PERCENT"/>
+                <DataItem category="EVENT" id="Hurco03-path_1" name="Block_Number" type="LINE" />
+                <DataItem category="EVENT" id="Hurco03-path_2" name="Program_Name_Running" type="PROGRAM" />
+                <DataItem category="EVENT" id="Hurco03-path_3" name="Program_Name_Editing" type="PROGRAM_EDIT_NAME" />
+                <DataItem category="EVENT" id="Hurco03-path_4" name="Part_Count" type="PART_COUNT" subType="ALL" />
+                <DataItem category="EVENT" id="Hurco03-path_5" name="Program_Status" type="EXECUTION" />
+                <DataItem category="EVENT" id="Hurco03-path_6" name="Current_Tool" type="TOOL_NUMBER" />
+                <DataItem category="SAMPLE" id="Hurco03-path_7" name="Program_Runtime_Seconds" type="ACCUMULATED_TIME" units="SECOND" />
+                <DataItem category="SAMPLE" id="Hurco03-path_8" name="Spindle_Time" type="ACCUMULATED_TIME" units="SECOND" />
+                <DataItem category="SAMPLE" id="Hurco03-path_9" name="Feed_Rate" nativeUnits="MILLIMETER/SECOND" type="PATH_FEEDRATE" subType="ACTUAL" units="MILLIMETER/SECOND" />
+                <DataItem category="SAMPLE" id="Hurco03-path_10" name="Feed_Override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" units="PERCENT" />
+                <DataItem category="SAMPLE" id="Hurco03-path_11" name="Rapid_Override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" subType="RAPID" units="PERCENT" />
               </DataItems>
             </Path>
           </Components>
@@ -691,17 +688,17 @@
     <Device name="Hurco04" uuid="mtc_adapter008" id="Hurco04">
       <Description model="VMX24" manufacturer="Hurco">Hurco VMX 24 #4</Description>
       <DataItems>
-        <DataItem category="EVENT" id="Hurco04-dtop_1" name="avail" type="AVAILABILITY"/>
+        <DataItem category="EVENT" id="Hurco04-dtop_1" name="avail" type="AVAILABILITY" />
       </DataItems>
       <Components>
-        <Axes id="Hurco04-axes" name="axes">
+        <Axes id="Hurco04-axes" name="Axes">
           <Components>
             <Rotary id="Hurco04-C" name="C">
               <DataItems>
-                <DataItem category="SAMPLE" id="Hurco04-C_1" name="Srpm" nativeUnits="REVOLUTION/MINUTE" subType="ACTUAL" type="ROTARY_VELOCITY" units="REVOLUTION/MINUTE">
+                <DataItem category="SAMPLE" id="Hurco04-C_1" name="Spindle_Speed" nativeUnits="REVOLUTION/MINUTE" type="ROTARY_VELOCITY" subType="ACTUAL" units="REVOLUTION/MINUTE">
                   <Source>spindle_speed</Source>
                 </DataItem>
-                <DataItem category="EVENT" id="Hurco04-C_2" name="Sovr" nativeUnits="PERCENT" subType="PROGRAMMED" type="ROTARY_VELOCITY_OVERRIDE" units="PERCENT">
+                <DataItem category="EVENT" id="Hurco04-C_2" name="Spindle_Override" nativeUnits="PERCENT" type="ROTARY_VELOCITY_OVERRIDE" units="PERCENT">
                   <Source>SspeedOvr</Source>
                 </DataItem>
               </DataItems>
@@ -710,23 +707,22 @@
         </Axes>
         <Controller id="Hurco04-controller" name="controller">
           <DataItems>
-            <DataItem category="EVENT" id="Hurco04-controller_1" name="estop" type="EMERGENCY_STOP"/>
+            <DataItem category="EVENT" id="Hurco04-controller_1" name="EStop_State" type="EMERGENCY_STOP" />
           </DataItems>
           <Components>
-            <Path id="Hurco04-path" name="path">
+            <Path id="Hurco04-path" name="Path">
               <DataItems>
-                <DataItem category="EVENT" id="Hurco04-path_1" name="block_number" type="LINE_LABEL"/> <!-- Need to verify that this is correct -->
-                <DataItem category="EVENT" id="Hurco04-path_2" name="program_name_running" type="PROGRAM"/>
-                <DataItem category="EVENT" id="Hurco04-path_3" name="program_name_editing" type="PROGRAM_EDIT_NAME"/>
-                <DataItem category="EVENT" id="Hurco04-path_4" name="part_count" type="PART_COUNT"/>
-                <DataItem category="EVENT" id="Hurco04-path_5" name="execution" type="EXECUTION"/> <!-- Original name="Feed_Hold_State" -->
-                <!-- <DataItem category="EVENT" id="Hurco01-path_6" name="Program_Status" type="EXECUTION"/> Talk with Hurco about this -->
-                <DataItem category="EVENT" id="Hurco04-path_7" name="current_tool" type="TOOL_NUMBER"/>
-                <DataItem category="SAMPLE" id="Hurco04-path_8" name="program_runtime_seconds" type="ACCUMULATED_TIME" units="SECOND"/> <!-- Need to talk to Will about this -->
-                <DataItem category="SAMPLE" id="Hurco04-path_9" name="spindle_time" type="ACCUMULATED_TIME" units="SECOND"/> <!-- Need to talk to Will about this -->
-                <DataItem category="SAMPLE" id="Hurco04-path_10" name="feed_rate" nativeUnits="MILLIMETER/SECOND" type="PATH_FEEDRATE" subType="ACTUAL" units="MILLIMETER/SECOND"/> <!-- Actual? --> 
-                <DataItem category="EVENT" id="Hurco04-path_11" name="feed_override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" subType="PROGRAMMED" units="PERCENT"/>
-                <DataItem category="EVENT" id="Hurco04-path_12" name="rapid_override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" subType="RAPID" units="PERCENT"/>
+                <DataItem category="EVENT" id="Hurco04-path_1" name="Block_Number" type="LINE" />
+                <DataItem category="EVENT" id="Hurco04-path_2" name="Program_Name_Running" type="PROGRAM" />
+                <DataItem category="EVENT" id="Hurco04-path_3" name="Program_Name_Editing" type="PROGRAM_EDIT_NAME" />
+                <DataItem category="EVENT" id="Hurco04-path_4" name="Part_Count" type="PART_COUNT" subType="ALL" />
+                <DataItem category="EVENT" id="Hurco04-path_5" name="Program_Status" type="EXECUTION" />
+                <DataItem category="EVENT" id="Hurco04-path_6" name="Current_Tool" type="TOOL_NUMBER" />
+                <DataItem category="SAMPLE" id="Hurco04-path_7" name="Program_Runtime_Seconds" type="ACCUMULATED_TIME" units="SECOND" />
+                <DataItem category="SAMPLE" id="Hurco04-path_8" name="Spindle_Time" type="ACCUMULATED_TIME" units="SECOND" />
+                <DataItem category="SAMPLE" id="Hurco04-path_9" name="Feed_Rate" nativeUnits="MILLIMETER/SECOND" type="PATH_FEEDRATE" subType="ACTUAL" units="MILLIMETER/SECOND" />
+                <DataItem category="SAMPLE" id="Hurco04-path_10" name="Feed_Override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" units="PERCENT" />
+                <DataItem category="SAMPLE" id="Hurco04-path_11" name="Rapid_Override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" subType="RAPID" units="PERCENT" />
               </DataItems>
             </Path>
           </Components>
@@ -736,17 +732,17 @@
     <Device name="Hurco05" uuid="mtc_adapter009" id="Hurco05">
       <Description model="VMX42" manufacturer="Hurco">Hurco VMX 42</Description>
       <DataItems>
-        <DataItem category="EVENT" id="Hurco05-dtop_1" name="avail" type="AVAILABILITY"/>
+        <DataItem category="EVENT" id="Hurco05-dtop_1" name="avail" type="AVAILABILITY" />
       </DataItems>
       <Components>
-        <Axes id="Hurco05-axes" name="axes">
+        <Axes id="Hurco05-axes" name="Axes">
           <Components>
             <Rotary id="Hurco05-C" name="C">
               <DataItems>
-                <DataItem category="SAMPLE" id="Hurco05-C_1" name="Srpm" nativeUnits="REVOLUTION/MINUTE" subType="ACTUAL" type="ROTARY_VELOCITY" units="REVOLUTION/MINUTE">
+                <DataItem category="SAMPLE" id="Hurco05-C_1" name="Spindle_Speed" nativeUnits="REVOLUTION/MINUTE" type="ROTARY_VELOCITY" subType="ACTUAL" units="REVOLUTION/MINUTE">
                   <Source>spindle_speed</Source>
                 </DataItem>
-                <DataItem category="EVENT" id="Hurco05-C_2" name="Sovr" nativeUnits="PERCENT" subType="PROGRAMMED" type="ROTARY_VELOCITY_OVERRIDE" units="PERCENT">
+                <DataItem category="EVENT" id="Hurco05-C_2" name="Spindle_Override" nativeUnits="PERCENT" type="ROTARY_VELOCITY_OVERRIDE" units="PERCENT">
                   <Source>SspeedOvr</Source>
                 </DataItem>
               </DataItems>
@@ -755,23 +751,22 @@
         </Axes>
         <Controller id="Hurco05-controller" name="controller">
           <DataItems>
-            <DataItem category="EVENT" id="Hurco05-controller_1" name="estop" type="EMERGENCY_STOP"/>
+            <DataItem category="EVENT" id="Hurco05-controller_1" name="EStop_State" type="EMERGENCY_STOP" />
           </DataItems>
           <Components>
-            <Path id="Hurco05-path" name="path">
+            <Path id="Hurco05-path" name="Path">
               <DataItems>
-                <DataItem category="EVENT" id="Hurco05-path_1" name="block_number" type="LINE_LABEL"/> <!-- Need to verify that this is correct -->
-                <DataItem category="EVENT" id="Hurco05-path_2" name="program_name_running" type="PROGRAM"/>
-                <DataItem category="EVENT" id="Hurco05-path_3" name="program_name_editing" type="PROGRAM_EDIT_NAME"/>
-                <DataItem category="EVENT" id="Hurco05-path_4" name="part_count" type="PART_COUNT"/>
-                <DataItem category="EVENT" id="Hurco05-path_5" name="execution" type="EXECUTION"/> <!-- Original name="Feed_Hold_State" -->
-                <!-- <DataItem category="EVENT" id="Hurco01-path_6" name="Program_Status" type="EXECUTION"/> Talk with Hurco about this -->
-                <DataItem category="EVENT" id="Hurco05-path_7" name="current_tool" type="TOOL_NUMBER"/>
-                <DataItem category="SAMPLE" id="Hurco05-path_8" name="program_runtime_seconds" type="ACCUMULATED_TIME" units="SECOND"/> <!-- Need to talk to Will about this -->
-                <DataItem category="SAMPLE" id="Hurco05-path_9" name="spindle_time" type="ACCUMULATED_TIME" units="SECOND"/> <!-- Need to talk to Will about this -->
-                <DataItem category="SAMPLE" id="Hurco05-path_10" name="feed_rate" nativeUnits="MILLIMETER/SECOND" type="PATH_FEEDRATE" subType="ACTUAL" units="MILLIMETER/SECOND"/> <!-- Actual? --> 
-                <DataItem category="EVENT" id="Hurco05-path_11" name="feed_override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" subType="PROGRAMMED" units="PERCENT"/>
-                <DataItem category="EVENT" id="Hurco05-path_12" name="rapid_override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" subType="RAPID" units="PERCENT"/>
+                <DataItem category="EVENT" id="Hurco05-path_1" name="Block_Number" type="LINE" />
+                <DataItem category="EVENT" id="Hurco05-path_2" name="Program_Name_Running" type="PROGRAM" />
+                <DataItem category="EVENT" id="Hurco05-path_3" name="Program_Name_Editing" type="PROGRAM_EDIT_NAME" />
+                <DataItem category="EVENT" id="Hurco05-path_4" name="Part_Count" type="PART_COUNT" subType="ALL" />
+                <DataItem category="EVENT" id="Hurco05-path_5" name="Program_Status" type="EXECUTION" />
+                <DataItem category="EVENT" id="Hurco05-path_6" name="Current_Tool" type="TOOL_NUMBER" />
+                <DataItem category="SAMPLE" id="Hurco05-path_7" name="Program_Runtime_Seconds" type="ACCUMULATED_TIME" units="SECOND" />
+                <DataItem category="SAMPLE" id="Hurco05-path_8" name="Spindle_Time" type="ACCUMULATED_TIME" units="SECOND" />
+                <DataItem category="SAMPLE" id="Hurco05-path_9" name="Feed_Rate" nativeUnits="MILLIMETER/SECOND" type="PATH_FEEDRATE" subType="ACTUAL" units="MILLIMETER/SECOND" />
+                <DataItem category="SAMPLE" id="Hurco05-path_10" name="Feed_Override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" units="PERCENT" />
+                <DataItem category="SAMPLE" id="Hurco05-path_11" name="Rapid_Override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" subType="RAPID" units="PERCENT" />
               </DataItems>
             </Path>
           </Components>
@@ -781,17 +776,17 @@
     <Device name="Hurco06" uuid="mtc_adapter010" id="Hurco06">
       <Description model="VMX24" manufacturer="Hurco">Hurco VMX 64</Description>
       <DataItems>
-        <DataItem category="EVENT" id="Hurco06-dtop_1" name="avail" type="AVAILABILITY"/>
+        <DataItem category="EVENT" id="Hurco06-dtop_1" name="avail" type="AVAILABILITY" />
       </DataItems>
       <Components>
-        <Axes id="Hurco06-axes" name="axes">
+        <Axes id="Hurco06-axes" name="Axes">
           <Components>
             <Rotary id="Hurco06-C" name="C">
               <DataItems>
-                <DataItem category="SAMPLE" id="Hurco06-C_1" name="Srpm" nativeUnits="REVOLUTION/MINUTE" subType="ACTUAL" type="ROTARY_VELOCITY" units="REVOLUTION/MINUTE">
+                <DataItem category="SAMPLE" id="Hurco06-C_1" name="Spindle_Speed" nativeUnits="REVOLUTION/MINUTE" type="ROTARY_VELOCITY" subType="ACTUAL" units="REVOLUTION/MINUTE">
                   <Source>spindle_speed</Source>
                 </DataItem>
-                <DataItem category="EVENT" id="Hurco06-C_2" name="Sovr" nativeUnits="PERCENT" subType="PROGRAMMED" type="ROTARY_VELOCITY_OVERRIDE" units="PERCENT">
+                <DataItem category="EVENT" id="Hurco06-C_2" name="Spindle_Override" nativeUnits="PERCENT" type="ROTARY_VELOCITY_OVERRIDE" units="PERCENT">
                   <Source>SspeedOvr</Source>
                 </DataItem>
               </DataItems>
@@ -800,23 +795,22 @@
         </Axes>
         <Controller id="Hurco06-controller" name="controller">
           <DataItems>
-            <DataItem category="EVENT" id="Hurco06-controller_1" name="estop" type="EMERGENCY_STOP"/>
+            <DataItem category="EVENT" id="Hurco06-controller_1" name="EStop_State" type="EMERGENCY_STOP" />
           </DataItems>
           <Components>
-            <Path id="Hurco06-path" name="path">
+            <Path id="Hurco06-path" name="Path">
               <DataItems>
-                <DataItem category="EVENT" id="Hurco06-path_1" name="block_number" type="LINE_LABEL"/> <!-- Need to verify that this is correct -->
-                <DataItem category="EVENT" id="Hurco06-path_2" name="program_name_running" type="PROGRAM"/>
-                <DataItem category="EVENT" id="Hurco06-path_3" name="program_name_editing" type="PROGRAM_EDIT_NAME"/>
-                <DataItem category="EVENT" id="Hurco06-path_4" name="part_count" type="PART_COUNT"/>
-                <DataItem category="EVENT" id="Hurco06-path_5" name="execution" type="EXECUTION"/> <!-- Original name="Feed_Hold_State" -->
-                <!-- <DataItem category="EVENT" id="Hurco01-path_6" name="Program_Status" type="EXECUTION"/> Talk with Hurco about this -->
-                <DataItem category="EVENT" id="Hurco06-path_7" name="current_tool" type="TOOL_NUMBER"/>
-                <DataItem category="SAMPLE" id="Hurco06-path_8" name="program_runtime_seconds" type="ACCUMULATED_TIME" units="SECOND"/> <!-- Need to talk to Will about this -->
-                <DataItem category="SAMPLE" id="Hurco06-path_9" name="spindle_time" type="ACCUMULATED_TIME" units="SECOND"/> <!-- Need to talk to Will about this -->
-                <DataItem category="SAMPLE" id="Hurco06-path_10" name="feed_rate" nativeUnits="MILLIMETER/SECOND" type="PATH_FEEDRATE" subType="ACTUAL" units="MILLIMETER/SECOND"/> <!-- Actual? --> 
-                <DataItem category="EVENT" id="Hurco06-path_11" name="feed_override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" subType="PROGRAMMED" units="PERCENT"/>
-                <DataItem category="EVENT" id="Hurco06-path_12" name="rapid_override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" subType="RAPID" units="PERCENT"/>
+                <DataItem category="EVENT" id="Hurco06-path_1" name="Block_Number" type="LINE" />
+                <DataItem category="EVENT" id="Hurco06-path_2" name="Program_Name_Running" type="PROGRAM" />
+                <DataItem category="EVENT" id="Hurco06-path_3" name="Program_Name_Editing" type="PROGRAM_EDIT_NAME" />
+                <DataItem category="EVENT" id="Hurco06-path_4" name="Part_Count" type="PART_COUNT" subType="ALL" />
+                <DataItem category="EVENT" id="Hurco06-path_5" name="Program_Status" type="EXECUTION" />
+                <DataItem category="EVENT" id="Hurco06-path_6" name="Current_Tool" type="TOOL_NUMBER" />
+                <DataItem category="SAMPLE" id="Hurco06-path_7" name="Program_Runtime_Seconds" type="ACCUMULATED_TIME" units="SECOND" />
+                <DataItem category="SAMPLE" id="Hurco06-path_8" name="Spindle_Time" type="ACCUMULATED_TIME" units="SECOND" />
+                <DataItem category="SAMPLE" id="Hurco06-path_9" name="Feed_Rate" nativeUnits="MILLIMETER/SECOND" type="PATH_FEEDRATE" subType="ACTUAL" units="MILLIMETER/SECOND" />
+                <DataItem category="SAMPLE" id="Hurco06-path_10" name="Feed_Override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" units="PERCENT" />
+                <DataItem category="SAMPLE" id="Hurco06-path_11" name="Rapid_Override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" subType="RAPID" units="PERCENT" />
               </DataItems>
             </Path>
           </Components>
