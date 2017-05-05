@@ -247,7 +247,7 @@
                   </DataItem>
                 </DataItems>
               </Rotary>
-              <Rotary id="Mazak01-C" name="C">
+              <Rotary id="Mazak02-C" name="C">
                 <DataItems>
                   <DataItem category="SAMPLE" id="Mazak02-C_1" name="Cload" nativeUnits="PERCENT" type="LOAD" units="PERCENT"/>
                   <DataItem category="SAMPLE" id="Mazak02-C_2" name="Sload" nativeUnits="PERCENT" type="LOAD" units="PERCENT"/>
@@ -268,7 +268,7 @@
                   <DataItem category="CONDITION" id="Mazak02-C_11" name="Stemp_cond" type="TEMPERATURE"/>
                 </DataItems>
               </Rotary>
-              <Rotary id="Mazak01-C2" name="C">
+              <Rotary id="Mazak02-C2" name="C">
                 <DataItems>
                   <DataItem category="SAMPLE" id="Mazak02-C2_1" name="C2load" nativeUnits="PERCENT" type="LOAD" units="PERCENT"/>
                   <DataItem category="SAMPLE" id="Mazak02-C2_2" name="S2load" nativeUnits="PERCENT" type="LOAD" units="PERCENT"/>
