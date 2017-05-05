@@ -69,7 +69,7 @@
 	  <Device id="Mazak01" name="Mazak01" uuid="mtc_adapter002">
         <Description model='Integrex' manufacturer='Mazak' serialNumber="M7303290458">Mazak Integrex 100-IV</Description>
         <DataItems>
-          <DataItem category="EVENT" id="Mazak01-dtop_1" type="AVAILABILITY"/>
+          <DataItem category="EVENT" id="Mazak01-dtop_1" name="avail" type="AVAILABILITY"/>
         </DataItems>
         <Components>
           <Axes id="Mazak01-base" name="base">
