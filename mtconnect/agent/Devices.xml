@@ -107,12 +107,6 @@
                   <DataItem category="SAMPLE" id="Mazak01-B_2" name="Bfrt" nativeUnits="DEGREE/MINUTE" type="ANGULAR_VELOCITY" units="DEGREE/SECOND"/>
                   <DataItem category="CONDITION" id="Mazak01-B_3" name="Btravel" type="ANGLE"/>
                   <DataItem category="SAMPLE" id="Mazak01-B_4" name="Bdeg" nativeUnits="DEGREE" subType="ACTUAL" type="ANGLE" units="DEGREE"/>
-                  <DataItem category="EVENT" id="Mazak01-B_5" name="Brfunc" type="ROTARY_MODE">
-                    <Constraints>
-                      <Value>CONTOUR</Value>
-                      <Value>INDEX</Value>
-                    </Constraints>
-                  </DataItem>
                 </DataItems>
               </Rotary>
               <Rotary id="Mazak01-C" name="C">
@@ -125,57 +119,17 @@
                   <DataItem category="EVENT" id="Mazak01-C_6" name="Sovr" nativeUnits="PERCENT" type="ROTARY_VELOCITY_OVERRIDE" units="PERCENT"/>
                   <DataItem category="SAMPLE" id="Mazak01-C_7" name="Stemp" nativeUnits="CELSIUS" type="TEMPERATURE" units="CELSIUS"/>
                   <DataItem category="SAMPLE" id="Mazak01-C_8" name="Cdeg" nativeUnits="DEGREE" subType="ACTUAL" type="ANGLE" units="DEGREE"/>
-                  <DataItem category="EVENT" id="Mazak01-C_9" name="crfunc" type="ROTARY_MODE">
-                    <Constraints>
-                    <Value>CONTOUR</Value>
-                      <Value>SPINDLE</Value>
-                      <Value>INDEX</Value>
-                    </Constraints>
-                  </DataItem>
-                  <DataItem category="CONDITION" id="Mazak01-C_10" name="Sload_cond" type="LOAD"/>
-                  <DataItem category="CONDITION" id="Mazak01-C_11" name="Stemp_cond" type="TEMPERATURE"/>
+                  <DataItem category="CONDITION" id="Mazak01-C_9" name="Sload_cond" type="LOAD"/>
+                  <DataItem category="CONDITION" id="Mazak01-C_10" name="Stemp_cond" type="TEMPERATURE"/>
                 </DataItems>
               </Rotary>
               <Rotary id="Mazak01-C2" name="C">
                 <DataItems>
-                  <DataItem category="SAMPLE" id="Mazak01-C2_1" name="C2load" nativeUnits="PERCENT" type="LOAD" units="PERCENT"/>
-                  <DataItem category="SAMPLE" id="Mazak01-C2_2" name="S2load" nativeUnits="PERCENT" type="LOAD" units="PERCENT"/>
-                  <DataItem category="CONDITION" id="Mazak01-C2_3" name="C2travel" type="ANGLE"/>
-                  <DataItem category="SAMPLE" id="Mazak01-C2_4" name="C2frt" nativeUnits="DEGREE/MINUTE" type="ANGULAR_VELOCITY" units="DEGREE/SECOND"/>
-                  <DataItem category="SAMPLE" id="Mazak01-C2_5" name="S2rpm" nativeUnits="REVOLUTION/MINUTE" subType="ACTUAL" type="ROTARY_VELOCITY" units="REVOLUTION/MINUTE"/>
-                  <DataItem category="EVENT" id="Mazak01-C2_6" name="S2ovr" nativeUnits="PERCENT" type="ROTARY_VELOCITY_OVERRIDE" units="PERCENT"/>
-                  <DataItem category="SAMPLE" id="Mazak01-C2_7" name="S2temp" nativeUnits="CELSIUS" type="TEMPERATURE" units="CELSIUS"/>
-                  <DataItem category="SAMPLE" id="Mazak01-C2_8" name="C2deg" nativeUnits="DEGREE" subType="ACTUAL" type="ANGLE" units="DEGREE"/>
-                  <DataItem category="EVENT" id="Mazak01-C2_9" name="c2rfunc" type="ROTARY_MODE">
-                    <Constraints>
-                    <Value>CONTOUR</Value>
-                      <Value>SPINDLE</Value>
-                      <Value>INDEX</Value>
-                    </Constraints>
-                  </DataItem>
-                  <DataItem category="CONDITION" id="Mazak01-C2_10" name="S2load_cond" type="LOAD"/>
-                  <DataItem category="CONDITION" id="Mazak01-C2_11" name="S2temp_cond" type="TEMPERATURE"/>
-                </DataItems>
-              </Rotary>
-              <Rotary id="Mazak01-C3" name="C">
-                <DataItems>
-                  <DataItem category="SAMPLE" id="Mazak01-C3_1" name="C3load" nativeUnits="PERCENT" type="LOAD" units="PERCENT"/>
-                  <DataItem category="SAMPLE" id="Mazak01-C3_2" name="S3load" nativeUnits="PERCENT" type="LOAD" units="PERCENT"/>
-                  <DataItem category="CONDITION" id="Mazak01-C3_3" name="C3travel" type="ANGLE"/>
-                  <DataItem category="SAMPLE" id="Mazak01-C3_4" name="S3frt" nativeUnits="DEGREE/MINUTE" type="ANGULAR_VELOCITY" units="DEGREE/SECOND"/>
-                  <DataItem category="SAMPLE" id="Mazak01-C3_5" name="S3rpm" nativeUnits="REVOLUTION/MINUTE" subType="ACTUAL" type="ROTARY_VELOCITY" units="REVOLUTION/MINUTE"/>
-                  <DataItem category="EVENT" id="Mazak01-C3_6" name="S3ovr" nativeUnits="PERCENT" type="ROTARY_VELOCITY_OVERRIDE" units="PERCENT"/>
-                  <DataItem category="SAMPLE" id="Mazak01-C3_7" name="S3temp" nativeUnits="CELSIUS" type="TEMPERATURE" units="CELSIUS"/>
-                  <DataItem category="SAMPLE" id="Mazak01-C3_8" name="C3deg" nativeUnits="DEGREE" subType="ACTUAL" type="ANGLE" units="DEGREE"/>
-                  <DataItem category="EVENT" id="Mazak01-C3_9" name="c3rfunc" type="ROTARY_MODE">
-                    <Constraints>
-                    <Value>CONTOUR</Value>
-                      <Value>SPINDLE</Value>
-                      <Value>INDEX</Value>
-                    </Constraints>
-                  </DataItem>
-                  <DataItem category="CONDITION" id="Mazak01-C3_10" name="S3load_cond" type="LOAD"/>
-                  <DataItem category="CONDITION" id="Mazak01-C3_11" name="S3temp_cond" type="TEMPERATURE"/>
+                  <DataItem category="SAMPLE" id="Mazak01-C2_1" name="S2load" nativeUnits="PERCENT" type="LOAD" units="PERCENT"/>
+                  <DataItem category="SAMPLE" id="Mazak01-C2_2" name="S2rpm" nativeUnits="REVOLUTION/MINUTE" subType="ACTUAL" type="ROTARY_VELOCITY" units="REVOLUTION/MINUTE"/>
+                  <DataItem category="SAMPLE" id="Mazak01-C2_3" name="S2temp" nativeUnits="CELSIUS" type="TEMPERATURE" units="CELSIUS"/>
+                  <DataItem category="CONDITION" id="Mazak01-C2_4" name="S2load_cond" type="LOAD"/>
+                  <DataItem category="CONDITION" id="Mazak01-C2_5" name="S2temp_cond" type="TEMPERATURE"/>
                 </DataItems>
               </Rotary>
             </Components>
