@@ -57,10 +57,9 @@
                   <DataItem type='EXECUTION' category='EVENT' id='GFAgie01-path_basic_2' name='execution'/>
                   <DataItem type='CONTROLLER_MODE' category='EVENT' id='GFAgie01-path_basic_3' name='mode'/>
                   <DataItem type='PROGRAM' category='EVENT' id='GFAgie01-path_basic_4' name='program'/>
-                  <DataItem type='TOOL_ID' category='EVENT' id='GFAgie01-path_basic_5' name='CuttingTool'/>
-                  <DataItem type='LINE' category='EVENT' id='GFAgie01-path_basic_6' name='line'/>
-                  <DataItem type='x:MOTION' category='EVENT' id='GFAgie01-path_basic_7' name='move'/>
-                  <DataItem type='PATH_POSITION' category='SAMPLE' id='GFAgie01-path_basic_8' name='path_pos' units='MILLIMETER_3D' nativeUnits='MILLIMETER_3D'/>
+                  <DataItem type='LINE' category='EVENT' id='GFAgie01-path_basic_5' name='line'/>
+                  <DataItem type='x:MOTION' category='EVENT' id='GFAgie01-path_basic_6' name='move'/>
+                  <DataItem type='PATH_POSITION' category='SAMPLE' id='GFAgie01-path_basic_7' name='path_pos' units='MILLIMETER_3D' nativeUnits='MILLIMETER_3D'/>
                 </DataItems>
               </Path>
             </Components>
@@ -774,7 +773,7 @@
       </Components>
     </Device>
     <Device name="Hurco06" uuid="mtc_adapter010" id="Hurco06">
-      <Description model="VMX24" manufacturer="Hurco">Hurco VMX 64</Description>
+      <Description model="VMX64" manufacturer="Hurco">Hurco VMX 64</Description>
       <DataItems>
         <DataItem category="EVENT" id="Hurco06-dtop_1" name="avail" type="AVAILABILITY" />
       </DataItems>
