@@ -504,50 +504,6 @@
         </Controller>
       </Components>
     </Device>
-    <Device name="Hurco05" uuid="mtc_adapter009" id="Hurco05">
-      <Description model="VMX42" manufacturer="Hurco">Hurco VMX 42</Description>
-      <DataItems>
-        <DataItem category="EVENT" id="Hurco05-dtop_1" name="avail" type="AVAILABILITY" />
-      </DataItems>
-      <Components>
-        <Axes id="Hurco05-axes" name="Axes">
-          <Components>
-            <Rotary id="Hurco05-C" name="C">
-              <DataItems>
-                <DataItem category="SAMPLE" id="Hurco05-C_1" name="Spindle_Speed" nativeUnits="REVOLUTION/MINUTE" type="ROTARY_VELOCITY" subType="ACTUAL" units="REVOLUTION/MINUTE">
-                  <Source>spindle_speed</Source>
-                </DataItem>
-                <DataItem category="EVENT" id="Hurco05-C_2" name="Spindle_Override" nativeUnits="PERCENT" type="ROTARY_VELOCITY_OVERRIDE" units="PERCENT">
-                  <Source>SspeedOvr</Source>
-                </DataItem>
-              </DataItems>
-            </Rotary>
-          </Components>
-        </Axes>
-        <Controller id="Hurco05-controller" name="controller">
-          <DataItems>
-            <DataItem category="EVENT" id="Hurco05-controller_1" name="EStop_State" type="EMERGENCY_STOP" />
-          </DataItems>
-          <Components>
-            <Path id="Hurco05-path" name="Path">
-              <DataItems>
-                <DataItem category="EVENT" id="Hurco05-path_1" name="Block_Number" type="LINE" />
-                <DataItem category="EVENT" id="Hurco05-path_2" name="Program_Name_Running" type="PROGRAM" />
-                <DataItem category="EVENT" id="Hurco05-path_3" name="Program_Name_Editing" type="PROGRAM_EDIT_NAME" />
-                <DataItem category="EVENT" id="Hurco05-path_4" name="Part_Count" type="PART_COUNT" subType="ALL" />
-                <DataItem category="EVENT" id="Hurco05-path_5" name="Program_Status" type="EXECUTION" />
-                <DataItem category="EVENT" id="Hurco05-path_6" name="Current_Tool" type="TOOL_NUMBER" />
-                <DataItem category="SAMPLE" id="Hurco05-path_7" name="Program_Runtime_Seconds" type="ACCUMULATED_TIME" units="SECOND" />
-                <DataItem category="SAMPLE" id="Hurco05-path_8" name="Spindle_Time" type="ACCUMULATED_TIME" units="SECOND" />
-                <DataItem category="SAMPLE" id="Hurco05-path_9" name="Feed_Rate" nativeUnits="MILLIMETER/SECOND" type="PATH_FEEDRATE" subType="ACTUAL" units="MILLIMETER/SECOND" />
-                <DataItem category="SAMPLE" id="Hurco05-path_10" name="Feed_Override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" units="PERCENT" />
-                <DataItem category="SAMPLE" id="Hurco05-path_11" name="Rapid_Override" nativeUnits="PERCENT" type="PATH_FEEDRATE_OVERRIDE" subType="RAPID" units="PERCENT" />
-              </DataItems>
-            </Path>
-          </Components>
-        </Controller>
-      </Components>
-    </Device>
     <Device name="Hurco06" uuid="mtc_adapter010" id="Hurco06">
       <Description model="VMX64" manufacturer="Hurco">Hurco VMX 64</Description>
       <DataItems>
