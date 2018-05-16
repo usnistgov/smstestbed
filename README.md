@@ -27,6 +27,12 @@ For general questions, please send an email to smstestbed@nist.gov.
 
 ## Disclaimers
 
+### Use of NIST Information
+
+These World Wide Web pages are provided as a public service by the National Institute of Standards and Technology (NIST). With the exception of material marked as copyrighted, information presented on these pages is considered public information and may be distributed or copied. Use of appropriate byline/photo/image credits is requested.
+
+###  Software Disclaimer
+
 The use of any software or hardware by the project does not imply a recommendation or endorsement by NIST.
 
 The use of the project results in other software or hardware products does not imply a recommendation or endorsement by NIST of those products.
