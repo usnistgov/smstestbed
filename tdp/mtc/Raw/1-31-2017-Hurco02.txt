@@ -1,0 +1,97 @@
+2017-02-01T03:13:55.0468750Z|EStop_State|ARMED|Spindle_Speed|0|Feed_Rate|0|Progr
+am_Name_Editing|NONAME1.HWM|Program_Name_Running| |Block_Number|0|Part_Count|190
+9|Spindle_Override|101|Feed_Override|101|Rapid_Override|50|Spindle_Time|7165959.
+99999998|Current_Tool|0|Program_Status|READY|Program_Runtime_Seconds|0|avail|AVA
+ILABLE
+      2017-02-01T03:13:59.0156250Z|Spindle_Override|106.000000
+                                                              2017-02-01T03:13:5
+9.0468750Z|Spindle_Override|157.000000
+                                      2017-02-01T03:13:59.1562500Z|Spindle_Overr
+ide|176.000000
+              2017-02-01T03:13:59.2656250Z|Spindle_Override|184.000000
+                                                                      2017-02-01
+T03:13:59.3750000Z|Spindle_Override|175.000000
+                                              2017-02-01T03:13:59.5000000Z|Spind
+le_Override|154.000000
+                      2017-02-01T03:13:59.6093750Z|Spindle_Override|137.000000
+                                                                              20
+17-02-01T03:13:59.7343750Z|Spindle_Override|104.000000
+                                                      2017-02-01T03:13:59.859375
+0Z|Spindle_Override|96.000000
+                             2017-02-01T03:13:59.9687500Z|Spindle_Override|95.00
+0000
+    2017-02-01T03:14:00.0937500Z|Spindle_Override|107.000000
+                                                            2017-02-01T03:14:00.
+2187500Z|Spindle_Override|124.000000
+                                    2017-02-01T03:14:00.3437500Z|Spindle_Overrid
+e|148.000000
+            2017-02-01T03:14:00.4687500Z|Spindle_Override|139.000000
+                                                                    2017-02-01T0
+3:14:00.5781250Z|Spindle_Override|125.000000
+                                            2017-02-01T03:14:00.6875000Z|Spindle
+_Override|122.000000
+                    2017-02-01T03:14:00.8125000Z|Spindle_Override|120.000000
+                                                                            2017
+-02-01T03:14:01.7656250Z|Spindle_Override|119.000000
+                                                    2017-02-01T03:14:01.9062500Z
+|Spindle_Override|118.000000
+                            2017-02-01T03:14:02.0000000Z|Spindle_Override|117.00
+0000
+    2017-02-01T03:14:02.1718750Z|Spindle_Override|114.000000
+                                                            2017-02-01T03:14:02.
+8281250Z|Spindle_Override|112.000000
+                                    2017-02-01T03:14:02.9375000Z|Spindle_Overrid
+e|106.000000
+            2017-02-01T03:14:03.0625000Z|Spindle_Override|105.000000
+                                                                    2017-02-01T0
+3:14:03.1718750Z|Spindle_Override|104.000000
+                                            2017-02-01T03:14:03.2968750Z|Spindle
+_Override|103.000000
+                    2017-02-01T03:14:05.2812500Z|Spindle_Override|104.000000
+                                                                            2017
+-02-01T03:14:05.5156250Z|Spindle_Override|105.000000
+                                                    2017-02-01T03:14:05.9218750Z
+|Spindle_Override|104.000000
+                            2017-02-01T09:50:03.8437500Z|Spindle_Override|105.00
+0000
+    2017-02-01T10:10:40.8750000Z|Spindle_Override|104.000000
+                                                            2017-02-01T10:10:41.
+4687500Z|Spindle_Override|105.000000
+                                    2017-02-01T10:11:17.9687500Z|Spindle_Overrid
+e|106.000000
+            2017-02-01T10:11:18.1250000Z|Spindle_Override|127.000000
+                                                                    2017-02-01T1
+0:11:18.2187500Z|Spindle_Override|130.000000
+                                            2017-02-01T10:11:18.3437500Z|Spindle
+_Override|132.000000
+                    2017-02-01T10:11:18.9687500Z|Spindle_Override|131.000000
+                                                                            2017
+-02-01T10:11:19.1093750Z|Spindle_Override|126.000000
+                                                    2017-02-01T10:11:19.2187500Z
+|Spindle_Override|122.000000
+                            2017-02-01T10:11:19.3437500Z|Spindle_Override|118.00
+0000
+    2017-02-01T10:11:19.4687500Z|Spindle_Override|112.000000
+                                                            2017-02-01T10:11:19.
+5937500Z|Spindle_Override|109.000000
+                                    2017-02-01T10:11:19.7187500Z|Spindle_Overrid
+e|107.000000
+            2017-02-01T10:11:19.8437500Z|Spindle_Override|106.000000
+                                                                    2017-02-01T1
+0:11:20.1093750Z|Spindle_Override|103.000000
+                                            2017-02-01T10:11:20.2187500Z|Spindle
+_Override|100.000000
+                    2017-02-01T10:11:20.3437500Z|Spindle_Override|98.000000
+                                                                           2017-
+02-01T10:11:20.4687500Z|Spindle_Override|97.000000
+                                                  2017-02-01T10:11:20.5937500Z|S
+pindle_Override|96.000000
+                         2017-02-01T10:11:21.8750000Z|Spindle_Override|97.000000
+2017-02-01T10:11:21.9687500Z|Spindle_Override|98.000000
+                                                       2017-02-01T10:11:22.10937
+50Z|Spindle_Override|99.000000
+                              2017-02-01T10:11:24.5937500Z|Spindle_Override|100.
+000000
+      2017-02-01T10:11:26.3437500Z|Spindle_Override|99.000000
+                                                             2017-02-01T10:11:26
+.8437500Z|Spindle_Override|100.000000
