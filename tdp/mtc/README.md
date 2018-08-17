@@ -1,32 +1,32 @@
-# Digital Thread Box Data
-Design, Manufacturing, and Quality data for the box assembly for collaborating around Mfg.io
+# Design, Manufacturing, and Inspection Data for a Box Assembly
+To better understand and address the challenges faced in linking all stages of a manufacturing and design process, an investigative fabrication process was designed and enacted as part of a collaboration between [National Institute of Standards and Technology (NIST)](https://www.nist.gov) and [Manufacturing Technology Centre (MTC)](http://www.the-mtc.org/). This collaboration sought to test selected open standards' ability to integrate the product-lifecycle stages of engineering design, manufacturing, and quality assurance through a thorough implementation of a small scale model-based enterprise (MBE). This dataset was generated as a result of the collaboration.
 
 ## Directory Structure
-+ CAD 
++ [CAD](./Cad) 
   - Digital Product Definition, in accordance to ASME Y14.41-2012, created using SolidWorks 2016
-+ Clean 
++ [Clean](./Clean) 
   - Raw output from machine tool adapters with white-space and recording errors cleaned
   - Pipe delimited in accordance with the MTConnect standard v1.3
-+ FAIR 
++ [FAIR](./FAIR) 
   - First article inspection reporting data in QIF 2.1 format
-  - Data conforms to QIF XSD (http://qifstandards.org/latest-qif-version/)
+  - Data conforms to [QIF XSD](http://qifstandards.org/latest-qif-version/)
   - Each file contains data for 20 instances of the same part
   - NIST / Mitutoyo completed inspection
-+ MTConnect 
++ [MTConnect](./MTConnect) 
   - XML-formatted data of the machine tool output data in accordance with the MTConnect standard v1.3
-  - Data conforms to MTConnect v1.3 schemas (https://github.com/mtconnect/schema)
-+ NC Code 
+  - Data conforms to [MTConnect v1.3 schemas](https://github.com/mtconnect/schema)
++ [NC Code](./NCcode) 
   - Machining programs for operations steps for each part in accordance with ISO 6983 (G-code)
-+ PartData 
++ [PartData](./PartData) 
   - Combined "Split" data organized into data blocks by part instance
-+ QIF-IncomingInspection 
++ [QIF-IncomingInspection](./QIF-IncomingInspection)
   - Receiving / incoming inspection reporting data in QIF 2.1 format
-  - Data conforms to QIF XSD (http://qifstandards.org/latest-qif-version/)
+  - Data conforms to [QIF XSD](http://qifstandards.org/latest-qif-version/)
   - Each file contains data for 20 instances of the same part
   - The MTC in the UK completed inspection
-+ Raw 
++ [Raw](./Raw) 
   - Raw output from machine tool adapters as recorded on the given date and machine
-+ Split 
++ [Split](./Split) 
   - Parsed "Clean" data split into data blocks by operation for each part instance
 
 ## Contacts
