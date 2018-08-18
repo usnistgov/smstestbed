@@ -2,7 +2,7 @@
 To better understand and address the challenges faced in linking all stages of a manufacturing and design process, an investigative fabrication process was designed and enacted as part of a collaboration between [National Institute of Standards and Technology (NIST)](https://www.nist.gov) and [Manufacturing Technology Centre (MTC)](http://www.the-mtc.org/). This collaboration sought to test selected open standards' ability to integrate the product-lifecycle stages of engineering design, manufacturing, and quality assurance through a thorough implementation of a small scale model-based enterprise (MBE). This dataset was generated as a result of the collaboration.
 
 ## Directory Structure
-+ [CAD](./Cad) 
++ [CAD](./CAD) 
   - Digital Product Definition, in accordance to ASME Y14.41-2012, created using SolidWorks 2016
 + [Clean](./Clean) 
   - Raw output from machine tool adapters with white-space and recording errors cleaned
