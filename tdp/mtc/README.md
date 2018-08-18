@@ -15,7 +15,7 @@ To better understand and address the challenges faced in linking all stages of a
 + [MTConnect](./MTConnect) 
   - XML-formatted data of the machine tool output data in accordance with the MTConnect standard v1.3
   - Data conforms to [MTConnect v1.3 schemas](https://github.com/mtconnect/schema)
-+ [NC Code](./NCcode) 
++ [NC-Code](./NC-Code) 
   - Machining programs for operations steps for each part in accordance with ISO 6983 (G-code)
 + [PartData](./PartData) 
   - Combined "Split" data organized into data blocks by part instance
