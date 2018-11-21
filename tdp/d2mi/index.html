@@ -14,86 +14,45 @@
 
 <div id="main" class="nist-main">
 	<div id="tdp content" style="padding: 0px 30px 30px 30px;">
-	<h1><a
-	id="Design_Manufacturing_and_Inspection_Data_for_a_Box_Assembly_0"></a>Design,
-	Manufacturing, and Inspection Data for a Box Assembly</h1>
+	<h1>Design to Manufacturing and Inspection (D2MI)</h1>
 
-	<p>To better understand and address the challenges faced in linking all stages
-	of a manufacturing and design process, an investigative fabrication process was
-	designed and enacted as part of a collaboration between <a
-	href="https://www.nist.gov">National Institute of Standards and Technology
-	(NIST)</a> and <a href="http://www.the-mtc.org/">Manufacturing Technology
-	Centre (MTC)</a>. This collaboration sought to test selected open standards'
-	ability to integrate the product-lifecycle stages of engineering design,
-	manufacturing, and quality assurance through a thorough implementation of a
-	small scale model-based enterprise (MBE). This dataset was generated as a
-	result of the collaboration.</p>
+	<p>The Design to Manufacturing and Inspection project demonstrated the feasibility and development of CAD-to-CAM and CAD-to-CMM tools taking advantage of the 3D data interoperability groundwork previously established with CAD-to-CAD. The enhanced interoperability will significantly reduce and/or eliminate recreation of part design data, reduced cycle time and cost, reduce risk of downstream error introduction, increased part yield, and generate higher quality products.</p>
+	
+	<p>The information flow utilized a CAD model with PMI that is translated from native CAD to STEP. The STEP file was then imported by the CAM system, which uses a Parasolid kernel. In addition, the STEP file was ported to an extended version of ACIS that was imported by the CMM system, which uses an ACIS kernel.</p>
 
-	<p><a href="https://s3.amazonaws.com/nist-el/mfg_digitalthread/nist-mtc-assembly_tdp.zip">Download the full package @ 237 MB.</a></p>
+	<p>The project tasks included:</p>
+	<ul>
+		<li>Proof-of-Concept demonstrator for transport of PMI downstream to manufacturing and First Article Inspections (FAI)</li>
+		<li>Identify Metrics for analyzing As-Is and To-Be processes</li>
+		<li>Collect Metrics results for As-Is and To-Be processes and determine Return On Investment (ROI)</li>
+		<li>Identify technology and data gaps and roadblocks in the To-Be process</li>
+	</ul>
+	
+	<p>The project was a collaborative effort by a team comprised of <a href="https://www.nist.gov/">National Institute of Standards and Technology (NIST)</a>, <a href="https://www.iti-global.com/">ITI TranscenData</a>, <a href="https://www.rockwellcollins.com/">Rockwell Collins</a>, <a href="https://www.coretechnologie.com/">CT CoreTechnologie</a>, <a href="http://www.accr-llc.com/">Advanced Collaboration Consulting Resources LLC</a>, <a href="https://www.mastercam.com/en-us/">CNC Software Inc.</a>, <a href="https://www.mitutoyo.com/">Mitutoyo America Corp.</a>, and <a href="http://www.geater.com/">Geater Machining and Manufacturing, Co.</a></p>
+
+	<p><a href="https://s3.amazonaws.com/nist-el/mfg_digitalthread/NIST-D2MI-Models.zip">Download the full package @ 5.20 MB.</a></p>
 
 	<h2><a id="Directory_Structure_3"></a>Directory Structure</h2>
 	<ul>
 	  <li><a href="./CAD">CAD</a> 
 		<ul>
-		  <li>Digital Product Definition, in accordance to ASME Y14.41-2012,
-			created using SolidWorks 2016</li>
+		  <li>Digital Product Definition Data generated using Siemens NX</li>
 		</ul>
 	  </li>
-	  <li><a href="./Clean">Clean</a> 
+	  <li><a href="./CAM">CAM</a> 
 		<ul>
-		  <li>Raw output from machine tool adapters with white-space and recording
-			errors cleaned</li>
-		  <li>Pipe delimited in accordance with the MTConnect standard v1.3</li>
+		  <li>NC Programs Plans generated in MasterCAM 8</li>
 		</ul>
 	  </li>
-	  <li><a href="./FAIR">FAIR</a> 
-		<ul>
-		  <li>First article inspection reporting data in QIF 2.1 format</li>
-		  <li>Data conforms to <a
-			href="http://qifstandards.org/latest-qif-version/">QIF XSD</a></li>
-		  <li>Each file contains data for 20 instances of the same part</li>
-		  <li>NIST / Mitutoyo completed inspection</li>
-		</ul>
-	  </li>
-	  <li><a href="./MTConnect">MTConnect</a> 
-		<ul>
-		  <li>XML-formatted data of the machine tool output data in accordance with
-			the MTConnect standard v1.3</li>
-		  <li>Data conforms to <a
-			href="https://github.com/mtconnect/schema">MTConnect v1.3
-		  schemas</a></li>
-		</ul>
-	  </li>
-	  <li><a href="./NC-Code">NC-Code</a> 
+	  <li><a href="./G-code">G-code</a> 
 		<ul>
 		  <li>Machining programs for operations steps for each part in accordance
 			with ISO 6983 (G-code)</li>
 		</ul>
 	  </li>
-	  <li><a href="./PartData">PartData</a> 
+	  <li><a href="./Setup%20Sheets">Setup Sheets</a> 
 		<ul>
-		  <li>Combined "Split" data organized into data blocks by part instance</li>
-		</ul>
-	  </li>
-	  <li><a href="./QIF-IncomingInspection">QIF-IncomingInspection</a> 
-		<ul>
-		  <li>Receiving / incoming inspection reporting data in QIF 2.1 format</li>
-		  <li>Data conforms to <a
-			href="http://qifstandards.org/latest-qif-version/">QIF XSD</a></li>
-		  <li>Each file contains data for 20 instances of the same part</li>
-		  <li>The MTC in the UK completed inspection</li>
-		</ul>
-	  </li>
-	  <li><a href="./Raw">Raw</a> 
-		<ul>
-		  <li>Raw output from machine tool adapters as recorded on the given date
-			and machine</li>
-		</ul>
-	  </li>
-	  <li><a href="./Split">Split</a> 
-		<ul>
-		  <li>Parsed "Clean" data split into data blocks by operation for each part
-			instance</li>
+		  <li>Setup sheets related to the CAM and G-code</li>
 		</ul>
 	  </li>
 	</ul>
@@ -146,7 +105,7 @@
 	to property. The software developed by NIST employees is not subject to
 	copyright protection within the United States.</p>
 
-	<p>Date created: August 17, 2018 | Last updated: November 21, 2018 | Contact: <a
+	<p>Date created: November 21, 2018 | Last updated: November 21, 2018 | Contact: <a
 	href="mailto:smstestbed@nist.gov" class="bold">SMS Test Bed Coordinators</a></p>
 	</div>
 </div>
