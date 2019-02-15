@@ -3,17 +3,22 @@
 	<xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes"/>
 	<xsl:template match="/">
 		<head>
-			<title>NIST SMS Test Bed: Device Streams</title>
-			<meta name="Description" id="Description" content="Test Web Page" />
-			<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-			<meta name="Keywords" id="Keywords" content="manufacturing, data, MTConnect, QIF, design">
-			<link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css">
-			<script src="https://pages.nist.gov/nist-header-footer/js/jquery-1.9.0.min.js" type="text/javascript" defer="defer"></script>
-			<script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
-			<!-- DAP Analytics -->
-			<script type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NIST&pua=UA-102226507-7&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script>
+			<title>NIST SMS Test Bed: Volatile Data Stream</title>
+			<meta name="Description" id="Description" content="Test Web Page"/>
+			<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+			<meta name="Keywords" id="Keywords" content="manufacturing, data, MTConnect, QIF, design"/>
+			<link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css"/>
+			<xsl:text disable-output-escaping="yes">
+				<![CDATA[
+					<script src="https://pages.nist.gov/nist-header-footer/js/jquery-1.9.0.min.js" type="text/javascript" defer="defer"></script> 
+					<script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script> 
+					<!-- DAP Analytics --> 
+					<script type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NIST&pua=UA-102226507-7&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script>
+				]]>
+			</xsl:text>
 		</head>
 
+		<body>
 		<div id="main" class="nist-main">
 			<div id="mtconnect content" style="padding: 0px 30px 30px 30px;">
 				<p>
