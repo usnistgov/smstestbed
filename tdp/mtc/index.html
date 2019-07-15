@@ -3,620 +3,152 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>NIST SMS Test Bed: Technical Data Packages</title>
-  <meta name="Description" id="Description" content="Test Web Page">
-  <meta name="Keywords" id="Keywords" content="">
-  <link type="text/css" href="https://smstestbed.nist.gov/styles/Streams.css"
-  media="screen" rel="stylesheet">
-  <link rel="stylesheet" href="https://smstestbed.nist.gov/css/nist_base.css">
-  <link rel="stylesheet" href="https://smstestbed.nist.gov/css/nist_header.css">
-  <script type="text/javascript"
-  src="https://smstestbed.nist.gov/js/jquery-1.9.0.min.js">
- </script>
-  <script type="text/javascript"
-  src="https://smstestbed.nist.gov/js/nist-header.js">
- </script>
+  <meta name="Description" id="Description" content="Technical Data Pacakages (TDP) for NIST Smart Manufacturing Test Bed. Real manufacturing data available for research and development.">
+  <meta name="Keywords" id="Keywords" content="manufacturing, data, MTConnect, QIF, design" \>
+  <link rel="stylesheet" href="https://pages.nist.gov/nist-header-footer/css/nist-combined.css" \>
+  <script src="https://pages.nist.gov/nist-header-footer/js/jquery-1.9.0.min.js" type="text/javascript" defer="defer"></script>
+  <script src="https://pages.nist.gov/nist-header-footer/js/nist-header-footer.js" type="text/javascript" defer="defer"></script>
+  <!-- DAP Analytics -->
+  <script type="text/javascript" id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NIST&pua=UA-102226507-7&yt=true&exts=ppsx,pps,f90,sch,rtf,wrl,txz,m1v,xlsm,msi,xsd,f,tif,eps,mpg,xml,pl,xlt,c"></script>
 </head>
 
-<body lang="en" class="CS_Document">
-<header class=nist-header nist-header--bar id=nist-header role=banner>
-<div class="nist-header__inner clearfix">
+<div id="main" class="nist-main">
+	<div id="tdp content" style="padding: 0px 30px 30px 30px;">
+	<h1><a
+	id="Design_Manufacturing_and_Inspection_Data_for_a_Box_Assembly_0"></a>Design,
+	Manufacturing, and Inspection Data for a Box Assembly</h1>
 
-<div class="nist-header__logo">
-<a href="https://www.nist.gov/"
-title="National Institute of Standards and Technology"
-class="nist-header__logo-link" rel="home"><img
-src="https://smstestbed.nist.gov/images/svg/nist_logo_reverse.svg"
-alt="National Institute of Standards and Technology"></a></div>
+	<p>To better understand and address the challenges faced in linking all stages
+	of a manufacturing and design process, an investigative fabrication process was
+	designed and enacted as part of a collaboration between <a
+	href="https://www.nist.gov">National Institute of Standards and Technology
+	(NIST)</a> and <a href="http://www.the-mtc.org/">Manufacturing Technology
+	Centre (MTC)</a>. This collaboration sought to test selected open standards'
+	ability to integrate the product-lifecycle stages of engineering design,
+	manufacturing, and quality assurance through a thorough implementation of a
+	small scale model-based enterprise (MBE). This dataset was generated as a
+	result of the collaboration.</p>
 
-<div class="nist-header__search">
+	<p><a href="https://s3.amazonaws.com/nist-el/mfg_digitalthread/nist-mtc-assembly_tdp.zip">Download the full package @ 237 MB.</a></p>
 
-<form accept-charset="UTF-8"
-action="https://find.nist.gov/search?affiliate=nist-search" id="nist-search"
-method="get">
-  <input name="utf8" value="true" type="hidden"><input id="affiliate"
-  name="affiliate" value="nist-search" type="hidden"><label
-  class="element-invisible" for="query">Search</label><input
-  class="usagov-search-autocomplete" id="query" name="query" size="15"
-  maxlength="128" type="text"><span class="ui-helper-hidden-accessible"></span> 
-  <input id="edit-submit" name="commit" value="Search" class="form-submit"
-  type="submit"><button type="submit" id="edit-submit-btn" name="op"
-  class="form-submit"><span class="element-invisible">Search</span><i
-  class="fa fa-search"></i></button></form>
-</div>
-</div>
+	<h2><a id="Directory_Structure_3"></a>Directory Structure</h2>
+	<ul>
+	  <li><a href="./CAD">CAD</a> 
+		<ul>
+		  <li>Digital Product Definition, in accordance to ASME Y14.41-2012,
+			created using SolidWorks 2016</li>
+		</ul>
+	  </li>
+	  <li><a href="./Clean">Clean</a> 
+		<ul>
+		  <li>Raw output from machine tool adapters with white-space and recording
+			errors cleaned</li>
+		  <li>Pipe delimited in accordance with the MTConnect standard v1.3</li>
+		</ul>
+	  </li>
+	  <li><a href="./FAIR">FAIR</a> 
+		<ul>
+		  <li>First article inspection reporting data in QIF 2.1 format</li>
+		  <li>Data conforms to <a
+			href="http://qifstandards.org/latest-qif-version/">QIF XSD</a></li>
+		  <li>Each file contains data for 20 instances of the same part</li>
+		  <li>NIST / Mitutoyo completed inspection</li>
+		</ul>
+	  </li>
+	  <li><a href="./MTConnect">MTConnect</a> 
+		<ul>
+		  <li>XML-formatted data of the machine tool output data in accordance with
+			the MTConnect standard v1.3</li>
+		  <li>Data conforms to <a
+			href="https://github.com/mtconnect/schema">MTConnect v1.3
+		  schemas</a></li>
+		</ul>
+	  </li>
+	  <li><a href="./NC-Code">NC-Code</a> 
+		<ul>
+		  <li>Machining programs for operations steps for each part in accordance
+			with ISO 6983 (G-code)</li>
+		</ul>
+	  </li>
+	  <li><a href="./PartData">PartData</a> 
+		<ul>
+		  <li>Combined "Split" data organized into data blocks by part instance</li>
+		</ul>
+	  </li>
+	  <li><a href="./QIF-IncomingInspection">QIF-IncomingInspection</a> 
+		<ul>
+		  <li>Receiving / incoming inspection reporting data in QIF 2.1 format</li>
+		  <li>Data conforms to <a
+			href="http://qifstandards.org/latest-qif-version/">QIF XSD</a></li>
+		  <li>Each file contains data for 20 instances of the same part</li>
+		  <li>The MTC in the UK completed inspection</li>
+		</ul>
+	  </li>
+	  <li><a href="./Raw">Raw</a> 
+		<ul>
+		  <li>Raw output from machine tool adapters as recorded on the given date
+			and machine</li>
+		</ul>
+	  </li>
+	  <li><a href="./Split">Split</a> 
+		<ul>
+		  <li>Parsed "Clean" data split into data blocks by operation for each part
+			instance</li>
+		</ul>
+	  </li>
+	</ul>
 
-<div class="nist-header__nav-wrapper">
+	<h2><a id="Contacts_31"></a>Contacts</h2>
 
-<div class="nist-header__nav nist-header__nav--mini">
+	<p><a href="https://www.nist.gov/people/thomas-hedberg">Thomas Hedberg</a>
+	and <a href="https://www.nist.gov/people/moneer-helu">Moneer Helu</a>
+	are the Coordinators of the SMS Test Bed.</p>
 
-<div class="nist-header__nav-toggle-wrapper clearfix">
-<a href="#" class="nist-header__nav-toggle"><span class="fa fa-bars"></span>
-NIST Menu</a></div>
+	<p>For general questions, please send an email to <a
+	href="mailto:smstestbed@nist.gov">smstestbed@nist.gov</a>.</p>
 
-<div class="nist-header__nav-inner clearfix">
-<ul class="nist-menu">
-  <li class="nist-menu__item nist-menu__item--depth-1"><a
-    href="https://www.nist.gov/topics" class="nist-menu__link">Topics<span
-    class="expander fa fa-minus"><span class="element-invisible">Expand or
-    Collapse</span></span></a> 
+	<h2><a id="Disclaimers_35"></a>Disclaimers</h2>
 
-    <div class="nist-menu__submenu">
-    <ul class="nist-menu">
+	<p>The use of any software or hardware by the project does not imply a
+	recommendation or endorsement by NIST.</p>
 
-      <div class="nist-menu__column-container has-three-columns">
-      <span tabindex="0" class="nist-menu__close">Close</span> 
+	<p>The use of the project results in other software or hardware products does
+	not imply a recommendation or endorsement by NIST of those products.</p>
 
-      <div class="nist-menu__column">
-      <ul>
-        <li class="nist-menu__item nist-menu__item--depth-2 "><a
-          href="https://www.nist.gov/topics/advanced-communications"
-          class="nist-menu__link">Advanced Communications</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/topics/bioscience"
-          class="nist-menu__link">Bioscience</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/topics/buildings-and-construction"
-          class="nist-menu__link">Buildings and Construction</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/topics/chemistry"
-          class="nist-menu__link">Chemistry</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/topics/disaster-resilience"
-          class="nist-menu__link">Disaster Resilience</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/topics/electronics"
-          class="nist-menu__link">Electronics</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/topics/energy"
-          class="nist-menu__link">Energy</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/topics/environment"
-          class="nist-menu__link">Environment</a></li>
-      </ul>
-      </div>
+	<p>We would appreciate acknowledgment if any of the project results are used,
+	however, the use of the NIST logo is not allowed.</p>
 
-      <div class="nist-menu__column">
-      <ul>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/topics/fire"
-          class="nist-menu__link">Fire</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/topics/forensic-science"
-          class="nist-menu__link">Forensic Science</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/topics/health"
-          class="nist-menu__link">Health</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/topics/information-technology"
-          class="nist-menu__link">Information technology</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/topics/manufacturing"
-          class="nist-menu__link">Manufacturing</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/topics/mathematics-and-statistics"
-          class="nist-menu__link">Mathematics and Statistics</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/topics/metrology"
-          class="nist-menu__link">Metrology</a></li>
-      </ul>
-      </div>
+	<p>NIST-developed software is provided by NIST as a public service. You may
+	use, copy and distribute copies of the software in any medium, provided that
+	you keep intact this entire notice. You may improve, modify and create
+	derivative works of the software or any portion of the software, and you may
+	copy and distribute such modifications or works. Modified works should carry a
+	notice stating that you changed the software and should note the date and
+	nature of any such change. Please explicitly acknowledge the National Institute
+	of Standards and Technology as the source of the software.</p>
 
-      <div class="nist-menu__column">
-      <ul>
-        <li
-        class="nist-menu__item nist-menu__item--depth-2 nist-menu__column-break "><a
-          href="https://www.nist.gov/topics/nanotechnology"
-          class="nist-menu__link">Nanotechnology</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/topics/neutron-research"
-          class="nist-menu__link">Neutron research</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/topics/performance-excellence"
-          class="nist-menu__link">Performance Excellence</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/topics/physics"
-          class="nist-menu__link">Physics</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/topics/public-safety"
-          class="nist-menu__link">Public safety</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/topics/standards"
-          class="nist-menu__link">Standards</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/topics/transportation"
-          class="nist-menu__link">Transportation</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/topics/cybersecurity"
-          class="nist-menu__link">Cybersecurity</a></li>
-      </ul>
-      </div>
-      </div>
-    </ul>
-    </div>
-  </li>
-  <li class="nist-menu__item nist-menu__item--depth-1"><a
-    href="https://www.nist.gov/publications"
-    class="nist-menu__link">Publications</a></li>
-  <li class="nist-menu__item nist-menu__item--depth-1"><a
-    href="https://www.nist.gov/labs-major-programs"
-    class="nist-menu__link">Labs &amp; Major Programs<span
-    class="expander fa fa-minus"><span class="element-invisible">Expand or
-    Collapse</span></span></a> 
+	<p>NIST-developed software is expressly provided "AS IS." NIST MAKES NO
+	WARRANTY OF ANY KIND, EXPRESS, IMPLIED, IN FACT OR ARISING BY OPERATION OF LAW,
+	INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS
+	FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT AND DATA ACCURACY. NIST NEITHER
+	REPRESENTS NOR WARRANTS THAT THE OPERATION OF THE SOFTWARE WILL BE
+	UNINTERRUPTED OR ERROR-FREE, OR THAT ANY DEFECTS WILL BE CORRECTED. NIST DOES
+	NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE OF THE SOFTWARE OR
+	THE RESULTS THEREOF, INCLUDING BUT NOT LIMITED TO THE CORRECTNESS, ACCURACY,
+	RELIABILITY, OR USEFULNESS OF THE SOFTWARE.</p>
 
-    <div class="nist-menu__submenu">
-    <ul class="nist-menu">
+	<p>You are solely responsible for determining the appropriateness of using and
+	distributing the software and you assume all risks associated with its use,
+	including but not limited to the risks and costs of program errors, compliance
+	with applicable laws, damage to or loss of data, programs or equipment, and the
+	unavailability or interruption of operation. This software is not intended to
+	be used in any situation where a failure could cause risk of injury or damage
+	to property. The software developed by NIST employees is not subject to
+	copyright protection within the United States.</p>
 
-      <div class="nist-menu__column-container has-three-columns">
-      <span tabindex="0" class="nist-menu__close">Close</span> 
-
-      <div class="nist-menu__column">
-      <ul>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/labs-major-programs/laboratories"
-          class="nist-menu__link">Laboratories</a> 
-          <ul class="nist-menu">
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/ctl"
-              class="nist-menu__link">Communications Technology
-            Laboratory</a></li>
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/el"
-              class="nist-menu__link">Engineering Laboratory</a></li>
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/itl"
-              class="nist-menu__link">Information Technology Laboratory</a></li>
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/mml" class="nist-menu__link">Material
-              Measurement Laboratory</a></li>
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/pml" class="nist-menu__link">Physical
-              Measurement Laboratory</a></li>
-          </ul>
-        </li>
-      </ul>
-      </div>
-
-      <div class="nist-menu__column">
-      <ul>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/laboratories/user-facilities"
-          class="nist-menu__link">User Facilities</a> 
-          <ul class="nist-menu">
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/cnst" class="nist-menu__link">Center
-              for Nanoscale Science and Technology</a></li>
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/ncnr" class="nist-menu__link">NIST
-              Center for Neutron Research</a></li>
-          </ul>
-        </li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/labs-major-programs/research-test-beds"
-          class="nist-menu__link">Research Test Beds</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/laboratories/projects-programs"
-          class="nist-menu__link">Research Projects</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/laboratories/tools-instruments"
-          class="nist-menu__link">Tools &amp; Instruments</a></li>
-      </ul>
-      </div>
-
-      <div class="nist-menu__column">
-      <ul>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/labs-major-programs/major-programs"
-          class="nist-menu__link">Major Programs</a> 
-          <ul class="nist-menu">
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/advanced-manufacturing-office"
-              class="nist-menu__link">Advanced Manufacturing Office</a></li>
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/baldrige"
-              class="nist-menu__link">Baldrige Performance Excellence
-              Program</a></li>
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/mep"
-              class="nist-menu__link">Manufacturing Extension Partnership
-              (MEP)</a></li>
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/spo" class="nist-menu__link">Special
-              Programs Office</a></li>
-          </ul>
-        </li>
-      </ul>
-      </div>
-      </div>
-    </ul>
-    </div>
-  </li>
-  <li class="nist-menu__item nist-menu__item--depth-1"><a
-    href="https://www.nist.gov/services-resources"
-    class="nist-menu__link">Services &amp; Resources<span
-    class="expander fa fa-minus"><span class="element-invisible">Expand or
-    Collapse</span></span></a> 
-
-    <div class="nist-menu__submenu">
-    <ul class="nist-menu">
-
-      <div class="nist-menu__column-container has-two-columns">
-      <span tabindex="0" class="nist-menu__close">Close</span> 
-
-      <div class="nist-menu__column">
-      <ul>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/services-resources/standards-and-measurements"
-          class="nist-menu__link">Standards and Measurements</a> 
-          <ul class="nist-menu">
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/calibrations"
-              class="nist-menu__link">Calibration Services</a></li>
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/nvlap"
-              class="nist-menu__link">Laboratory Accreditation (NVLAP)</a></li>
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/nist-quality-system"
-              class="nist-menu__link">Quality System</a></li>
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/srm" class="nist-menu__link">Standard
-              Reference Materials (SRMs)</a></li>
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/standardsgov"
-              class="nist-menu__link">Standards.gov</a></li>
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/pml/time-and-frequency-division/time-services"
-              class="nist-menu__link">Time Services</a></li>
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/pml/weights-and-measures"
-              class="nist-menu__link">Office of Weights and Measures</a></li>
-          </ul>
-        </li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/services-resources/software"
-          class="nist-menu__link">Software</a></li>
-      </ul>
-      </div>
-
-      <div class="nist-menu__column">
-      <ul>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/data" class="nist-menu__link">Data</a> 
-          <ul class="nist-menu">
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="http://webbook.nist.gov/chemistry/"
-              class="nist-menu__link">Chemistry WebBook</a></li>
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="http://csrc.nist.gov/groups/SNS/nvd"
-              class="nist-menu__link">National Vulnerability Database</a></li>
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/pml/productsservices/physical-reference-data"
-              class="nist-menu__link">Physical Reference Data</a></li>
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/srd" class="nist-menu__link">Standard
-              Reference Data (SRDs)</a></li>
-          </ul>
-        </li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="http://csrc.nist.gov/" class="nist-menu__link">Computer
-          Security Resource Center (CSRC)</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="http://tsapps.nist.gov/techtransfer"
-          class="nist-menu__link">License &amp; Patents</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/nist-research-library"
-          class="nist-menu__link">NIST Research Library</a></li>
-      </ul>
-      </div>
-      </div>
-    </ul>
-    </div>
-  </li>
-  <li class="nist-menu__item nist-menu__item--depth-1"><a
-    href="https://www.nist.gov/news-events" class="nist-menu__link">News &amp;
-    Events<span class="expander fa fa-minus"><span
-    class="element-invisible">Expand or Collapse</span></span></a> 
-
-    <div class="nist-menu__submenu has-one-column">
-    <ul class="nist-menu">
-
-      <div class="nist-menu__column-container has-one-column">
-      <span tabindex="0" class="nist-menu__close">Close</span> 
-
-      <div class="nist-menu__column">
-      <ul>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/news-events/news"
-          class="nist-menu__link">News</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/news-events/events"
-          class="nist-menu__link">Events</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/news-events/news/blogs"
-          class="nist-menu__link">Blogs</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/news-events/image-gallery"
-          class="nist-menu__link">Image Gallery</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/news-events/video-gallery"
-          class="nist-menu__link">Video Gallery</a></li>
-      </ul>
-      </div>
-      </div>
-    </ul>
-    </div>
-  </li>
-  <li class="nist-menu__item nist-menu__item--depth-1"><a
-    href="https://www.nist.gov/about-nist" class="nist-menu__link">About
-    NIST<span class="expander fa fa-minus"><span
-    class="element-invisible">Expand or Collapse</span></span></a> 
-
-    <div class="nist-menu__submenu">
-    <ul class="nist-menu">
-
-      <div class="nist-menu__column-container has-two-columns">
-      <span tabindex="0" class="nist-menu__close">Close</span> 
-
-      <div class="nist-menu__column">
-      <ul>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/about-nist/contact-us"
-          class="nist-menu__link">Contact Us</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/pba/nist-visitor-information"
-          class="nist-menu__link">Visit</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/about-nist/our-organization"
-          class="nist-menu__link">Our Organization</a> 
-          <ul class="nist-menu">
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/about-nist/our-organization/mission-vision-values"
-              class="nist-menu__link">Mission, Vision &amp; Values</a></li>
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/director/nist-organizational-chart"
-              class="nist-menu__link">Organization Chart</a></li>
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/director"
-              class="nist-menu__link">Office of the Director</a></li>
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/about-nist/our-organization/locations"
-              class="nist-menu__link">Locations</a></li>
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/about-nist/our-organization/people"
-              class="nist-menu__link">People</a></li>
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="https://www.nist.gov/about-nist/our-organization/budget-planning"
-              class="nist-menu__link">Budget &amp; Planning</a></li>
-          </ul>
-        </li>
-      </ul>
-      </div>
-
-      <div class="nist-menu__column">
-      <ul>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/about-us/nist-awards"
-          class="nist-menu__link">Awards</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/about-nist/work-nist"
-          class="nist-menu__link">Work with NIST</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/office-acquisition-and-agreements-management-oaam/grants-management-division/nist-program"
-          class="nist-menu__link">Funding Opportunities</a></li>
-        <li class="nist-menu__item nist-menu__item--depth-2"><a
-          href="https://www.nist.gov/timeline"
-          class="nist-menu__link">History</a> 
-          <ul class="nist-menu">
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="http://nistdigitalarchives.contentdm.oclc.org/"
-              class="nist-menu__link">IST Digital Archives</a></li>
-            <li class="nist-menu__item nist-menu__item--depth-3"><a
-              href="http://museum.nist.gov" class="nist-menu__link">NIST
-              Museum</a></li>
-          </ul>
-        </li>
-      </ul>
-      </div>
-      </div>
-    </ul>
-    </div>
-  </li>
-</ul>
-</div>
-</div>
-</div>
-</header>
-<div id="tdp content" style="padding: 0px 30px 30px 30px;">
-<h1><a
-id="Design_Manufacturing_and_Inspection_Data_for_a_Box_Assembly_0"></a>Design,
-Manufacturing, and Inspection Data for a Box Assembly</h1>
-
-<p>To better understand and address the challenges faced in linking all stages
-of a manufacturing and design process, an investigative fabrication process was
-designed and enacted as part of a collaboration between <a
-href="https://www.nist.gov">National Institute of Standards and Technology
-(NIST)</a> and <a href="http://www.the-mtc.org/">Manufacturing Technology
-Centre (MTC)</a>. This collaboration sought to test selected open standards'
-ability to integrate the product-lifecycle stages of engineering design,
-manufacturing, and quality assurance through a thorough implementation of a
-small scale model-based enterprise (MBE). This dataset was generated as a
-result of the collaboration.</p>
-
-<p><a href="https://s3.amazonaws.com/nist-el/mfg_digitalthread/nist-mtc-assembly_tdp.zip">Download the full package @ 237 MB.</a></p>
-
-<h2><a id="Directory_Structure_3"></a>Directory Structure</h2>
-<ul>
-  <li><a href="./CAD">CAD</a> 
-    <ul>
-      <li>Digital Product Definition, in accordance to ASME Y14.41-2012,
-        created using SolidWorks 2016</li>
-    </ul>
-  </li>
-  <li><a href="./Clean">Clean</a> 
-    <ul>
-      <li>Raw output from machine tool adapters with white-space and recording
-        errors cleaned</li>
-      <li>Pipe delimited in accordance with the MTConnect standard v1.3</li>
-    </ul>
-  </li>
-  <li><a href="./FAIR">FAIR</a> 
-    <ul>
-      <li>First article inspection reporting data in QIF 2.1 format</li>
-      <li>Data conforms to <a
-        href="http://qifstandards.org/latest-qif-version/">QIF XSD</a></li>
-      <li>Each file contains data for 20 instances of the same part</li>
-      <li>NIST / Mitutoyo completed inspection</li>
-    </ul>
-  </li>
-  <li><a href="./MTConnect">MTConnect</a> 
-    <ul>
-      <li>XML-formatted data of the machine tool output data in accordance with
-        the MTConnect standard v1.3</li>
-      <li>Data conforms to <a
-        href="https://github.com/mtconnect/schema">MTConnect v1.3
-      schemas</a></li>
-    </ul>
-  </li>
-  <li><a href="./NC-Code">NC-Code</a> 
-    <ul>
-      <li>Machining programs for operations steps for each part in accordance
-        with ISO 6983 (G-code)</li>
-    </ul>
-  </li>
-  <li><a href="./PartData">PartData</a> 
-    <ul>
-      <li>Combined "Split" data organized into data blocks by part instance</li>
-    </ul>
-  </li>
-  <li><a href="./QIF-IncomingInspection">QIF-IncomingInspection</a> 
-    <ul>
-      <li>Receiving / incoming inspection reporting data in QIF 2.1 format</li>
-      <li>Data conforms to <a
-        href="http://qifstandards.org/latest-qif-version/">QIF XSD</a></li>
-      <li>Each file contains data for 20 instances of the same part</li>
-      <li>The MTC in the UK completed inspection</li>
-    </ul>
-  </li>
-  <li><a href="./Raw">Raw</a> 
-    <ul>
-      <li>Raw output from machine tool adapters as recorded on the given date
-        and machine</li>
-    </ul>
-  </li>
-  <li><a href="./Split">Split</a> 
-    <ul>
-      <li>Parsed "Clean" data split into data blocks by operation for each part
-        instance</li>
-    </ul>
-  </li>
-</ul>
-
-<h2><a id="Contacts_31"></a>Contacts</h2>
-
-<p><a href="https://www.nist.gov/people/thomas-hedberg">Thomas Hedberg</a>.</p>
-
-<h2><a id="Disclaimers_35"></a>Disclaimers</h2>
-
-<p>The use of any software or hardware by the project does not imply a
-recommendation or endorsement by NIST.</p>
-
-<p>The use of the project results in other software or hardware products does
-not imply a recommendation or endorsement by NIST of those products.</p>
-
-<p>We would appreciate acknowledgment if any of the project results are used,
-however, the use of the NIST logo is not allowed.</p>
-
-<p>NIST-developed software is provided by NIST as a public service. You may
-use, copy and distribute copies of the software in any medium, provided that
-you keep intact this entire notice. You may improve, modify and create
-derivative works of the software or any portion of the software, and you may
-copy and distribute such modifications or works. Modified works should carry a
-notice stating that you changed the software and should note the date and
-nature of any such change. Please explicitly acknowledge the National Institute
-of Standards and Technology as the source of the software.</p>
-
-<p>NIST-developed software is expressly provided "AS IS." NIST MAKES NO
-WARRANTY OF ANY KIND, EXPRESS, IMPLIED, IN FACT OR ARISING BY OPERATION OF LAW,
-INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS
-FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT AND DATA ACCURACY. NIST NEITHER
-REPRESENTS NOR WARRANTS THAT THE OPERATION OF THE SOFTWARE WILL BE
-UNINTERRUPTED OR ERROR-FREE, OR THAT ANY DEFECTS WILL BE CORRECTED. NIST DOES
-NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING THE USE OF THE SOFTWARE OR
-THE RESULTS THEREOF, INCLUDING BUT NOT LIMITED TO THE CORRECTNESS, ACCURACY,
-RELIABILITY, OR USEFULNESS OF THE SOFTWARE.</p>
-
-<p>You are solely responsible for determining the appropriateness of using and
-distributing the software and you assume all risks associated with its use,
-including but not limited to the risks and costs of program errors, compliance
-with applicable laws, damage to or loss of data, programs or equipment, and the
-unavailability or interruption of operation. This software is not intended to
-be used in any situation where a failure could cause risk of injury or damage
-to property. The software developed by NIST employees is not subject to
-copyright protection within the United States.</p>
-</div>
-
-<div id="footer-wrapper">
-
-<table width="225" border="0" align="right">
-  <tbody>
-    <tr>
-      <td><br>
-
-
-        <form method="post"
-        action="https://service.govdelivery.com/service/multi_subscribe.html">
-          <input value="http://www.nist.gov/" name="origin" type="hidden"><img
-          src="http://csrc.nist.gov/publications/govdelivery_bubble.gif"
-          alt="govdelivery bubble icon" title="govdelivery bubble icon"
-          width="21" vspace="0" border="0" hspace="0" height="21"> Sign Up for
-          NIST E-mail alerts:<br>
-          <input onfocus="this.value=''" value="Enter email address"
-          name="login" id="login" title="login" type="text"><input
-          value="USNIST" name="code" type="hidden"> 
-          <input name="signupbutton" id="signupbutton" value="Go"
-        type="submit"></form>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<p>The National Institute of Standards and Technology (NIST) is an agency of
-the U.S. Commerce Department.</p>
-
-<p><a href="http://www.nist.gov/public_affairs/privacy.cfm">Privacy policy /
-security notice / accessibility statement</a> / <a
-href="http://www.nist.gov/public_affairs/disclaimer.cfm">Disclaimer</a> / <a
-href="http://www.nist.gov/director/foia/">Freedom of Information Act (FOIA)</a>
-/ <br>
-<a href="http://www.nist.gov/director/civil/nofearpolicy.cfm">No Fear Act
-Policy</a> / <a href="http://www.ExpectMore.gov">ExpectMore.gov (performance of
-federal programs)</a> / <a
-href="http://www.nist.gov/director/quality_standards.cfm">NIST Information
-Quality Standards</a> / <br>
-<a href="http://www.nist.gov/public_affairs/envpolicy.cfm">Environmental Policy
-Statement</a></p>
-
-<p>Date created: August 17, 2018 | Last updated: August 17, 2018 Contact: <a
-href="mailto:smstestbed@nist.gov" class="bold">SMS Test Bed Coordinators</a></p>
+	<p>Date created: August 17, 2018 | Last updated: November 21, 2018 | Contact: <a
+	href="mailto:smstestbed@nist.gov" class="bold">SMS Test Bed Coordinators</a></p>
+	</div>
 </div>
 </body>
 </html>
